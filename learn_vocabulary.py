@@ -1,6 +1,9 @@
 import random
 import re
 import unicodedata
+from colorama import Fore, Style, init
+init(autoreset=True)
+
 
 '''
 to do:
@@ -12,7 +15,8 @@ draw desire follow of app?
     press 'enter': skip. if you want to add previous word into wrong list, press 'w' 
     press 'space', it mean we don't rememeber this word. This word will added into wrong list. 
   + after done the list word and wrong word, automatically increase number of practice file 
-  + change commandline into 'python3 learn.py filename' instead of choose filename 
+  + change commandline into 'python3 learn.py filename' instead of choose filename
+  + add highlighted text with phrase
   + after choose filename, it will display instead of current manner: 
     you want answer by english or vietnamese: 
     1. english 
@@ -29,7 +33,10 @@ def read_vocabulary(filename):
         if len(parts) < 2:
           continue
         else:
-          pass
+          vocabulary.append({
+            'english': parts[0].strip(),
+            'vietnamese': parts[1].strip()
+          })
           
       
     # Open word and draft file
@@ -81,8 +88,15 @@ def check_answer(question, answer, is_english):
 def print_vocabulary_list(vocabulary):
   print("English\tPronunciation\tTranslation\tAnnotate")
   for word in vocabulary:
-    print(f"{word['english']}\t{word['phonetic']}\t{word['vietnamese']}\t{word.get('annotation','')}")
+    if 'phonetic' in word:
+      print(f"{word['english']}\t{word['phonetic']}\t{word['vietnamese']}\t{word.get('annotation','')}")
+    else:
+      print(f"{word['english']}\t{word['vietnamese']}")
 
+    
+def highlight_text(text):
+    return re.sub(r'`([^`]+)`', f'{Fore.RED}`\\1`{Style.RESET_ALL}', text)
+  
 def vocabulary_quiz(files):
   while True:
     print("Choose a file to practice vocabulary: ")
@@ -105,30 +119,52 @@ def vocabulary_quiz(files):
     
     wrong_answers = []
     count = 0
+    question = random.choice(vocabulary)
+    if 'phonentic' in question:
+      # browse through each voca in list voca
+      while vocabulary:
+        question = random.choice(vocabulary)
+        # print("question: ", question)
+        if is_english:
+          print(f"[{count}] {question['english']} ({question['phonetic']})", end=': ')
+        else:
+          print(f"[{count}] {question['vietnamese']}", end=': ')
+        count += 1
 
-    # browse through each voca in list voca
-    while vocabulary:
-      question = random.choice(vocabulary)
-      print("question: ", question)
-      if is_english:
-        print(f"[{count}] {question['english']} ({question['phonetic']})", end=': ')
-      else:
-        print(f"[{count}] {question['vietnamese']}", end=': ')
-      count += 1
+        user_answer = input()
+        # Whether answer correct or not
+        if check_answer(question, user_answer, is_english) or user_answer == 'n':
+            if (user_answer == 'n'):
+              print(question['vietnamese'])
+            if 'annotation' in question:
+              print("  example:", question['annotation'])
+        else:
+            wrong_answers.append(question)
+            print(f"Wrong! The correct answer is: {question['vietnamese'] if is_english else question['english']}")
+            if 'annotation' in question:
+              print("  example: ", question['annotation'])
+        vocabulary.remove(question)
+    else:
+      while vocabulary:
+        question = random.choice(vocabulary)
+        # print("question: ", question)
+        if is_english:
+          print(f"[{count}] {highlight_text(question['english'])}", end=': ')
+        else:
+          print(f"[{count}] {highlight_text(question['vietnamese'])}", end=': ')
+        count += 1
 
-      user_answer = input()
-      # Whether answer correct or not
-      if check_answer(question, user_answer, is_english) or user_answer == 'n':
-          if (user_answer == 'n'):
-            print(question['vietnamese'])
-          if 'annotation' in question:
-            print("  example:", question['annotation'])
-      else:
-          wrong_answers.append(question)
-          print(f"Wrong! The correct answer is: {question['vietnamese'] if is_english else question['english']}")
-          if 'annotation' in question:
-            print("  example: ", question['annotation'])
-      vocabulary.remove(question)
+        user_answer = input()
+        # Whether answer correct or not
+        if check_answer(question, user_answer, is_english) or user_answer == 'n':
+            if (user_answer == 'n'):
+              print(question['vietnamese'])
+            if 'annotation' in question:
+              print("  example:", question['annotation'])
+        else:
+            wrong_answers.append(question)
+            print(f"Wrong! The correct answer is: {highlight_text(question['vietnamese']) if is_english else highlight_text(question['english'])}")
+        vocabulary.remove(question)
 
     if wrong_answers:
       print("\nList wrong word:")
@@ -137,7 +173,6 @@ def vocabulary_quiz(files):
     continue_quiz = input("Do you want to continue (yes/no)? ")
     if continue_quiz.lower() != 'yes':
         break
-
 if __name__ == '__main__':
     files = ['Voca_01.txt', 'Voca_02.txt', 'Voca_32.txt', 'Voca_33.txt', 'Voca_34.txt', 'Voca_35.txt', 'Voca_40.txt', 'Voca_41.txt', "Voca_40_phrase.md"]  # Thay thế danh sách tệp của bạn tại đây
     vocabulary_quiz(files)
