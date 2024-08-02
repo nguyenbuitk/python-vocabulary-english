@@ -1,0 +1,235 @@
+============================
+Hard word VNU
+Test 1:
+aridity:khô cằn
+geyser:mạch nước phun
+necessiate:đòi hỏi
+irigation:tưới tiêu
+searing:khắc nghiệt
+depletion:cạn kiệt
+
+implication:tác động
+boast:tự hào
+pedestrian:người đi bộ
+affectionate:giàu tình cảm
+
+make effect:nỗ lực
+affect:ảnh hưởng
+
+
+Test 2
+norm:nguyên tắc
+composition:thành phần
+preliminary:sơ bộ
+nearly:hầu hết
+withdraw:rút lui
+determined:quyết định, quyết tâm
+fluctuation:biến động
+favourable:thuận lợi
+
+sack:sa thải
+dismiss: sa thải
+dismissal: sa thải
+fired: sa thải
+
+accusation(n):cáo buộc
+charge(v)cáo buộc
+
+appeal(n)kháng cáo
+appeal(v)hấp dẫn
+
+decent: khát tốt, tử tế
+distant: xa xôi
+
+menace: mối đe dọa
+humane: nhân văn
+aggrevation: trầm trọng
+
+gather(v): tập trung
+focused(adj): tập trung
+
+căng lên: tense (cơ căng lên)
+strain(v): làm căng
+strain(n): căng thẳng
+
+remedy:biện pháp
+relief:sự cứu trợ
+aggravation:trầm trọng
+precisely:chắc chắn
+
+immigration:di cư
+emigration:nhập cư
+charm:quyến rũ
+elegance:sang tọng
+
+=== Test 3
+mental:tinh thần
+metal:kim loại
+
+alignment: sự liên kết
+ligament:  dây chằng
+
+pedestrian: người đi bộ
+desperate: tuyệt vọng
+
+piece:tác phẩm nghệ thuật
+species:tác phẩm
+
+merit(v)xứng đáng nhận
+merit(n)điểm tốt
+
+favor:ủng hộ, sự giúp đỡ
+ask a favor:nhờ 1 sự giúp đỡ
+do me a favor: làm ơn giúp tôi
+
+practical:thực tế, thiết thực
+practically:thực tế, thiết thực
+impractical:không thực tế
+
+virgin(n):trinh nữ, thô (nguyên liệu thô)
+
+polite(adj)lịch sự
+politeness(n)lịch sự
+courtesy(n)phép lịch sự
+
+in term:về mặt (in term of marriage rate)
+terms(n)thuật ngữ
+term(v)được gọi là
+
+plant(n):nhà máy
+
+advance(v)tiến vào
+advance(v)nâng cao
+in advance:trước
+
+initial(adj)ban đầu
+initial(n)tên viết tắt
+abbreviation(n)viết tắt ~ thường là viết tắt một thuật ngữ nào đó
+
+====== voca VNU 6 ====
+empathy:đồng cảm
+grumpy, irritable:cáu kỉnh
+impulsive(adj)bốc đồng
+indulgence(n)ham muốn
+
+===== voca VNU 8 =====
+susceptible:nhạy cảm
+infection:sự lây nhiễm
+gratuity:tiền thưởng
+consensus:sự nhất trí
+inceneration:thiêu hủy rác
+metropolitan:đô thị
+fiberglass:sợi thủy tinh
+abbreviation:tên viết tắt
+aggregate:tổng hợp
+supervision:giám sát
+mandatory:bắt buộc
+invasion:sự xâm phạm
+organism:sinh vật
+
+================= end of hard word VNU  ==============
+01-05:
+constant:liên tục
+instant:ngay lập tức
+interpret
+presence
+accuse
+detect
+costume
+commit
+inspect
+purpose
+propose
+rational
+persuade
+oppose
+gentle
+guilty
+division
+preserve
+interfere
+cast
+dormitory
+secretary
+relatively
+particular
+
+negative
+negation
+
+burglary
+robbery
+thief
+
+09:
+fraight:sự sợ hãi
+afraid:sợ hãi
+nervous:lo lắng
+concern:lo ngại
+terrible:kinh khủng
+terrific:tuyệt vời
+terrified:sợ hãi
+awful:kinh khủng
+
+reply:đáp lại
+response:phản ứng
+react:phản ứng
+reaction:phản ứng
+
+shout:la lên
+loud:lớn tiếng
+
+reach:chạm tới
+approach:tiếp cận
+
+prior:trước
+period:giai đoạn
+
+judge(v, n): đánh giá, sự đánh giá
+judgement(n): sự đánh giá
+
+
+10:
+corralation: mối liên hệ
+inquiry: điều tra/yêu cầu
+coordination: sự phối hợp
+variation: biến đổi
+accelerate: thúc đẩy
+
+11-16
+council:hội đồng
+coucin:anh chị em họ
+
+obviously:rõ ràng là
+obituary:cáo phó
+
+wise(adj):khôn ngoan
+wisdom(n):khôn ngoan
+
+quantity:số lượng
+quality:chất lượng
+qualify:đủ điều kiện
+
+laundry:giặt ủi
+launch
+lounge
+luggage
+
+guarantee
+ensure
+assure
+
+celebrity
+celebration
+
+
+process:tiến trình, quá trình
+processing:xử lý
+
+
+- decode >< encode
+- transitive
+- dependent
+- west >< east
+- north >< south
+- vertical >< horizontal

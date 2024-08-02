@@ -1,0 +1,101 @@
+15
+13
+adopt(n - əˈdɑːpt)con nuôi
+interpret(v - ɪnˈtɜːrprət)giải thích
+kindly(adv - ˈkaɪndli)lòng tốt
+gravity(n - ɡrævəti)trọng lực
+astronaut(n - ˈæstrənɔːt)phi hành gia
+poverty(n - ˈpɑːvərti)nghèo nàn
+duty(n - duːti)trách nhiệm
+detect(v - dɪˈtekt)phát hiện
+float(v - fləʊt)nổi
+jewel(n - dʒuːəl)ngọc
+courage(n - ˈkɜːrɪdʒ)lòng can đảm
+refrigerate(v - rɪˈfrɪdʒəreɪt)làm lạnh
+beg(v - beɡ)ăn xin
+indeed(adv - ɪnˈdiːd)thật
+grant(v - ɡrænt)cho phép
+beyond(prep - bɪˈjɑːnd)nằm ngoài
+pour(v - pɔːr)đổ
+raw(adj - rɔː)chưa xử lý
+costume(n - kɑːstuːm)trang phục
+barrier(n - bæriər)rào chắn
+instant(adv - ɪnstənt)ngay lập tức
+origin(n - ɔːrɪdʒɪn)nguồn gốc
+underground(adj - ʌndərˈɡraʊnd)ngầm, dưới lòng đất
+mineral(n - mɪnərəl)khoáng sản, khoáng chất
+telescope(n - telɪskəʊp)kính viễn vọng, kính thiên văn
+retire(v - rɪˈtaɪər)nghỉ hưu
+presence(n - prezns)sự có mặt
+satellite(n - sætəlaɪt)vệ tinh
+participate(v - pɑːrˈtɪsɪpeɪt)tham gia
+pretend(v - prɪˈtend)giả vờ
+permission(n - pərˈmɪʃn)sự cho phép
+tone(n - təʊn)giọng, âm điệu
+elementary(adj - elɪˈmentri)tiểu học
+immigrant(adj - ɪmɪɡrənt)di trú
+exclaim/ yell(v - ɪkˈskleɪm, jel)la lên, kêu lên
+stretch(v - stretʃ)căng ra
+tissue(n - tɪʃuː)khăn giấy
+forbid(v - fərˈbɪd)ngăn cấm
+illustrate(v - ɪləstreɪt)minh họa
+fool(n - fuːl)kẻ ngốc
+statistic(n - stəˈtɪstɪk)thống kê
+extend(v - ɪkˈstend)đưa ra
+gradual(adj - ˈɡrædʒuəl)dần dần
+approximate(v - əˈprɑːksɪmət)gần đúng
+stream(n - striːm)suối
+failure(n - ˈfeɪljər)thất bại, không
+nest(n - nest)tổ
+wallet(n - ˈwɑːlɪt)ví
+tough(adj - tʌf)khó khăn
+shortage(n - ˈʃɔːrtɪdʒ)thiếu, sự thiếu hụt
+tube(n - tʌb)ống
+heal(v - hiːl)hồi phục
+penalty(n - ˈpenəlti)phạt
+rude(adj - ruːd)thô lỗ
+bowl(n - bəʊl)bát
+mere(n - mɪr)chỉ vì
+marvel(n - ˈmɑːrvl)kỳ lạ
+fantastic(adj - fænˈtæstɪk)tuyệt diệu
+disabled(adj - dɪsˈeɪbld)tàn tật
+bend(v - bend)bẻ cong
+nutrient(n - ˈnuːtriənt)chất dinh dưỡng
+architecture(ˈɑːrkɪtektʃər)kiến trúc
+roof(n - ruːf)trần nhà
+annoy(n - əˈnɔɪ)làm phiền
+mount(v - maʊnt)tăng lên
+excitement(n - ɪkˈsaɪtmənt)sự phấn khích
+substance(n - ˈsʌbstəns)vật chất
+inspect(v - ɪnˈspekt)kiểm tra
+surgery(n - ˈsɜːrdʒəri)phẫu thuật
+sufficient(adj - səˈfɪʃnt)đủ
+fence(v - fens)hàng rào
+accuse(v - əˈkjuːz)buộc tội
+regret(v - rɪˈɡret)hối tiếc
+overcome(v - ˌəʊvərˈkʌm)vượt qua
+distinct(adj - dɪˈstɪŋkt)khác biệt
+tomb(n - tuːm)mộ
+soul(n - səʊl)linh hồn
+dust(n - dʌst)bụi bẩn
+stock(n - stɑːk)một phần, kho
+solid(adj - ˈsɑːlɪd)rắn chắc
+artificial(n - ˌɑːrtɪˈfɪʃl)nhân tạo
+facial(adj - ˈfeɪʃl)vẻ mặt
+inherit(v - ɪnˈherɪt)thừa kế
+manner(n - ˈmænər)cách, cách cư xử
+chew(v - tʃuː)nhai
+chain(n - tʃeɪn)chuỗi
+inspire(v - ɪnˈspaɪər)lấy cảm hứng
+alike(adj - əˈlaɪk)giống nhau
+criminal(n - ˈkrɪmɪnl)tội phạm
+neat(adj - niːt)gọn gàng
+cash(n - kæʃ)tiền mặt
+cabin(n - ˈkæbɪn)lều
+dozen(n - ˈdʌzn)một tá
+admit(v - ədˈmɪt)thừa nhận
+occasion(n - əˈkeɪʒn)dịp quan trọng
+journal(n - ˈdʒɜːrnl)tạp chí
+wound(n - wuːnd)vết thương
+fiction(n - ˈfɪkʃn)viễn tưởng, tiểu thuyết
+end(file)

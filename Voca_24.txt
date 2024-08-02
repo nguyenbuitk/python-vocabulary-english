@@ -1,0 +1,27 @@
+15
+20
+elegance(n - ˈelɪɡəns)sang trọng
+charm(n - tʃɑːrm)quyến rũ
+self-esteem(n - ˌself ɪˈstiːm)lòng tự trọng
+soon(adv - suːn)ngay sau đó
+training(n - ˈtreɪnɪŋ)đào tạo
+flame(n - fleɪm)bốc cháy
+frankly(adv - ˈfræŋkli)thực ra
+phenomenon(n - fəˈnɑːmɪnən)hiện tượng
+eruption(n - ɪˈrʌpʃn)vụ phun trào
+cyclical(adj - ˈsaɪklɪk)theo chu kỳ
+apparently(adv - əˈpærəntli)dường như, rõ ràng là
+boiling(adj - ˈbɔɪlɪŋ)sôi
+scorcher(n - ˈskɔːrtʃər)vụ thiêu đốt
+basically(adv - ˈbeɪsɪkli)về cơ bản
+altogether, absolutely(adv - ˌɔːltəˈɡeðər, ˈæbsəluːtli)hoàn toàn
+solar(adj - ˈsəʊlər)hệ mặt trời
+correctly(adv - kəˈrektli)chính xác
+severely(adv - sɪˈvɪrli)nghiêm trọng
+signing( - ˈsaɪnɪŋ)ký kết
+partially(adv - ˈpɑːrʃəli)một phần
+satisfactory(adj - ˌsætɪsˈfæktəri)thỏa đáng/đạt yêu cầu
+morality(n - məˈræləti)đạo đức
+immigration(n - ˌɪmɪˈɡreɪʃn)nhập cư
+emigration(n - ˌemɪˈɡreɪʃn)di cư
+end(file)

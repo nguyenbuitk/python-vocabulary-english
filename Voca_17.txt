@@ -1,0 +1,77 @@
+10
+10
+tear(n - ter)nước mắt
+sob(v - sɑːb)nức nở
+deport(v - dɪˈpɔːrt)trục xuất
+hug(v - hʌɡ)ôm
+ingrained(adj - ɪnˈɡreɪnd)ăn sâu
+bump( - bʌmp)va chạm
+core(n - kɔːr)cốt lõi
+grip(n - ɡrɪp)nắm chặt
+steering wheel(n - ˈstɪrɪŋ wiːl)vô lăng
+terrifying(adj - ˈterɪfaɪɪŋ)kinh hoàng
+undergo(v - ˌʌndərˈɡəʊ)trải qua
+wit(n - wɪt)trí thông minh
+applause(n - əˈplɔːz)tiếng vỗ tay
+ordeal(n - ɔːrˈdiːl)thử thách
+traumatic(adj - trəˈmætɪk)chấn thương
+suck(v - sʌk)tồi tệ
+define(v - dɪˈfaɪn)định nghĩa
+neurological(adj - ˌnʊrəˈlɑːdʒɪkl)tinh thần
+assault(n - əˈsɔːlt)tấn công
+Native American(adj - ˌneɪtɪv əˈmerɪkən)người da đỏ
+mold(n - məʊld)khuôn
+imperfection(n - ˌɪmpərˈfekʃn)không hoàn hảo
+quirky(adj - ˈkwɜːrki)kỳ quặc
+formula(n - ˈfɔːrmjələ)công thức
+transitive(adj - ˈtrænzətɪv)chuyển tiếp
+perceptual(adj - pərˈseptʃuəl)tri giác
+preposition(n - ˌprepəˈzɪʃn)giới từ
+satisfied(adj - ˈsætɪsfaɪd)hài lòng
+delight(n - dɪˈlaɪt)vui
+pond(n - pɑːnd)ao
+goose(n - ɡuːs)ngỗng
+preoccupy(v - priˈɑːkjupaɪ)bận tâm
+handset(n - ˈhændset)thiết bị cầm tay
+medication(n - ˌmedɪˈkeɪʃn)thuốc
+registration(n - ˌredʒɪˈstreɪʃn)đăng ký
+earthworm(n - ˈɜːrθwɜːrm)giun đất
+anatomy(n - əˈnætəmi)giải phẫu
+humorous(adj - ˈhjuːmərəs)hài hước
+quiz(n - kwɪz)câu đố
+revolve(v - rɪˈvɑːlv)quay
+allot(v - əˈlɑːt)phân bổ
+session(n - seʃn)buổi, hội nghị
+recreation(n - rekriˈeɪʃn)tái tạo
+pottery(n - pɑːtəri)đồ gốm
+knit(v - nɪt)đan
+unexpectedly(adv - ʌnɪkˈspektɪdli)bất ngờ
+attraction(n - əˈtrækʃn)thu hút
+pastime(n - pæstaɪm)trò tiêu khiển
+incident(n - ɪnsɪdənt)sự cố
+unforgivable(adj - ʌnfərˈɡɪvəbl)không thể tha thứ
+hospitalize(v - hɑːspɪtəlaɪz)nhập viện
+expel(v - ɪkˈspel)trục xuất
+treatment(n - triːtmənt)việc điều trị, đối xử
+backache(n - bækeɪk)đau lưng
+relation(n - rɪˈleɪʃn)quan hệ
+sponsor(v - spɑːnsər)nhà tài trợ
+rule(n - ruːl)quy tắc
+regulation(n - reɡjuˈleɪʃn)quy định
+ensure(v - ɪnˈʃʊr)đảm bảo
+patron(n - peɪtrən)người ủng hộ, khách quen
+prohibit(v - prəˈhɪbɪt)cấm
+premises(n - premɪsɪz)cơ sở
+extinguish(v - ɪkˈstɪŋɡwɪʃ)dập tắt
+payable(adj - peɪəbl)phải trả
+hardback(n - hɑːrdbæk)bìa cứng
+renovate(v - renəveɪt)cải tạo
+conjunctions(n - kənˈdʒʌŋkʃn)liên từ
+subordinate(n - səˈbɔːrdɪnət)phụ thuộc
+simultaneous(adj - ˌsaɪmlˈteɪniəs)đồng thời
+sequential(adj - sɪˈkwenʃl)tuần tự
+concession(n - kənˈseʃn)nhượng bộ
+unreal(adj - ˌʌnˈriːəl)không thật
+distinction(n - dɪˈstɪŋkʃn)phân biệt
+whereas(conj - ˌwerˈæz)trong khi
+end(file)

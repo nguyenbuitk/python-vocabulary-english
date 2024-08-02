@@ -1,0 +1,92 @@
+12
+12
+owner(n - ˈəʊnər)chủ nhân
+stain(v - steɪn)làm bẩn
+raincoat(n - ˈreɪnkəʊt)áo mưa
+muffler(n - ˈmʌflər)ống giảm thanh
+touching(n - ˈmʌflər)cảm động
+wool(n - wʊl)len
+silk(n - sɪlk)lụa
+tie(v - taɪ)cà vạt
+leather(n - ˈleðər)da
+valid(adj - ˈvælɪd)có hiệu lực
+overall(adj - ˌəʊvərˈɔːl)tổng thể
+shirt(n - ʃɜːrt)áo sơ mi
+grape(n - ɡreɪp)nho
+raisin(n - 'reɪzn)nho khô
+decade(n - dɪˈkeɪd)thập kỷ
+youthful(adj - ˈjuːθfl)trẻ trung
+healthy(adj - ˈhelθi)khỏe mạnh
+cleanse(v - klenz)làm sạch
+health(n - helθ)sức khỏe
+broadcasting(n - ˈbrɔːdkæstɪŋ)phát thanh truyền hình
+enjoyment(n - ɪnˈdʒɔɪmənt)sự thích thú
+spoil(v - spɔɪl)hỏng
+curse(n - kɜːrs)lời chửi thề
+adaptable(adj - əˈdæptəbl)thích ứng
+variable(n - ˈværiəbl)biến số
+properly(adv - ˈprɑːpərli)đúng cách
+inappropriate(adj - ˌɪnəˈprəʊpriət)không thích hợp
+agency(n - ˈeɪdʒənsi)đại lý
+dial(n - ˈdaɪəl)quay số
+tournament(n - ˈtʊrnəmənt)giải đấu
+familiar(adj - fəˈmɪliər)quen thuộc
+addiction(n - əˈdɪkʃn)nghiện
+harmful(adj - ˈhɑːrmfl)có hại
+strength(n - streŋkθ)sức mạnh
+drinking(n - ˈdrɪŋkɪŋ)nghiện rượu
+sort(n - sɔːrt)loại
+carnival(n - ˈkɑːrnɪvl)lễ hội
+judge(n - dʒʌdʒ)ban giám khảo
+illustration(n - ˌɪləˈstreɪʃn)hình minh họa
+originally(adv - əˈrɪdʒənəli)ban đầu
+editorial(adj - ˌedɪˈtɔːriəl)biên tập
+cargo(n - ˈkɑːrɡəʊ)hàng hóa
+probably(adv - ˈprɑːbəbli)có lẽ
+prompt(adj, v - prɑːmpt)nhanh chóng| nhắc nhở
+assure(v - əˈʃʊr)đảm bảo
+expiry(n - ɪkˈspaɪəri)hết hạn
+operator(n - ˈɑːpəreɪtər)người vận hành
+consumer(n - kənˈsuːmər)người tiêu dùng
+sunshine(n - ˈsʌnʃaɪn)ánh nắng
+holiday(n - ˈhɑːlədeɪ)ngày lễ
+marketing(n - ˈmɑːrkɪtɪŋ)tiếp thị
+preference(n - ˈprefrəns)sở thích
+launch(v - lɔːntʃ)phát động
+reputation(n - ˌrepjuˈteɪʃn)nổi tiếng
+accident(n - ˈæksɪdənt)tai nạn
+culmination(n - ˌkʌlmɪˈneɪʃn)đỉnh điểm
+celebration(n - ˌselɪˈbreɪʃn)lễ kỷ niệm
+symphony(n - ˈsɪmfəni)bản giao hưởng
+orchestra(n - ˈɔːrkɪstrə)dàn nhạc
+seem(linking verb - siːm)có vẻ
+witness(n - ˈwɪtnəs)nhân chứng
+stagehand(n - ˈsteɪdʒhænd)sân khấu
+unconscious(adj - ʌnˈkɑːnʃəs)bất tỉnh
+stable(adj - ˈsteɪbl)ổn định
+biased(adj - ˈbaɪəst)thiên vị
+irresponsible(adj - ˌɪrɪˈspɑːnsəbl)vô trách nhiệm
+objective(adj - əbˈdʒektɪv)khách quan
+praise(n - preɪz)ca ngợi
+export(n - ˈekspɔːrt)xuất khẩu
+ministry(n - ˈmɪnɪstri)bộ
+trade(n - treɪd)thương mại
+government(n - ˈɡʌvərnmənt)chính phủ
+flood(n - flʌd)lũ lụt
+drought(n - draʊt)hạn hán
+generate(v - ˈdʒenəreɪt)tạo ra
+offering(n - ˈɔːfərɪŋ)chào bán
+tasty(adj - ˈteɪsti)ngon
+subsidize(v - ˈsʌbsɪdaɪz)trợ cấp
+excel(v - ɪkˈsel)vượt trội
+climate(n - ˈklaɪmət)khí hậu
+strike(n - straɪk)đình công
+industrial(adj - ɪnˈdʌstriəl)công nghiệp
+memorandum(n - ˌmeməˈrændəm)bản ghi nhớ
+stationery(n - ˈsteɪʃəneri)văn phòng phẩm
+merger(n - ˈmɜːrdʒər)sát nhập
+former(adj)trước đây
+correspondence(n - ˌkɔːrəˈspɑːndəns)thư tín
+implement(v - ˈɪmplɪment)thực thi
+useable(adj - ˈjuːzəbl)có thể sử dụng
+end(file)

@@ -1,0 +1,99 @@
+26
+21
+base(n - beɪs)dưới cùng
+alive(adj - əˈlaɪv)sống
+reflect(v - rɪˈflekt)phản chiếu, phản ánh, suy ngẫm
+staff(n - stæf)cán bộ, nhân viên
+advise(v - ədˈvaɪz)khuyên
+steal(v - stiːl)lấy cắp
+passage(n - ˈpæsɪdʒ)đoạn văn
+block(n - blɑːk)khối
+cheer(v - tʃɪr)reo hò
+conclusion(n - kənˈkluːʒn)phần kết luận, kết thúc
+locate(v - ˈləʊkeɪt)xác định
+probable(adj - ˈprɑːbəbl)có thể xảy ra, có khả năng
+match(n - mætʃ)cặp, đôi, phù hợp
+critic(n - ˈkrɪtɪk)nhà phê bình
+mental(adj - ˈmentl)tinh thần
+lack(n - læk)thiếu sót
+unite(v - juˈnaɪt)đoàn kết, thống nhất
+planet(n - ˈplænɪt)hành tinh
+instead(adv - ɪnˈsted)thay vì
+universe(n - ˈjuːnɪvɜːrs)vũ trụ
+expect(v - ɪkˈspekt)chờ đợi, kỳ vọng, dự kiến
+toward(prep - tɔːrdz)về phía
+occur(v - əˈkɜːr)xảy ra
+reward(n - rɪˈwɔːrd)phần thưởng
+advance(n - ədˈvæns)nâng cao
+terms(n - tɜːrmz)thuật ngữ
+mystery(n - ˈmɪstəri)huyền bí
+injustice(n - ɪnˈdʒʌstɪs)sự bất công
+foreign(adj - ˈfɔːrən)ngoại quốc
+pressure(n - ˈpreʃər)sức ép, áp lực
+later(adv - ˈleɪtər)một lát nữa
+set(v - set)đặt
+explore(v - ɪkˈsplɔːr)khám phá
+personality(n - ˌpɜːrsəˈnæləti)nhân cách
+deliver(v - dɪˈlɪvər)giao hàng
+earn(v - ɜːrn)kiếm
+social(adj - ˈsəʊʃl)xã hội
+doubt(n - daʊt)nghi ngờ
+complex(adj - kəmˈpleks)phức tạp
+bother(v - ˈbɑːðər)bận tâm
+brain(n - breɪn)não
+perform(v - pərˈfɔːrm)thực hiện, biểu diễn
+likely(adj - ˈlaɪkli)có thể, có khả năng
+speech(n - spiːtʃ)phát biểu, bài phát biểu
+frequently(adv - ˈfriːkwəntli)thường xuyên
+appropriate(adj - əˈprəʊpriət)thích hợp
+relax(v - rɪˈlæks)thư giãn
+across, cross(prep - əˈkrɔːs)băng qua
+entertain(v - ˌentərˈteɪn)giải trí
+realize(v - ˈriːəlaɪz)nhận ra
+conversation(n - ˌkɑːnvərˈseɪʃn)hội thoại, cuộc hội thoại
+purpose(n - ˈpɜːrpəs)mục đích
+stair(adj - ster)cầu thang
+arrange(v - əˈreɪndʒ)sắp xếp
+symbol(n - ˈsɪmbl)ký hiệu
+propose(v - prəˈpəʊz)đề xuất
+serious(adj - ˈsɪriəs)nghiêm trọng
+single(adj - ˈsɪŋɡl)độc thân
+divide(v - dɪˈvaɪd)chia
+decision(n - dɪˈsɪʒn)quyết định
+forest(n - ˈfɔːrɪst)rừng
+familiar(adj - fəˈmɪliər)quen
+fit(v - fɪt)vừa vặn
+behavior(n - bɪˈheɪvjər)hành vi
+responsible(adj - rɪˈspɑːnsəbl)có trách nhiệm
+observe(v - əbˈzɜːrv)quan sát
+officer(n - ˈɑːfɪsər)cấp sĩ quan, sĩ quan, chỉ huy
+breathe(v - briːð)thở
+goal(n - ɡəʊl)mục tiêu
+though(conj - ðəʊ)mặc dù, tuy nhiên
+course(n - kɔːrs)khóa học
+charge(n - tʃɑːrdʒ)khoản phí, tiền phí tốn
+extreme(adj - ɪkˈstriːm)cực, khắc nghiệt
+bit(n - bɪt)một phần nhỏ
+pole(n - pəʊl)cây sào
+consider(v - kənˈsɪdər)xem xét, coi, quan tâm, cân nhắc
+strike(v - straɪk)đánh người, ập đến
+mistake(n - mɪˈsteɪk)sai lầm
+thief(n - θiːf)tên trộm
+fortunate(adj - ˈfɔːrtʃənət)may mắn
+punish(v - ˈpʌnɪʃ)trừng phạt
+cruel(adj - ˈkruːəl)hung ác
+force(n - fɔːrs ~ main force ~ nguyên nhân chính)lực lượng, sức mạnh, nguyên nhân 
+shoot(v - ʃuːt)bắn
+exercise(n - ˈeksərsaɪz)tập thể dục
+actual(adj - ˈæktʃuəl)thực tế
+pain(n - peɪn)đau đớn
+contact(n - ˈkɑːntækt)liên hệ, liên lạc
+wonder(v - ˈwʌndər)tự hỏi
+various(adj - ˈværiəs)khác nhau
+mention(v - ˈmenʃn)đề cập đến
+average(adj - ˈævərɪdʒ)trung bình, bình thường
+worth(adj - wɜːrθ)trị giá
+policy(n - ˈpɑːləsi)chính sách
+any more(adv - ˌeni ˈmɔːr)không còn nữa
+either(det - ˈiːðər)hoặc
+end(file)

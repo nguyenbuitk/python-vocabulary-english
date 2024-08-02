@@ -1,0 +1,74 @@
+20
+20
+general(adj - ˈdʒenrəl)chung ~ adj
+ecologist(n - iˈkɑːlədʒɪst)nhà sinh thái học
+ecological(adj - ˌiːkəˈlɑːdʒɪkl)sinh thái
+incapacitate(v - ˌɪnkəˈpæsɪteɪt)mất khả năng
+primarily(adv - praɪˈmerəli)chủ yếu
+mistakenly(adv - mɪˈsteɪkənli)nhầm lẫn
+region(n - ˈriːdʒən)vùng ~ khu vực nào đó
+rainforest(n - ˈreɪnfɔːrɪst)rừng nhiệt đới
+deforestation(n - ˌdiːˌfɔːrɪˈsteɪʃn)nạn phá rừng
+vast(adj - væst)lớn
+implication(n - ˌɪmplɪˈkeɪʃn)tác động
+acre(n - ˈeɪkər)mẫu
+play(v - pleɪ)đóng ~ đóng phim
+pollutant(n - pəˈluːtənt)chất ô nhiễm
+pollution(n - pəˈluːʃn)sự ô nhiễm
+slash-and-burn(adj - ˌslæʃ ən ˈbɜːrn)đốt nương làm rẫy
+practical(adj - ˈpræktɪkl)thiết thực, thực tế
+fertilize(v - ˈfɜːrtəlaɪz)bón phân
+fertility(n - fərˈtɪləti)độ phì nhiêu
+abandon(v - əˈbændən)bỏ rơi
+destruction(n - dɪˈstrʌkʃn)tàn phá
+logging(n - ˈlɔːɡɪŋ)khai thác gỗ
+measure(n - ˈmeʒər)biện pháp
+corporation(n - ˌkɔːrpəˈreɪʃn)tập đoàn
+helpful(adj - ˈhelpfl)hữu ích
+affectionate(adj - əˈfekʃənət)giàu tình cảm
+fisherman(n - ˈfɪʃərmən)ngư dân
+childhood(n - ˈtʃaɪldhʊd)tuổi thơ
+transportation(n - ˌtrænspərˈteɪʃn)giao thông, phương tiện di chuyển, di chuyển
+plan(n - plæn)kế hoạch, quy hoạch
+plan(v - plæn)lên kế hoạch, dự kiến
+pedestrian(n - pəˈdestriən)người đi bộ
+cyclist(n - ˈsaɪklɪst)người đi xe đạp
+track(n - træk)đường ray
+carry(v - ˈkæri)chở
+modernize(v - ˈmɑːdərnaɪz)hiện đại hóa
+commuter(n - kəˈmjuːtər)người đi làm
+capacity(n - kəˈpæsəti)sức chứa
+exert(v - ɪɡˈzɜːrt)tác động
+govern(v - ˈɡʌvərn)chi phối
+downward(adj - ˈdaʊnwərd)đi xuống
+relate(v - rɪˈleɪt)liên hệ
+principle(n - ˈprɪnsəpl)nguyên lý
+practically(adv - ˈpræktɪkli)thiết thực, thực tế
+theoretically(adv - ˌθiːəˈretɪkli)lý thuyết
+assume(v - əˈsuːm)cho rằng ~ v
+motion(n - ˈməʊʃn)chuyển động
+mass(n - mæs)khối lượng
+times(prep  - taɪmz)nhân
+acceleration(n - əkˌseləˈreɪʃn)gia tốc
+exemplify(v - ɪɡˈzemplɪfaɪ)minh họa
+opposite(adj - ˈɑːpəzɪt)ngược chiều
+quicksand(n - ˈkwɪksænd)cát lún
+muddy(adj - ˈmʌdi)bùn lầy
+man-made(adj - ˌmæn ˈmeɪd)nhân tạo
+desperate(adj - ˈdespərət)tuyệt vọng
+marital status(n - ˌmærɪtl ˈsteɪtəs)tình trạng hôn nhân
+religion(n - rɪˈlɪdʒən)tôn giáo
+internal(adj - ɪnˈtɜːrnl)nội bộ ~ phía bên trong
+miracle(n - ˈmɪrəkl)thần kỳ
+bridge(v - brɪdʒ)kết nối
+boast(v - bəʊst)tự hào
+marriage(n - ˈmærɪdʒ)cuộc hôn nhân
+browse(n - braʊz)duyệt
+truthful(adj - ˈtruːθfl)trung thực
+confidentiality(n - ˌkɑːnfɪˌdenʃiˈæləti)sự bảo mật
+known(adj - nəʊn)được biết đến
+cab(n - kæb)tắc xi
+self-employed(adj - ˌself ɪmˈplɔɪd)tự kinh doanh
+convention(n - kənˈvenʃn)hội nghị
+living room(n - ˈlɪvɪŋ rʊm)phòng khách
+end(file)

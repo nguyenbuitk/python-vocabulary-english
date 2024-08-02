@@ -1,0 +1,92 @@
+invent:phát minh
+conserve:bảo tồn
+achievement:thành tích
+employ:thuê
+edit:biên tập
+assist:hỗ trợ
+assistant:trợ lý
+participant:người tham gia
+national:quốc gia
+nationality:quốc tịch
+subcontract:hợp đồng phụ
+snooze:hoãn báo thức
+productive:hiệu quả
+look forward:mong chờ
+circumstance:hoàn cảnh
+discipline:kỷ luật
+whine:than vãn
+humankind:loài người
+upcoming:sắp tới
+wonder:tự hỏi
+precious:quý giá
+opportunity:cơ hội
+excuse:lời bào chữa
+sacrifice:sự hy sinh
+compensation:sự bồi thường, lương thưởng
+expire:sự hết hạn
+expertise:chuyên môn
+fare:tiền vé
+fine:tiền phạt
+breach:phá vỡ
+comparison:so sánh
+cruise:du thuyền
+episode:tập
+resort:khu nghỉ mát
+segment:bộ phận
+discontinue:ngưng
+outcome:kết quả
+attention:chú ý
+upon request:theo yêu cầu
+take effect:có hiệu lực
+bank balance:số dư ngân hàng
+pay increase:mức tăng lương
+modifier:bổ nghĩa
+sketch:phác họa
+antecedent:ở trước
+refer:đề cập
+the thing which:cái mà
+newcomer:người mới
+guess:đoán
+deserve:xứng đáng
+notice:chú ý
+set:bộ
+supplier:nhà cung cấp
+regards:trân trọng
+sociable:hòa đồng
+violate:xâm phạm
+annul:hủy bỏ
+terminate:chấm dứt
+catch up on:kéo dài thời gian
+indefinite:bất định
+affirmative:khẳng định
+wholegrain:ngũ cốc nguyên hạt
+pastry:bánh ngọt
+the others:những người còn lại
+the other:người còn lại
+dough:bột
+yeast:men
+activate:kích hoạt
+aside:qua một bên
+contemporary:người đương đại, hiện đại
+considerable:đáng kể
+conclusive:quả quyết
+confuse:nhầm lẫn
+personal:cá nhân
+personnel:nhân sự, nhân viên
+urgent:khẩn cấp
+reception:tiệc chiêu đãi, lễ tân
+dissect:giải phẫu
+accustomed to:quen với
+vanish:biến mất
+vital:quan trọng
+likewise:tương tự
+on the contrary:ngược lại
+shortly:ngay sau khi
+bankrupt:phá sản
+substantially:một cách đáng kể
+potentially:tiềm năng
+comparatively:tương đối
+approximately:xấp xỉ
+save up:tiết kiệm
+allowance:tiền phụ cấp
+injection:sự tiêm chủng

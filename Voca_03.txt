@@ -1,0 +1,50 @@
+13
+base:duoi' cung`
+alive:song'
+reflect:phan? chieu'
+staff:can' bo.
+advise:loi` khuyen
+steal:lay' cap'
+passage:doan. van
+achieve:hoan` thanh`
+operation:mo? xe?
+regard:lien quan
+block:khoi'
+cheer:reo ho`
+conclusion:phan` ket' luan.
+locate:dinh. vi.
+probable:co' the? xay? ra
+match:cap.
+critic:nha` phe binh`
+mental:tinh than`
+lack:thieu' sot'
+unite:doan` ket'
+planet:hanh` tinh
+instead:thay vi`
+universe:vu~ tru.
+expect:cho` doi.
+toward:ve` phia'
+occur:xay? ra
+reward:phan` thuong?
+advance:nang cao
+terms:thuat. ngu~
+mystery:huyen` bi'
+injustice:su. bat' cong
+foreign:ngoai. quoc'
+pressure:suc' ep'
+later:mot. lat' nua~
+set:dat.
+explore:kham' pha'
+personality:nhan cach'
+deliver:da~ giao hang`
+earn:kiem'
+social:xa~ hoi.
+doubt:nghi ngo`
+complex:phuc' tap.
+bother:ban. tam
+brain:nao~
+perform:bieu? dien~
+speech:phat' bieu?
+frequatly:thuong` xuyen
+appropriate:thich' hop.
+relax:thu gian~

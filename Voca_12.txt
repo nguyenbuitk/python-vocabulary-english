@@ -1,0 +1,65 @@
+12
+12
+ease(v - iːz)giảm bớt
+poisonous(adj - ˈpɔɪzənəs)độc tố
+fumes(n - fjuːmz)khói
+resign(v - rɪˈzaɪn)từ chức
+opponent(n - əˈpəʊnənt)đối thủ
+depression(n - dɪˈpreʃn)suy thoái
+quota(n - ˈkwəʊtə)hạng ngạch
+quote(v - kwəʊt)trích dẫn
+court(n - kwəʊt)tòa án
+wholesale(adv - ˈhəʊlseɪl)bán sỷ
+prosperity(n - prɑːˈsperəti)thịnh vượng
+fired(v - ˈfaɪər)sa thải
+moving(adj - ˈmuːvɪŋ)cảm động
+overdose(n - ˈəʊvərdəʊs)quá liều
+succession(n - səkˈseʃn)sự liên tiếp
+productivity(n - ˌprəʊdʌkˈtɪvəti)năng suất
+borrow(v - ˈbɔːrəʊ)mượn
+except(prep - ɪkˈsept)ngoại trừ
+broke(adj - brəʊk)cháy túi
+seldom(adv - ˈseldəm)hiếm khi
+scarcely(adv - ˈskersli)hiếm hoi
+therein(adv - ˌðerˈɪn)trong đó
+abolish(v - əˈbɑːlɪʃ)bãi bỏ
+reimburse(v - ˌriːɪmˈbɜːrs)hoàn trả
+specify(v - ˈspesɪfaɪ)chỉ ra
+hospitably(adv - ˈhɑːspɪtəbli)hiếu khách
+preface(n - ˈprefəs)lời nói đầu
+familiarity(n - fəˌmɪliˈærəti)sự quen thuộc
+fundamental(adj - ˌfʌndəˈmentl)cơ bản
+exam(n - ɪɡˈzæm)kiểm tra ở trường
+quiz(n - kwɪz)kiểm tra vấn đáp
+test(n - test)kiểm tra từng phần
+examination(n - ɪɡˌzæmɪˈneɪʃn)khám tổng quát
+fitness(n - ˈfɪtnəs)thể hình
+cramp(n - kræmp)chuột rút
+enter(v - ˈentər)bước vào
+strictly(adv - ˈstrɪktli)một cách chặt chẽ
+matter(n - ˈmætər)vấn đề
+vary(v - ˈværi)khác nhau
+suffer(v - ˈsʌfər)chịu thiệt hại
+revise(v - rɪˈvaɪz)xem lại, sửa đổi
+dismiss(v - dɪsˈmɪs)cho về
+admission(n - ədˈmɪʃn)tuyển sinh
+junior(adj - ˈdʒuːniər)sinh viên năm gần cuối
+senior(n - ˈsiːniər)sinh viên năm cuối
+orientation(n - ˌɔːriənˈteɪʃn)định hướng
+pocketbook(n - ˈpɑːkɪtbʊk)túi tiền
+campaign(n - kæmˈpeɪn)chiến dịch
+counsel(n - ˈkaʊnsl)lời khuyên
+career(n - kəˈrɪr)sự nghiệp
+ongoing(adj - ˈɑːnɡəʊɪŋ)đang diễn ra
+flexibility(n - ˌfleksəˈbɪləti)uyển chuyển
+laundry(n - ˈlɔːndri - ˈlɔːnri)giặt ủi
+mow(v - məʊ)cắt
+fireplace(n - ˈfaɪərpleɪs)lò sưởi
+estate(n - ɪˈsteɪt)bất động sản
+tile(n - taɪl)gạch
+rust(n - rʌst)rỉ sét
+enjoyable(adj - ɪnˈdʒɔɪəbl)thú vị
+compile(v - kəmˈpaɪl)biên soạn
+performance(n - pərˈfɔːrməns)biểu diễn
+treasure(n - ˈtreʒər)kho báu
+end(file)

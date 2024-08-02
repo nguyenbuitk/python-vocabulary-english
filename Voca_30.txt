@@ -1,0 +1,54 @@
+21
+17
+wednesday(empty - empty - wenzdeɪ)thứ 4
+friday(empty - fraɪdeɪ)thứ 6
+saturday(empty - sætərdeɪ)thứ 7
+sunday(empty - sʌndeɪ)chủ nhật
+january(empty - dʒænjueri)tháng 1
+february(empty - februeri)tháng 2
+march(empty - mɑːrtʃ)tháng 3
+april(empty - eɪprəl)tháng 4
+may(empty - meɪ)tháng 5
+june(empty - dʒuːn)tháng 6
+july(empty - dʒuˈlaɪ)tháng 7
+august(empty - ɔːˈɡʌst)tháng 8
+september(empty - sepˈtembər)tháng 9
+october(empty - ɑːkˈtəʊbər)tháng 10
+november(empty - nəʊˈvembər)tháng 11
+december(empty - dɪˈsembər)tháng 12
+spring(empty - sprɪŋ)mùa xuân
+summer(empty - sʌmər)mùa hạ, mùa hè
+autumn(empty - ɔːtəm)mùa thu
+winter(empty - wɪntər)mùa đông
+twelve(empty - twelv)12
+thirteen(empty - θɜːrˈtiːn)13
+fifteen(empty - fɪfˈtiːn)15
+twenty(empty - twenti)20
+thirty(empty - θɜːrti)30
+forty(empty - fɔːrti)40
+fifty(empty - fɪfti)50
+hundred(empty - hʌndrəd)100
+thousand(empty - θaʊznd)1000
+grandparents(empty - ɡrænperənt)ông bà
+cousin(empty - kʌzn)anh chị em họ
+behind(empty - bɪˈhaɪnd)phía sau
+under(empty - ʌndər)phía dưới
+next to(empty - nekst tu)kế bên
+in front of(empty - frʌnt)phía trước
+through(empty - θruː)xuyên qua
+east(empty - iːst)hướng đông, phía đông
+west(empty - west)hướng tây, phía tây
+south(empty - saʊθ)hướng nam, phía nam
+north(empty - nɔːrθ)hướng bắc, phía bắc
+first(empty - fɜːrst)stt 1, thứ nhất
+second(empty - sekənd)stt 2
+third(empty - θɜːrd)stt 3
+twelfth(empty - twelfθ)stt 12
+twentieth(empty - twentiəθ)stt 20
+europe(empty - ˈjʊrəp)châu âu
+africa(empty - ˈæfrɪkə)châu phi
+america(empty - əˈmerəkə)châu mỹ
+australia(empty - ɔːˈstreɪliə)châu úc
+oceania(empty - ˌəʊʃiˈɑːniə)châu đại dương
+asia(empty - eɪʒə)châu á
+end(empty - file)

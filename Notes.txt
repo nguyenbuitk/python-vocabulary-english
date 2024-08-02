@@ -1,0 +1,4 @@
+Voca_X.txt: từ mới
+Voca_X_phrase.txt: cụm từ mới
+Voca_X_draft: từ đã học nhưng quên
+rarely_word: từ hiếm gặp, được bôi màu xanh trong đề
