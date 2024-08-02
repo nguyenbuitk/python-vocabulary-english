@@ -7,11 +7,11 @@ to do:
 vv print annotation
 vv check answer by vietnamese
 draw desire follow of app? 
+  + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently. 
   + when answer by vietnamese:  
     press 'enter': skip. if you want to add previous word into wrong list, press 'w' 
     press 'space', it mean we don't rememeber this word. This word will added into wrong list. 
   + after done the list word and wrong word, automatically increase number of practice file 
-  + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently. 
   + change commandline into 'python3 learn.py filename' instead of choose filename 
   + after choose filename, it will display instead of current manner: 
     you want answer by english or vietnamese: 
@@ -21,46 +21,67 @@ draw desire follow of app?
 def read_vocabulary(filename):
   vocabulary = []
   with open(filename, 'r', encoding='utf-8') as file:
-    for line in file:
-      # line example: vacant(adj - ˈveɪkənt)chỗ trống | the seat next to him was vacant
-      line = line.strip()
-      if line:
-        parts = line.split('(')
-        if len(parts) < 2 or parts[0] == "end":
-          # print("not enough infor")
+    # Open draft file
+    if "phrase" in filename:
+      for line in file:
+        line = line.strip()
+        parts = line.split(':')
+        if len(parts) < 2:
           continue
         else:
-          # english = vacant
-          english = parts[0].strip()
+          pass
           
-          # part_two = (adj - ˈveɪkənt, chỗ trống | the seat next to him was vacant)
-          part_two = parts[1].split(')')
-          phonetic = part_two[0].strip()
-
-          if '|' in part_two[1]:
-            # part_three = chỗ trống, the seat next to him was vacant
-            part_three = part_two[1].split('|')
-            vietnamese = part_three[0].strip()
-            annotation = part_three[1].strip()
-            vocabulary.append((english,phonetic,vietnamese,annotation))
+      
+    # Open word and draft file
+    else: 
+      for line in file:
+        # line example: vacant(adj - ˈveɪkənt)chỗ trống | the seat next to him was vacant
+        line = line.strip()
+        if line:
+          parts = line.split('(')
+          if len(parts) < 2 or parts[0] == "end":
+            # print("not enough infor")
+            continue
           else:
-            vietnamese = parts[1].split(')')[1].strip()
-            vocabulary.append((english,phonetic,vietnamese))
+            # english = vacant
+            english = parts[0].strip()
+            
+            # part_two = (adj - ˈveɪkənt, chỗ trống | the seat next to him was vacant)
+            part_two = parts[1].split(')')
+            phonetic = part_two[0].strip()
+
+            if '|' in part_two[1]:
+              # part_three = chỗ trống, the seat next to him was vacant
+              part_three = part_two[1].split('|')
+              vietnamese = part_three[0].strip()
+              annotation = part_three[1].strip()
+              vocabulary.append({
+                "english": english,
+                "phonetic": phonetic,
+                "vietnamese": vietnamese,
+                "annotation": annotation
+              })
+            else:
+              vietnamese = parts[1].split(')')[1].strip()
+              vocabulary.append({
+                "english": english,
+                "phonetic": phonetic,
+                "vietnamese": vietnamese,
+                "annotation": annotation
+              })
   return vocabulary
 
 def check_answer(question, answer, is_english):
     # print(f"{answer}, {question[2]}" if is_english else "{answer}, {question[0]}")
     if is_english:
-        return answer == question[2]
+        return answer == question['vietnamese']
     else:
-        return answer == question[0]
+        return answer == question['english']
 
 def print_vocabulary_list(vocabulary):
   print("English\tPronunciation\tTranslation\tAnnotate")
-  for line in vocabulary:
-    for word in line:
-      print(word, end='\t')
-    print('')
+  for word in vocabulary:
+    print(f"{word['english']}\t{word['phonetic']}\t{word['vietnamese']}\t{word.get('annotation','')}")
 
 def vocabulary_quiz(files):
   while True:
@@ -88,24 +109,25 @@ def vocabulary_quiz(files):
     # browse through each voca in list voca
     while vocabulary:
       question = random.choice(vocabulary)
+      print("question: ", question)
       if is_english:
-        print(f"[{count}] {question[0]} ({question[1]})", end=': ')
+        print(f"[{count}] {question['english']} ({question['phonetic']})", end=': ')
       else:
-        print(f"[{count}] {question[2]}", end=': ')
-      count+=1
+        print(f"[{count}] {question['vietnamese']}", end=': ')
+      count += 1
 
       user_answer = input()
       # Whether answer correct or not
       if check_answer(question, user_answer, is_english) or user_answer == 'n':
           if (user_answer == 'n'):
-            print(question[2])
-          if len(question) == 4:
-            print("  example:", question[3])
+            print(question['vietnamese'])
+          if 'annotation' in question:
+            print("  example:", question['annotation'])
       else:
           wrong_answers.append(question)
-          print(f"Wrong! The correct answer is: {question[2] if is_english else question[0]}")
-          if len(question) == 4:
-            print("  example: ", question[3])
+          print(f"Wrong! The correct answer is: {question['vietnamese'] if is_english else question['english']}")
+          if 'annotation' in question:
+            print("  example: ", question['annotation'])
       vocabulary.remove(question)
 
     if wrong_answers:
@@ -117,5 +139,5 @@ def vocabulary_quiz(files):
         break
 
 if __name__ == '__main__':
-    files = ['Voca_01.txt', 'Voca_02.txt', 'Voca_32.txt', 'Voca_33.txt', 'Voca_34.txt', 'Voca_35.txt', 'Voca_40.txt', 'Voca_41.txt']  # Thay thế danh sách tệp của bạn tại đây
+    files = ['Voca_01.txt', 'Voca_02.txt', 'Voca_32.txt', 'Voca_33.txt', 'Voca_34.txt', 'Voca_35.txt', 'Voca_40.txt', 'Voca_41.txt', "Voca_40_phrase.md"]  # Thay thế danh sách tệp của bạn tại đây
     vocabulary_quiz(files)
