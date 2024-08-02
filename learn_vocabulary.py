@@ -2,6 +2,7 @@ import random
 import re
 import unicodedata
 from colorama import Fore, Style, init
+import argparse
 init(autoreset=True)
 
 
@@ -10,13 +11,13 @@ to do:
 vv print annotation
 vv check answer by vietnamese
 draw desire follow of app? 
-  + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently. 
+  Done + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently. 
   + when answer by vietnamese:  
     press 'enter': skip. if you want to add previous word into wrong list, press 'w' 
     press 'space', it mean we don't rememeber this word. This word will added into wrong list. 
   + after done the list word and wrong word, automatically increase number of practice file 
   + change commandline into 'python3 learn.py filename' instead of choose filename
-  + add highlighted text with phrase
+  Done + add highlighted text with phrase
   + after choose filename, it will display instead of current manner: 
     you want answer by english or vietnamese: 
     1. english 
@@ -26,7 +27,7 @@ def read_vocabulary(filename):
   vocabulary = []
   with open(filename, 'r', encoding='utf-8') as file:
     # Open draft file
-    if "phrase" in filename:
+    if "phrase" in filename or "Phrase" in filename:
       for line in file:
         line = line.strip()
         parts = line.split(':')
@@ -97,17 +98,17 @@ def print_vocabulary_list(vocabulary):
 def highlight_text(text):
     return re.sub(r'`([^`]+)`', f'{Fore.RED}`\\1`{Style.RESET_ALL}', text)
   
-def vocabulary_quiz(files):
+def vocabulary_quiz(selected_file):
   while True:
-    print("Choose a file to practice vocabulary: ")
-    for i, file in enumerate(files):
-      print(f"{i + 1}. {file}")
-    file_choice = int(input("Enter the number of file: ")) - 1
-    if 0 <= file_choice < len(files):
-      selected_file = files[file_choice]
-    else:
-      print("Invalid file choice. Please choose a valid file.")
-      continue
+    # print("Choose a file to practice vocabulary: ")
+    # for i, file in enumerate(files):
+    #   print(f"{i + 1}. {file}")
+    # file_choice = int(input("Enter the number of file: ")) - 1
+    # if 0 <= file_choice < len(files):
+    #   selected_file = files[file_choice]
+    # else:
+    #   print("Invalid file choice. Please choose a valid file.")
+    #   continue
     
     vocabulary = read_vocabulary(selected_file)
     
@@ -174,5 +175,11 @@ def vocabulary_quiz(files):
     if continue_quiz.lower() != 'yes':
         break
 if __name__ == '__main__':
-    files = ['Voca_01.txt', 'Voca_02.txt', 'Voca_32.txt', 'Voca_33.txt', 'Voca_34.txt', 'Voca_35.txt', 'Voca_40.txt', 'Voca_41.txt', "Voca_40_phrase.md"]  # Thay thế danh sách tệp của bạn tại đây
-    vocabulary_quiz(files)
+    # files = ['Voca_01.txt', 'Voca_02.txt', 'Voca_32.txt', 'Voca_33.txt', 'Voca_34.txt', 'Voca_35.txt', 'Voca_40.txt', 'Voca_41.txt', "Voca_40_phrase.md", "Phrase&Sentence_01.md"]  # Thay thế danh sách tệp của bạn tại đây
+    # Do something about here, so what when running python3 Voca_28.txt, it will take Voca_28.txt as argument and input to file
+    
+    # vocabulary_quiz(file)
+    parser = argparse.ArgumentParser(description="Learning Vocabulary")
+    parser.add_argument("filename", help="The vocabulary file to use for the quiz")
+    args = parser.parse_args()
+    vocabulary_quiz(args.filename)
