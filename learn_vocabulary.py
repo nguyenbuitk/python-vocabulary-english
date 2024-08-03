@@ -12,11 +12,11 @@ vv print annotation
 vv check answer by vietnamese
 draw desire follow of app? 
   Done + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently. 
-  + when answer by vietnamese:  
+  + when answer by vietnamese (python keystrokes): 
     press 'enter': skip. if you want to add previous word into wrong list, press 'w' 
     press 'space', it mean we don't rememeber this word. This word will added into wrong list. 
   + after done the list word and wrong word, automatically increase number of practice file 
-  + change commandline into 'python3 learn.py filename' instead of choose filename
+  Done + change commandline into 'python3 learn.py filename' instead of choose filename
   Done + add highlighted text with phrase
   + after choose filename, it will display instead of current manner: 
     you want answer by english or vietnamese: 
