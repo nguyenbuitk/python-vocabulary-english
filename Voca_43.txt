@@ -1,6 +1,6 @@
-1
+10
 owing to (pre - ˈəʊɪŋ tə) do | Due to the heavy rain, the event was postponed.
-Scholar (n - ˈskɑːlər) học giả | The scholar presented her research at the conference.
+scholar (n - ˈskɑːlər) học giả | The scholar presented her research at the conference.
 indicator (n - ˈɪndɪkeɪtər) chỉ số | The economic indicators show a positive trend.
 misspelling (n - ˌmɪsˈspelɪŋ) lỗi chính tả | The document contained several misspellings.
 interviewee (n - ˌɪntərvjuˈiː) người được phỏng vấn | The interviewee answered the questions confidently.
@@ -14,7 +14,7 @@ exclusively (adv - ɪkˈskluːsɪvli) chỉ | The service is exclusively for mem
 probation (n - prəˈbeɪʃn) thử việc | She is on probation for three months.
 by then (adv - baɪ ðen) vào lúc đó | Please complete the report by then.
 endorse (v - ɪnˈdɔːrs) xác nhận | The celebrity endorsed the new product.
-mismatch (n - ˈmɪsmætʃ) không đồng bộ | The mismatch between supply and demand caused issues.
+mismatch (n - ˈmɪsmætʃ) không đồng bộ, ko khớp | The mismatch between supply and demand caused issues.
 move (v - muːv) động thái | The government has not moved on this issue
 stock (v - stɑːk) lưu trữ, trữ | The store stocks a wide variety of goods.
 chill (v - tʃɪl) lạnh | Chill the wine before serving.
@@ -55,7 +55,7 @@ deluxe (adj - dɪˈlʌks) cao cấp | The hotel offers deluxe rooms.
 next door (n - nekst dɔːr) bên cạnh | The bakery is next door.
 mislabel (v - ˌmɪsˈleɪbl) dán nhãn sai | The products were mislabeled.
 product launch (n - ˈprɒdʌkt lɔːntʃ) buổi ra mắt sản phẩm | The company planned a big product launch.
-we're all right then (phr - wir ɔːl raɪt ðen) vậy chúng ta ổn rồi | If everything is packed, we're all right then.
+we're all right then (phr) vậy chúng ta ổn rồi | If everything is packed, we're all right then.
 house (v - haʊz) chứa | The museum houses ancient artifacts 'hiện vật'.
 glitch (n - ɡlɪtʃ) trục trặc | There was a glitch in the system.
 Fitness Expo (n - ˈfɪtnɪs ˈɛkspoʊ) triển lãm thể hình | She attended the Fitness Expo last year.
