@@ -11,17 +11,17 @@ to do:
 vv print annotation
 vv check answer by vietnamese
 draw desire follow of app? 
-  Done + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently. 
-  + when answer by vietnamese (python keystrokes): 
-    press 'enter': skip. if you want to add previous word into wrong list, press 'w' 
-    press 'space', it mean we don't rememeber this word. This word will added into wrong list. 
-  + after done the list word and wrong word, automatically increase number of practice file 
-  Done + change commandline into 'python3 learn.py filename' instead of choose filename
-  Done + add highlighted text with phrase
-  + after choose filename, it will display instead of current manner: 
-    you want answer by english or vietnamese: 
-    1. english 
-    2. vietnamese 
+Done + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently. 
++ when answer by vietnamese (python keystrokes). This task have problem, when running on WSL, library not work as expected cause WSL don't have access to hardware-level
+  press 'enter': skip. if you want to add previous word into wrong list, press 'w' 
+  press 'space', it mean we don't rememeber this word. This word will added into wrong list. 
++ after done the list word and wrong word, automatically increase number of practice file 
+Done + change commandline into 'python3 learn.py filename' instead of choose filename
+Done + add highlighted text with phrase
++ after choose filename, it will display instead of current manner: 
+  you want answer by english or vietnamese: 
+  1. english 
+  2. vietnamese
 '''
 def read_vocabulary(filename):
   vocabulary = []
@@ -40,7 +40,7 @@ def read_vocabulary(filename):
           })
           
       
-    # Open word and draft file
+    # Open word and draft file type
     else: 
       for line in file:
         # line example: vacant(adj - ˈveɪkənt)chỗ trống | the seat next to him was vacant
@@ -98,6 +98,14 @@ def print_vocabulary_list(vocabulary):
 def highlight_text(text):
     return re.sub(r'`([^`]+)`', f'{Fore.RED}`\\1`{Style.RESET_ALL}', text)
   
+def update_counter_of_file(filename):
+  with open(filename, 'r', encoding='utf-8') as file:
+    data = file.readlines()
+  
+  data[0] = str(int(data[0]) + 1) + '\n'
+  with open(filename, 'w', encoding='utf-8') as file:
+    file.writelines(data)
+
 def vocabulary_quiz(selected_file):
   while True:
     # print("Choose a file to practice vocabulary: ")
@@ -114,18 +122,18 @@ def vocabulary_quiz(selected_file):
     
     # print_vocabulary_list(vocabulary)
     # is_english == 1 <=> hiển thị tiếng anh, trả lời bằng tiếng việt
-    is_english = input("Choose the language is displayed (English or Vietnamese): ").strip().lower() == 'english'
+    is_english = input("Choose the language is displayed (English or Vietnamese, English as default): ").strip().lower() != 'vietnamese'
     
     print("Dịch từ tiếng Anh sang tiếng Việt:" if is_english else "Translate from English to Vietnamese:")
     
     wrong_answers = []
     count = 0
     question = random.choice(vocabulary)
-    if 'phonentic' in question:
+    if 'phonetic' in question:
       # browse through each voca in list voca
       while vocabulary:
         question = random.choice(vocabulary)
-        # print("question: ", question)
+        # if answer with viet `debate (n - dɪˈbeɪt): ??`
         if is_english:
           print(f"[{count}] {question['english']} ({question['phonetic']})", end=': ')
         else:
@@ -141,7 +149,7 @@ def vocabulary_quiz(selected_file):
               print("  example:", question['annotation'])
         else:
             wrong_answers.append(question)
-            print(f"Wrong! The correct answer is: {question['vietnamese'] if is_english else question['english']}")
+            print(f"answer is: {question['vietnamese'] if is_english else question['english']}")
             if 'annotation' in question:
               print("  example: ", question['annotation'])
         vocabulary.remove(question)
@@ -164,13 +172,15 @@ def vocabulary_quiz(selected_file):
               print("  example:", question['annotation'])
         else:
             wrong_answers.append(question)
-            print(f"Wrong! The correct answer is: {highlight_text(question['vietnamese']) if is_english else highlight_text(question['english'])}")
+            print(f"answer is: {highlight_text(question['vietnamese']) if is_english else highlight_text(question['english'])}")
         vocabulary.remove(question)
 
     if wrong_answers:
       print("\nList wrong word:")
       print_vocabulary_list(wrong_answers)
-
+      
+    update_counter_of_file(selected_file)
+    
     continue_quiz = input("Do you want to continue (yes/no)? ")
     if continue_quiz.lower() != 'yes':
         break
