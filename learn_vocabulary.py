@@ -7,10 +7,6 @@ from sshkeyboard import listen_keyboard, stop_listening
 result = None
 
 init(autoreset=True)
-pressed_keys = []
-question = None
-skip_question = False
-last_key_pressed = None
 
 '''
 to do:
@@ -24,6 +20,7 @@ Following task have problem, when running on WSL, library not work as expected c
   press 'w':      add previous word to
   press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
   press 'i':      enter the answer with user input
+  press 'h':      show help
 Done + after done the list word and wrong word, automatically increase number of practice file 
 Done + change commandline into 'python3 learn.py filename' instead of choose filename
 Done + add highlighted text with phrase
@@ -34,14 +31,17 @@ def press(key):
     print(f"'{key}' pressed")
     if key == 'esc':
         stop_listening()
-    elif key == 'n':
-        print("You pressed 'n', stop listen")
-        result = "n"
+    elif key == 'h' or key == 'w':
+        print(f"You pressed {key}")
+        stop_listening()
+        result = key
+    elif key == 'space' or key == 'enter' or key == 'i':
+        print(f"You pressed {key}")
+        result = key
         stop_listening()
 
 def release(key):
     print(f"'{key}' released")
-
 
 def read_vocabulary(filename):
   vocabulary = []
@@ -113,7 +113,6 @@ def print_vocabulary_list(vocabulary):
       print(f"{word['english']}\t{word['phonetic']}\t{word['vietnamese']}\t{word.get('annotation','')}")
     else:
       print(f"{word['english']}\t{word['vietnamese']}")
-
     
 def highlight_text(text):
     return re.sub(r'`([^`]+)`', f'{Fore.RED}`\\1`{Style.RESET_ALL}', text)
@@ -126,19 +125,15 @@ def update_counter_of_file(filename):
   with open(filename, 'w', encoding='utf-8') as file:
     file.writelines(data)
 
+def output_answer(question):
+  print(f"{question['english']} ({question['phonetic']}) {question['vietnamese']} ")
+  if 'annotation' in question:
+    print(question['annotation'])
+
 def vocabulary_quiz(selected_file):
-  global question, skip_question
   global result
+  # Loop for user practice again
   while True:
-    # print("Choose a file to practice vocabulary: ")
-    # for i, file in enumerate(files):
-    #   print(f"{i + 1}. {file}")
-    # file_choice = int(input("Enter the number of file: ")) - 1
-    # if 0 <= file_choice < len(files):
-    #   selected_file = files[file_choice]
-    # else:
-    #   print("Invalid file choice. Please choose a valid file.")
-    #   continue
     print("=============== new list voca ======================")
     vocabulary = read_vocabulary(selected_file)
     
@@ -150,45 +145,56 @@ def vocabulary_quiz(selected_file):
     
     wrong_answers = []
     count = 0
-    question = random.choice(vocabulary)
-
+    prev_question = None
+    question = None
     # if question have fully part (eng, viet, phonetic, annotation)
-    if 'phonetic' in question:
+    if 'phonetic' in random.choice(vocabulary):
       # browse through each voca in list voca
       while vocabulary:
-        print("next voca")
-        skip_question = False
+        result = None
+        if question: prev_question = question 
         question = random.choice(vocabulary)
+        vocabulary.remove(question)
+        count += 1
         # if answer with viet `debate (n - dɪˈbeɪt): ??`
         if is_english:
           print(f"[{count}] {question['english']} ({question['phonetic']})", end=': ')
         else:
           print(f"[{count}] {question['vietnamese']}", end=': ')
         
-        result = listen_keyboard(on_press=press, on_release=release)
-        
-        if result == "n":
-          print("skip_question = true, Skipping question...")
-          break
-
-        result = None  
-        # Add keystroke detection to this 
-        user_answer = input()
-        if user_answer == '':
-          print("Skipping question...")
+        listen_keyboard(on_press=press, on_release=release)
+        print("result: ", result)
+        if result == "enter":
+          output_answer(question)
           continue
-        # Whether answer correct or not
-        if check_answer(question, user_answer, is_english) or user_answer == 'n':
-            if (user_answer == 'n'):
-              print(question['vietnamese'])
-            if 'annotation' in question:
-              print("  example:", question['annotation'])
-        else:
-            wrong_answers.append(question)
-            print(f"answer is: {question['vietnamese'] if is_english else question['english']}")
-            if 'annotation' in question:
-              print("  example: ", question['annotation'])
-        vocabulary.remove(question)
+        
+        elif result == 'i':   
+        # Add keystroke detection to this
+          user_answer = input()
+          if check_answer(question, user_answer, is_english):
+              if 'annotation' in question:
+                print("  example:", question['annotation'])
+          else:
+              wrong_answers.append(question)
+
+        # add word to wrong list
+        elif result == 'space':
+          wrong_answers.append(question)
+        
+        # show help
+        elif result == 'h':
+          print('''
+          press 'enter':  skip. if you want to add previous word into wrong list
+          press 'w':      add previous word to
+          press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
+          press 'i':      enter the answer with user input
+          press 'h':      show help
+          ''')
+          
+        # add previous word to wrong list
+        elif result == 'w':
+          wrong_answers.append(prev_question)
+        
 
     # question have just the eng, viet
     else:
@@ -223,10 +229,7 @@ def vocabulary_quiz(selected_file):
     if continue_quiz.lower() != 'yes':
         break
 if __name__ == '__main__':
-    # files = ['Voca_01.txt', 'Voca_02.txt', 'Voca_32.txt', 'Voca_33.txt', 'Voca_34.txt', 'Voca_35.txt', 'Voca_40.txt', 'Voca_41.txt', "Voca_40_phrase.md", "Phrase&Sentence_01.md"]  # Thay thế danh sách tệp của bạn tại đây
     # Do something about here, so what when running python3 Voca_28.txt, it will take Voca_28.txt as argument and input to file
-    
-    # vocabulary_quiz(file)
     parser = argparse.ArgumentParser(description="Learning Vocabulary")
     parser.add_argument("filename", help="The vocabulary file to use for the quiz")
     args = parser.parse_args()
