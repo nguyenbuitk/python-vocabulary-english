@@ -28,21 +28,17 @@ Done after choose filename, it will select english as default if don't type 'vie
 '''
 def press(key):
     global result
-    print(f"'{key}' pressed")
     if key == 'esc':
         stop_listening()
     elif key == 'h' or key == 'w':
-        print(f"You pressed {key}")
         stop_listening()
         result = key
     elif key == 'space' or key == 'enter' or key == 'i':
-        print(f"You pressed {key}")
         result = key
         stop_listening()
 
 def release(key):
-    print(f"'{key}' released")
-
+    pass
 def read_vocabulary(filename):
   vocabulary = []
   with open(filename, 'r', encoding='utf-8') as file:
@@ -129,7 +125,7 @@ def output_answer(question):
   print(f"{question['english']} ({question['phonetic']}) {question['vietnamese']} ")
   if 'annotation' in question:
     print(question['annotation'])
-
+  
 def vocabulary_quiz(selected_file):
   global result
   # Loop for user practice again
@@ -156,14 +152,14 @@ def vocabulary_quiz(selected_file):
         question = random.choice(vocabulary)
         vocabulary.remove(question)
         count += 1
-        # if answer with viet `debate (n - dɪˈbeɪt): ??`
+
+        # if answer with viet `Ex: debate (n - dɪˈbeɪt): ??`
         if is_english:
           print(f"[{count}] {question['english']} ({question['phonetic']})", end=': ')
         else:
           print(f"[{count}] {question['vietnamese']}", end=': ')
         
         listen_keyboard(on_press=press, on_release=release)
-        print("result: ", result)
         if result == "enter":
           output_answer(question)
           continue
@@ -181,21 +177,43 @@ def vocabulary_quiz(selected_file):
         elif result == 'space':
           wrong_answers.append(question)
         
-        # show help
-        elif result == 'h':
-          print('''
-          press 'enter':  skip. if you want to add previous word into wrong list
-          press 'w':      add previous word to
-          press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
-          press 'i':      enter the answer with user input
-          press 'h':      show help
-          ''')
-          
-        # add previous word to wrong list
-        elif result == 'w':
-          wrong_answers.append(prev_question)
-        
+        # show help or add previous word to wrong list
+        elif result == 'h' or result == 'w': 
+          if result == 'h':
+            print('''
+            press 'enter':  skip. if you want to add previous word into wrong list
+            press 'w':      add previous word to
+            press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
+            press 'i':      enter the answer with user input
+            press 'h':      show help
+            ''')
+          elif result == 'w':
+            wrong_answers.append(prev_question)
 
+          # Wait another input: 'enter' or 'space' or 'i'
+          while True:
+            listen_keyboard(on_press=press, on_release=release)
+            if result == "enter":
+              print("jump to enter result")
+              output_answer(question)
+              break
+            
+            elif result == 'i':   
+            # Add keystroke detection to this
+              print("jump to i result")
+              user_answer = input()
+              if check_answer(question, user_answer, is_english):
+                  if 'annotation' in question:
+                    print("  example:", question['annotation'])
+              else:
+                  wrong_answers.append(question)
+              break
+
+            # add word to wrong list
+            elif result == 'space':
+              wrong_answers.append(question)
+              break
+          
     # question have just the eng, viet
     else:
       while vocabulary:
