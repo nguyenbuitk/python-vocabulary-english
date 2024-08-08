@@ -1,1 +1,74 @@
-defecitv(adj)lỗi
+10
+## test 8th
+owing to (pre - ˈəʊɪŋ tə) do | Due to the heavy rain, the event was postponed.
+scholar (n - ˈskɑːlər) học giả | The scholar presented her research at the conference.
+indicator (n - ˈɪndɪkeɪtər) chỉ số | The economic indicators show a positive trend.
+misspelling (n - ˌmɪsˈspelɪŋ) lỗi chính tả | The document contained several misspellings.
+interviewee (n - ˌɪntərvjuˈiː) người được phỏng vấn | The interviewee answered the questions confidently.
+already (adv - ɔːlˈredi) rồi | She has already finished her homework.
+power cord (n - kɔːrd) dây nguồn | The power cord is missing.
+checkout (n - ˈtʃekaʊt) quầy thanh toán | She waited at the checkout to pay for her items.
+Rail, railway (n - reɪl, ˈreɪlweɪ) đường sắt | The railway station is five minutes away 'Ga xe lửa cách đó năm phút'
+scratch-resistant (adj - skrætʃ-rɪˈzɪstənt) chống xướt | The phone has a scratch-resistant screen.
+coating (n - ˈkəʊtɪŋ) lớp phủ | The car's coating makes it shine.
+exclusively (adv - ɪkˈskluːsɪvli) chỉ | The service is exclusively for members.
+probation (n - prəˈbeɪʃn) thử việc | She is on probation for three months.
+by then (adv - baɪ ðen) vào lúc đó | Please complete the report by then.
+endorse (v - ɪnˈdɔːrs) xác nhận | The celebrity endorsed the new product.
+mismatch (n - ˈmɪsmætʃ) không đồng bộ, ko khớp | The mismatch between supply and demand caused issues.
+move (v - muːv) động thái | The government has not moved on this issue
+stock (v - stɑːk) lưu trữ, trữ | The store stocks a wide variety of goods.
+chill (v - tʃɪl) lạnh | Chill the wine before serving.
+freshwater (adj - ˈfreʃˌwɔːtər) nước ngọt | The aquarium has freshwater fish.
+interior (n - ɪnˈtɪriər) bên trong | The car's interior is spacious 'rộng rãi'
+tank (n - tæŋk) bể nước | The fish tank needs cleaning.
+rinse (v - rɪns) rửa kỹ | Rinse the vegetables before cooking.
+residue (n - ˈrezɪduː) cặn | There was some residue left in the bottle.
+toxic (adj - ˈtɑːksɪk) gây độc hại | The chemicals are toxic.
+cover (v - ˈkʌvər) phủ, bọc | Cover the cake with icing 'đường'
+gently (adv - ˈdʒentli) nhẹ nhàng | She touched the baby gently.
+root (n - ruːt) rễ | The tree's roots are deep.
+incorporate (v - ɪnˈkɔːrpəreɪt) kết hợp | Incorporate the new features into the design.
+shade (n - ʃeɪd) màu sắc | The paint comes in various shades.
+floorboard (n - ˈflɔːrbɔːrd) sàn nhà | The floorboards creaked as she walked.
+turn in (v - tɜːrn ɪn) nộp lại | Please turn in your assignments by Friday.
+tentative (adj - ˈtentətɪv) tạm thời | The schedule is tentative and may change.
+pull up (v - pʊl ʌp) nhổ | Pull up the weeds in the garden.
+erect (v - ɪˈrekt) dựng | They erected a statue in the park.
+fine dining (n - faɪn ˈdaɪnɪŋ) bữa ăn sang trọng | The restaurant offers fine dining experiences.
+set (v - set) lấy bối cảnh | The movie is set in the 18th century.
+pirate (n - ˈpaɪrət) cướp biển | The story is about a notorious 'khét tiếng' pirate.
+starring (v - ˈstɑːrɪŋ) diễn viên chính | starring John Wick.
+bring down (v - brɪŋ daʊn) hạ gục | They plan to bring down the corrupt government.
+elite (n - ɪˈliːt) ưu tú | The school is known for its elite students.
+threaten (v - ˈθretn) đe dọa | The storm threatens to cause flooding.
+the lead role (n - ði liːd roʊl) vai chính | She played the lead role in the play.
+lively (adj - ˈlaɪvli) sôi nổi | The festival was lively and fun.
+epic (adj - ˈepɪk) hoành tráng | The movie was an epic adventure.
+make a point of doing sth () cố gắng ... | He makes a point of visiting his grandparents every week.
+sheet (n - ʃiːt) ga trải giường | Change the sheets on the bed.
+dry-cleaner’s (n - ˈdraɪ ˌkliːnərz) tiệm giặt khô | I need to take my suit to the dry-cleaner’s.
+waterproof (adj - ˈwɔːtərˌpruːf) chống thấm nước | The jacket is waterproof.
+stain (v - steɪn) làm bẩn | Be careful not to stain your clothes.
+upstairs (adv - ˌʌpˈsterz) ở tầng trên | The bedrooms are upstairs.
+catalogue (v - ˈkætəˌlɔːɡ) lập danh mục | She catalogued the new arrivals.
+deluxe (adj - dɪˈlʌks) cao cấp | The hotel offers deluxe rooms.
+next door (n - nekst dɔːr) bên cạnh | The bakery is next door.
+mislabel (v - ˌmɪsˈleɪbl) dán nhãn sai | The products were mislabeled.
+product launch (n - ˈprɒdʌkt lɔːntʃ) buổi ra mắt sản phẩm | The company planned a big product launch.
+we're all right then (phr) vậy chúng ta ổn rồi | If everything is packed, we're all right then.
+house (v - haʊz) chứa | The museum houses ancient artifacts 'hiện vật'.
+glitch (n - ɡlɪtʃ) trục trặc | There was a glitch in the system.
+Fitness Expo (n - ˈfɪtnɪs ˈɛkspoʊ) triển lãm thể hình | She attended the Fitness Expo last year.
+tailor (v - ˈteɪlər) điều chỉnh | We tailor our services to meet your needs.
+hectic (adj - ˈhektɪk) bận rộn | The week has been hectic 'thật bận rộn'
+open house (n - ˈoʊpən haʊs) buổi tham quan nhà | They hosted an open house to sell their property.
+podium(n - ˈpəʊdiəm)bục phát biểu|the speaker stood on the podium
+gazing(v - ˈɡeɪzɪŋ)nhìn chằm chằm|he was gazing at the stars
+express mail(n - ɪkˈspres meɪl)thư chuyển phát nhanh|the package was sent by express mail
+damp cloth(n - dæmp klɔːθ)khăn ẩm|use a damp cloth to clean the surface
+out of order() bị hỏng | the machine is out of order
+spare(adj - sper)dự phòng|we have a spare tire in the trunk 'cốp xe'
+finding(n - ˈfaɪndɪŋ)phát hiện, kết quả|the finding was surprising
+sweep(v - swiːp)quét | to sweep the floor
+mop(v - mɑːp) lau | map the floor

@@ -52,3 +52,5 @@ percentage of our earnings () tỷ lệ phần trăm thu nhập | The percentage
 batch of brochures (n) lô tờ rơi quảng cáo | The company printed a new batch of brochures.
 commercial (n - kəˈmɜːrʃl) quảng cáo | The commercial was very entertaining.
 underway (adj - ˌʌndərˈweɪ) tiến hành | The project is currently underway.
+cartridge(n - ˈkɑːrtrɪdʒ)hộp mực|the printer needs a new cartridge
+premiere(n - prɪˈmɪr)buổi ra mắt|the movie premiere was a huge success

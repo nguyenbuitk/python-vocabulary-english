@@ -32,3 +32,19 @@ mattress: nệm cao su
 memory foam: than hoạt tính
 soak up: thấm, ngấm
 sweat: mồ hôi
+
+### Test 09th
+flowerbed: vườn hoa
+lawn clipping and other debris: cỏ cắt ra và mảnh vụn
+testimonral: lời chứng thực
+contamination: ô nhiễm
+meticulously: cẩn thận
+matiness: buổi biểu diễn
+obedience: vâng lời
+competenly: hiệu quả
+seniority: thâm niên
+floral centerpieces: lọ hoa
+checkered: ô vuông
+crystal light fixture: đèn pha lê
+isulated: cách nhiệt
+
