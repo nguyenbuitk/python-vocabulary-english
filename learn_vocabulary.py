@@ -10,17 +10,18 @@ init(autoreset=True)
 
 '''
 to do:
-vv print annotation
-vv check answer by vietnamese
-No need draw desire follow of app? 
-Done + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently. 
-Following task have problem, when running on WSL, library not work as expected cause WSL don't have access to hardware-level
-+ when answer by vietnamese (python keystrokes). Details of scenario of what you want? because it have user_input also.
-  press 'enter':  skip. if you want to add previous word into wrong list
-  press 'w':      add previous word to
-  press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
-  press 'i':      enter the answer with user input
-  press 'h':      show help
+Done print annotation
+Done check answer by vietnamese
+Done + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently.
+Key stroke detect
+  Done Following task have problem, when running on WSL, library not work as expected cause WSL don't have access to hardware-level
+  Done When answer by vietnamese (python keystrokes). Details of scenario of what you want? because it have user_input also.
+      press 'enter':  skip. if you want to add previous word into wrong list
+      press 'w':      add previous word to
+      press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
+      press 'i':      enter the answer with user input
+      press 'h':      show help
+  Key stroke for detect question just have eng and viet
 Done + after done the list word and wrong word, automatically increase number of practice file 
 Done + change commandline into 'python3 learn.py filename' instead of choose filename
 Done + add highlighted text with phrase
@@ -122,9 +123,9 @@ def update_counter_of_file(filename):
     file.writelines(data)
 
 def output_answer(question):
-  print(f"{question['english']} ({question['phonetic']}) {question['vietnamese']} ")
+  print(f"{question['vietnamese']} ")
   if 'annotation' in question:
-    print(question['annotation'])
+    print(f"    {question['annotation']}")
   
 def vocabulary_quiz(selected_file):
   global result
@@ -176,7 +177,9 @@ def vocabulary_quiz(selected_file):
         # add word to wrong list
         elif result == 'space':
           wrong_answers.append(question)
-        
+          print("added to wrong list")
+          output_answer(question)
+          continue
         # show help or add previous word to wrong list
         elif result == 'h' or result == 'w': 
           if result == 'h':
@@ -194,13 +197,11 @@ def vocabulary_quiz(selected_file):
           while True:
             listen_keyboard(on_press=press, on_release=release)
             if result == "enter":
-              print("jump to enter result")
               output_answer(question)
               break
             
-            elif result == 'i':   
+            elif result == 'i':
             # Add keystroke detection to this
-              print("jump to i result")
               user_answer = input()
               if check_answer(question, user_answer, is_english):
                   if 'annotation' in question:
@@ -212,6 +213,7 @@ def vocabulary_quiz(selected_file):
             # add word to wrong list
             elif result == 'space':
               wrong_answers.append(question)
+              print("\n")
               break
           
     # question have just the eng, viet
@@ -246,6 +248,7 @@ def vocabulary_quiz(selected_file):
     continue_quiz = input("Do you want to continue (yes/no)? ")
     if continue_quiz.lower() != 'yes':
         break
+
 if __name__ == '__main__':
     # Do something about here, so what when running python3 Voca_28.txt, it will take Voca_28.txt as argument and input to file
     parser = argparse.ArgumentParser(description="Learning Vocabulary")
