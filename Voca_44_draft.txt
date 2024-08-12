@@ -1,38 +1,40 @@
-0
-dress code: quy định trang phục
-alighment: căn chỉnh
-tailor: thợ may
-costume: trang phục
-booket: tập, tập sách
-soil: đất
-pollutant: chất ô nhiễm
-stram: suối
-acquire: có được
-professional (n): chuyên gia
-professional (adj): chuyên nghiệp
-we take pride ...: chúng tôi tự hào
-indeed: thật vậy
-sustantial: đáng kể
-opening: vị trí có sẵn, công việc có sẵn
-expedite: đẩy nhanh
-give home cooks: mang đến cho người nấu ăn tại nhà
-heritage: di sản
-blend: hòa trộn
-it takes diner reservation: nó nhận đặt chỗ bữa tối
-nearby: gần đó
-profiled: được giới thiệu
-appetiser: món khai vị
-scattered: rải rác
-sweep: lau
-blender: máy xay
-prescription: đơn thuốc
-sweater: áo len
-authorize: cho phép
-deck: bong tàu
-hospitality: khách sạn
-concentrate: tập trung
-napkin: khăn ăn
-dealership: đại lý
-loose: lỏng
-habitant: cư dân
-trail: đường mòn
+5
+dress code(n - ˈdres koʊd) quy định trang phục | the company's dress code is business casual
+alignment(n - əˈlaɪnmənt) căn chỉnh | the alignment of the wheels is crucial for safety
+tailor(n - ˈteɪlər) thợ may | the tailor took his measurements
+costume(n - ˈkɒstjuːm) trang phục | she wore a traditional costume to the festival
+booklet(n - ˈbʊklət) tập, tập sách | the booklet contains all the instructions
+soil(n - sɔɪl) đất | the soil in this area is very fertile
+pollutant(n - pəˈluːtənt) chất ô nhiễm | the river is contaminated with pollutants
+stream(n - striːm) suối | the stream flows through the forest
+acquire(v - əˈkwaɪər) có được | she acquired new skills through the training
+professional(n - prəˈfeʃənl) chuyên gia | he is a financial professional
+professional(adj - prəˈfeʃənl) chuyên nghiệp | the team gave a very professional presentation
+we take pride...(v - weɪ teɪk praɪd) chúng tôi tự hào | we take pride in our customer service
+indeed(adv - ɪnˈdiːd) thật vậy | the food was indeed delicious
+substantial(adj - səbˈstænʃl) đáng kể | the company made a substantial profit this year
+opening(n - ˈoʊpənɪŋ) vị trí có sẵn, công việc có sẵn | there is an opening for a marketing manager
+expedite(v - ˈekspədaɪt) đẩy nhanh | they will expedite the process to meet the deadline
+give home cooks(v - ɡɪv hoʊm kʊks) mang đến cho người nấu ăn tại nhà | this book gives home cooks new recipes
+heritage(n - ˈherɪtɪdʒ) di sản | the city's heritage is well preserved
+blend(v - blend) hòa trộn | blend the ingredients until smooth
+it takes diner reservation(v - ɪt teɪks ˈdaɪnər ˌrezərˈveɪʃn) nó nhận đặt chỗ bữa tối | the restaurant takes dinner reservations
+nearby(adv - ˌnɪrˈbaɪ) gần đó | there’s a café nearby
+profiled(v - ˈproʊfaɪld) được giới thiệu | the artist was profiled in the magazine
+appetizer(n - ˈæpɪtaɪzər) món khai vị | the appetizer was delicious
+scattered(adj - ˈskætərd) rải rác | the papers were scattered across the floor
+sweep(v - swiːp) lau | he swept the floor after dinner
+blender(n - ˈblendər) máy xay | use a blender to make the smoothie
+prescription(n - prɪˈskrɪpʃn) đơn thuốc | the doctor wrote a prescription for antibiotics
+sweater(n - ˈswetər) áo len | she wore a cozy sweater
+authorize(v - ˈɔːθəraɪz) cho phép | the manager authorized the purchase
+deck(n - dek) bong tàu | we relaxed on the deck of the ship
+hospitality(n - ˌhɒspɪˈtæləti) khách sạn | hospitality is a key industry in the region
+concentrate(v - ˈkɒnsntreɪt) tập trung | she needs to concentrate on her studies
+napkin(n - ˈnæpkɪn) khăn ăn | he placed the napkin on his lap
+dealership(n - ˈdiːlərʃɪp) đại lý | he works at a car dealership
+loose(adj - luːs) lỏng | the screw is loose and needs to be tightened
+habitant(n - ˈhæbɪtənt) cư dân | the habitants of the village are friendly
+trail(n - treɪl) đường mòn | we followed the hiking trail through the mountains
+rainfall(n - ˈreɪnfɔːl) lượng mưa | the annual rainfall in the region is high
+relief(n - rɪˈliːf) sự nhẹ nhõm | it was a relief to finish the project

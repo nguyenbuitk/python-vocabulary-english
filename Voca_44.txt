@@ -1,72 +1,70 @@
-0
-## test 10th
-wheel: bánh xe
-reinforcement: gia cố
-emerging: mới nổi
-just as: ngay khi
-in light of: vì, xét theo
-supplemental: bổ sung
-eco-friendly: thân thiện với môi trường
-mix: hỗn hợp
-flow: chảy
-landscape(v): tạo cảnh quan
-rainfall: lượng mưa
-best of all: trên hết
-premier: hàng đầu
-auction: cuộc đấu giá
-innovation: sự đổi mới
-criticism: sự chỉ trích
-shot: bức ảnh
-shoot: buổi chụp ảnh
-superior (adj): vượt trội
-screw: đinh vít
-bolt: bu lông
-interoffice: giữa các văn phòng
-botanical: thực vật
-marble: cẩm thạch
-coordinate: tọa độ
-fellow: giống bạn
-attendant: nhân viên
-delectable: ngon miệng
-treat: món ăn
-compact: nhỏ gọn
-perk: phúc lợi
-worthwhile: đáng giá
-it so happen: thật tình cờ
-crushed gravel: sỏi nghiền
-rollout: triển khai
-wipe off: lau
-brush: phủi
-shovel: xúc
-fixture: đồ đạc
-peach: đào
-uneventful: không có gì đáng kể
-cargo ship: tàu hàng
-shipping: vận chuyển
-meteorology: khí tượng học
-terrace: sân thượng
-not at all: không sao đâu
-stamp: đóng dấu
-cake, pie, cookies: bánh ngọt, bánh nướng, bánh quy
-sweetener: chất làm ngọt
-textile: dệt may
-a flat tire: lốp xe bị xẹp
-relief: sự nhẹ nhõm
-wide-mouthed lid: nắp miệng rộng
-straw: ống hút
-pencil drawing: bức vẽ bút chì
-mix-up: nhầm lẫn
-clay sculptures: điêu khắc đất sét
-offshore: ngoài khơi
-repave: lát lại
-trowel: cái bai
-crowbar: thanh cậy
-cement: xi măng
-seal: trám
-chip: vết sứt
-botanist: thực vật học
-orchild plant: cây phong lan
-concession: đồ ăn nhẹ
-vibrant: rực rỡ
-royal: hoàng gia
-rough: thô
+10
+# test 10th
+wheel(n - wiːl) bánh xe | the car's wheel is damaged
+reinforcement(n - ˌriːɪnˈfɔːrsmənt) gia cố | the reinforcement of the structure was necessary
+emerging(adj - ɪˈmɜːrdʒɪŋ) mới nổi | an emerging market in Asia
+just as(conj - dʒʌst æz) ngay khi | just as we arrived, it started raining
+in light of(prep - ɪn laɪt ʌv) vì, xét theo | in light of recent events, the meeting was postponed
+supplemental(adj - ˌsʌplɪˈmentl) bổ sung | supplemental materials were provided for the course
+eco-friendly(adj - ˌiːkoʊ ˈfrendli) thân thiện với môi trường | the eco-friendly products are popular among consumers
+mix(n - mɪks) hỗn hợp | the mix of colors is beautiful
+flow(v - floʊ) chảy | the river flows through the city
+landscape(v - ˈlændskeɪp) tạo cảnh quan | they landscaped the garden beautifully
+best of all(adv - best əv ɔːl) trên hết | best of all, the service was free
+premier(adj - prɪˈmɪr) hàng đầu | a premier luxury hotel in the city
+auction(n - ˈɔːkʃn) cuộc đấu giá | the painting was sold at auction
+innovation(n - ˌɪnəˈveɪʃn) sự đổi mới | innovation in technology
+criticism(n - ˈkrɪtɪsɪzəm) sự chỉ trích | she faced a lot of criticism for her decision
+shot(n - ʃɒt) bức ảnh | the shot was taken at sunset
+shoot(n - ʃuːt) buổi chụp ảnh | a shoot fashion
+superior(adj - suːˈpɪriər) vượt trội | the product is superior in quality
+screw(n - skruː) đinh vít 
+bolt(n - boʊlt) bu lông | the bolt needs to be replaced
+interoffice(adj - ˌɪntərˈɔːfɪs) giữa các văn phòng | interoffice communication is essential
+botanical(adj - bəˈtænɪkl) thực vật | a botanical garden with rare plants
+marble(n - ˈmɑːrbl) cẩm thạch | the marble floor looks elegant
+coordinate(n - koʊˈɔːrdɪnət) tọa độ | the coordinates are marked on the map
+fellow(n - ˈfeloʊ) giống bạn 
+attendant(n - əˈtendənt) nhân viên | the attendant helped with our luggage
+delectable(adj - dɪˈlektəbl) ngon miệng | the dessert was absolutely delectable
+treat(n - triːt) món ăn | she gave me a sweet treat
+compact(adj - kəmˈpækt) nhỏ gọn | the compact car is easy to park
+perk(n - pɜːrk) phúc lợi | a company perk is free gym membership
+worthwhile(adj - ˈwɜːrθwaɪl) đáng giá | it's a worthwhile investment
+it so happen(conj - ɪt soʊ ˈhæpən) thật tình cờ | it so happens that we met at the same cafe
+crushed gravel(n - krʌʃt ˈɡrævəl) sỏi nghiền | they used crushed gravel for the pathway
+rollout(n - ˈroʊlaʊt) triển khai | the rollout of the new product is next week
+wipe off(v - waɪp ɔːf) lau | wipe off the dust from the table
+brush(v - brʌʃ) phủi | he brushed the dirt off his shoes
+shovel(v - ˈʃʌvl) xúc | he shoveled the snow from the driveway
+fixture(n - ˈfɪkstʃər) đồ đạc | the light fixtures were newly installed
+peach(n - piːtʃ) đào | the peach was sweet and juicy
+uneventful(adj - ˌʌnɪˈventfl) không có gì đáng kể | the trip was uneventful but relaxing
+cargo ship(n - ˈkɑːrɡoʊ ʃɪp) tàu hàng | the cargo ship docked at the port
+shipping(n - ˈʃɪpɪŋ) vận chuyển | shipping costs are included in the price
+meteorology(n - ˌmiːtiəˈrɑːlədʒi) khí tượng học | she studied meteorology at university
+terrace(n - ˈterəs) sân thượng | the apartment has a spacious 'rộng rãi' terrace
+not at all(adv - nɑːt æt ɔːl) không sao đâu | not at all, I’m happy to help
+stamp(v - stæmp) đóng dấu | he stamped the document
+cake, pie, cookies(n - keɪk, paɪ, ˈkʊkiz) bánh ngọt, bánh nướng, bánh quy | she baked cake, pie, and cookies for the party
+sweetener(n - ˈswiːtnər) chất làm ngọt | use a natural sweetener instead of sugar
+textile(n - ˈtekstaɪl) dệt may | the textile industry is growing rapidly
+a flat tire(n - ə flæt taɪər) lốp xe bị xẹp | we had a flat tire on the way home
+wide-mouthed lid(n - waɪd maʊðt lɪd) nắp miệng rộng | the jar has a wide-mouthed lid
+straw(n - strɔː) ống hút | drink through a straw
+pencil drawing(n - ˈpensl ˈdrɔːɪŋ) bức vẽ bằng bút chì | the pencil drawing was beautifully detailed
+mix-up(n - ˈmɪks ʌp) nhầm lẫn | there was a mix-up with the reservations
+clay sculptures(n - kleɪ ˈskʌlptʃərz) điêu khắc đất sét | the gallery features clay sculptures
+offshore(adj - ˌɔːfˈʃɔːr) ngoài khơi | the offshore drilling platforms 'giàn khoan' are visible from the coast
+repave(v - ˌriːˈpeɪv) lát lại | they need to repave the old road
+trowel(n - ˈtraʊəl) cái bai | he used a trowel
+crowbar(n - ˈkroʊbɑːr) thanh cậy | use a crowbar to lift the lid
+cement(n - səˈment) xi măng | mix the cement with water
+seal(v - siːl) trám | seal the cracks with caulk 'keo'
+chip(n - tʃɪp) vết sứt | there’s a chip in the cup
+botanist(n - ˈbɑːtənɪst) nhà thực vật học | the botanist discovered a new species
+orchid plant(n - ˈɔːrkɪd plænt) cây phong lan | the orchid plant bloomed beautifully
+concession(n - kənˈseʃn) đồ ăn nhẹ | the movie theater has a concession stand
+vibrant(adj - ˈvaɪbrənt) rực rỡ | the vibrant colors of the painting
+royal(adj - ˈrɔɪəl) hoàng gia | the royal family attended the event
+rough(adj - rʌf) thô | the surface was rough

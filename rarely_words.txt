@@ -48,7 +48,7 @@ checkered: ô vuông
 crystal light fixture: đèn pha lê
 isulated: cách nhiệt
 
-### Test 09th
+### Test 10th
 assort?
 shallow sunken garden: khu vườn có ao nước nông, khu vườn trũng nông
 drainage: hệ thống thoát nước

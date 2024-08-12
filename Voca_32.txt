@@ -1,5 +1,6 @@
 18
 10
+# test 01st
 floor plan(n - ˈflɔːr plæn)sơ đồ mặt bằng
 manual(n - ˈmænjuəl)hướng dẫn sử dụng|Why don’t you read the manual?
 receipt(n - rɪˈsiːt)biên nhận, biên lai|Can I have a receipt, please?
