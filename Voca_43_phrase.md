@@ -1,4 +1,4 @@
-01
+5
 The rented equipment must `be returned by the user within 24 hours`: Thiết bị thuê phải `được trả bởi người dùng trong 24 giờ`.
 She accepts `nothing less than` perfection in her work: Cô ấy chấp nhận `không gì ngoài` sự hoàn hảo trong công việc của mình.
 We need to ensure that the talk can `go forward` even in case of technical issues: Chúng ta cần đảm bảo rằng bài nói có thể `tiếp tục` ngay cả khi có sự cố kỹ thuật.
@@ -18,3 +18,4 @@ You will need `an entrance pass` to attend the event: Bạn sẽ cần một `gi
 You're just `come off your lunch break`, right?: Bạn `vừa mới nghỉ trưa`, phải không?
 `There is definitely room for improvement` in our current system: `Có chỗ chắc chắn cần cải thiện` trong hệ thống hiện tại của chúng ta.
 They held `a drawing for one of his jerseys` at the event: Họ đã tổ chức `rút thăm cho một trong những chiếc áo đấu của anh ấy` tại sự kiện.
+windows are covered with curtains (phr) cửa sổ được phủ rèm | The windows are covered with curtains to block out the light.

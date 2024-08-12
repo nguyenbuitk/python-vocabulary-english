@@ -1,4 +1,4 @@
-1
+10
 ## test 9th
 incur (v - ɪnˈkɜːr) phải gánh chịu | We incurred significant costs due to the delay.
 compensate (v - ˈkɒmpənseɪt) bù đắp | The company compensated employees for their overtime work.
@@ -9,11 +9,10 @@ given that (conj - ˈɡɪvn ðæt) vì, bởi vì | Given that it’s raining, t
 burden (n - ˈbɜːdn) gánh nặng | The financial burden was too much for the small business.
 dispute (n - dɪˈspjuːt) tranh chấp, tranh cãi | The contract dispute has delayed the project.
 adoption (n - əˈdɒpʃn) nhận nuôi | The adoption of the new policy was unanimous 'nhất trí'
-veterinarian care () chăm sóc thú y | The shelter 'nơi trú ấn' provides excellent veterinarian care for all its animals.
+veterinarian care (vetərɪˈneriən) chăm sóc thú y | The shelter 'nơi trú ấn' provides excellent veterinarian care for all its animals.
 scrub (v - skrʌb) chà rửa | She scrubbed the floor until it was spotless.
 housekeeping (n - ˈhaʊskiːpɪŋ) dọn dẹp | The hotel’s housekeeping staff is very efficient.
 wetsuit (n - ˈwetsuːt) đồ lặn | He put on his wetsuit before diving into the cold water.
-drop off (phr.v - drɒp ɒf) gửi | Please drop off the documents at the front desk.
 at its finest (phr) ở mức tốt nhất | he is French cooking at its finest.
 peace of mind (n - piːs ɒv maɪnd) sự an tâm | give us some peace of mind.
 round-the-clock (adj - raʊnd-ðə-klɒk) suốt ngày đêm | The hospital provides round-the-clock care.
@@ -26,7 +25,7 @@ complication (n - ˌkɒmplɪˈkeɪʃn) sự cố | The surgery went well without
 ample (adj - ˈæmpl) đủ | There is ample space for a large party.
 off-site (adj - ɒf-saɪt) bên ngoài | The meeting will be held at an off-site location.
 retreat (n - rɪˈtriːt) nghỉ dưỡng | The company organized a weekend retreat for its employees.
-a final head count (phr) số liệu cuối cùng | We need a final head count before confirming the reservation.
+a head count (phr) số liệu | We need a final head count before confirming the reservation.
 compulsory (adj - kəmˈpʌlsəri) bắt buộc | Wearing a helmet is compulsory for motorcyclists.
 introductory period () giai đoạn giới thiệu | There is no charge during the introductory period.
 platter (n - ˈplætə) đĩa | The seafood platter was the highlight of the meal.
@@ -37,7 +36,6 @@ adjacent (adj - əˈdʒeɪsnt) liền kề | The park is adjacent to the school.
 damp (adj - dæmp) ẩm ướt | The basement was damp.
 debt-to-income ratio () tỉ lệ thu nợ | The bank evaluates your debt-to-income ratio when approving loans.
 reasonable (adj - ˈriːzənəbl) hợp lý | The price for the service is very reasonable.
-cleaner (n - ˈkliːnər) chất tẩy rửa | She bought a new cleaner for the kitchen.
 powder (n - ˈpaʊdər) bột | The recipe with two baking powder 'bột nở'.
 all-purpose (adj - ɔːl-ˈpɜːpəs) toàn diện | This is an all-purpose cleaner suitable for various surfaces.
 pose (v - pəʊz) đặt ra | The new regulations pose a challenge to small businesses.
@@ -47,7 +45,6 @@ donor (n - ˈdəʊnər) nhà tài trợ | The donor contributed a significant am
 screwdriver (n - ˈskruːdraɪvər) tua vít | He used a screwdriver to assemble the furniture.
 stripe (n - straɪp) vạch kẻ | The zebra has distinctive black and white stripes.
 suspend (v - səˈspɛnd) treo |  suspended from the ceiling.
-windows are covered with curtains (phr) cửa sổ được phủ rèm | The windows are covered with curtains to block out the light.
 mark down (phr.v - mɑːrk daʊn) giảm giá | The store marked down the prices of many items for the sale.
 sleeve (n - sliːv) tay áo | The sleeve of her dress was torn.
 adore (v - əˈdɔːr) yêu thích | She adores her new puppy.
@@ -64,3 +61,19 @@ moderate (v - ˈmɒdəreɪt) điều hành | She was chosen to moderate the disc
 fraction of (phr - ˈfrækʃn əv) một phần của | He only paid a fraction of the cost.
 binder (n - ˈbaɪndər) tệp tài liệu | She organized the documents in a binder.
 drop off (phr.v - drɒp ɒf) gửi | Please drop off the package at the reception desk.
+
+detergent (n - dɪˈtɜːrdʒənt): chất tẩy rửa | this detergent is effective in removing stains
+accompany (v - əˈkʌmpəni): đi cùng | she accompanied him to the meeting
+follow up (v - ˈfɑːloʊ ʌp): theo dõi | the doctor will follow up with the patient next week
+overcharge (v - ˌəʊvərˈtʃɑːrdʒ): tính phí quá cao | they overcharged me for the meal
+overspending (n - ˌəʊvərˈspendɪŋ): chi tiêu quá mức | overspending can lead to debt
+overdue bill (n - ˌəʊvərˈduː bɪl): hóa đơn quá hạn | he received an overdue bill for his electricity
+entree (n - ˈɑːntreɪ): món khai vị | the entree was served with a delicious sauce
+comes with a side of vegetables (phrase): kèm với một ít rau | the dish comes with a side of vegetables
+bag drop (n - ˈbæɡ drɒp): hành lý ký gửi | go to the bag drop counter before your flight
+footwear (n - ˈfʊtˌwɛr): giày dép | she purchased new footwear for the hike
+experienced record sale (phrase): doanh số kỷ lục | the store experienced record sales during the holiday season
+consultant (n - kənˈsʌltənt): cố vấn | the company hired a consultant to improve efficiency
+endorsement (n - ɪnˈdɔːrsmənt): sự xác nhận, sự chứng thực | the product received a celebrity endorsement
+accompany (v - əˈkʌmpəni): đi cùng | she accompanied him to the meeting
+summit: hội nghị thượng đỉnh
