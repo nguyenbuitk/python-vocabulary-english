@@ -10,10 +10,10 @@ init(autoreset=True)
 
 '''
 to do:
-Done print annotation
-Done check answer by vietnamese
-Done + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently.
-Key stroke detect
+[Done] print annotation
+[Done] check answer by vietnamese
+[Done] + it has mainly 3 type of file (word, phrase, draft). Each type will proceed differently.
+[Done] Key stroke detect
   Done Following task have problem, when running on WSL, library not work as expected cause WSL don't have access to hardware-level
   Done When answer by vietnamese (python keystrokes). Details of scenario of what you want? because it have user_input also.
       press 'enter':  skip. if you want to add previous word into wrong list
@@ -22,10 +22,14 @@ Key stroke detect
       press 'i':      enter the answer with user input
       press 'h':      show help
   Key stroke for detect question just have eng and viet
-Done + after done the list word and wrong word, automatically increase number of practice file 
-Done + change commandline into 'python3 learn.py filename' instead of choose filename
-Done + add highlighted text with phrase
-Done after choose filename, it will select english as default if don't type 'vietnamese'
+[Done + after done the list word and wrong word, automatically increase number of practice file 
+[Done + change commandline into 'python3 learn.py filename' instead of choose filename
+[Done] + add highlighted text with phrase
+[Done] after choose filename, it will select english as default if don't type 'vietnamese'
+[Done] Fix bug when line don't have annotation
+[Done] Show practice time when start
+[Done] Remove the while loop of practic again
+Optimize read_vocabulary function?
 '''
 def press(key):
     global result
@@ -40,6 +44,7 @@ def press(key):
 
 def release(key):
     pass
+  
 def read_vocabulary(filename):
   vocabulary = []
   with open(filename, 'r', encoding='utf-8') as file:
@@ -91,8 +96,8 @@ def read_vocabulary(filename):
               vocabulary.append({
                 "english": english,
                 "phonetic": phonetic,
-                "vietnamese": vietnamese,
-                "annotation": annotation
+                "vietnamese": vietnamese
+                # "annotation": annotation
               })
   return vocabulary
 
@@ -122,6 +127,11 @@ def update_counter_of_file(filename):
   with open(filename, 'w', encoding='utf-8') as file:
     file.writelines(data)
 
+def print_counter_of_file(filename):
+  with open(filename, 'r', encoding='utf-8') as file:
+    data = file.readlines()    
+  print(f"Practice times: ", data[0])
+  
 def output_answer(question):
   print(f"{question['vietnamese']} ")
   if 'annotation' in question:
@@ -130,124 +140,120 @@ def output_answer(question):
 def vocabulary_quiz(selected_file):
   global result
   # Loop for user practice again
-  while True:
-    print("=============== new list voca ======================")
-    vocabulary = read_vocabulary(selected_file)
-    
-    # print_vocabulary_list(vocabulary)
-    # is_english == 1 <=> hiển thị tiếng anh, trả lời bằng tiếng việt
-    is_english = input("Choose the language is displayed (English or Vietnamese, English as default): ").strip().lower() != 'vietnamese'
-    
-    print("Dịch từ tiếng Anh sang tiếng Việt:" if is_english else "Translate from English to Vietnamese:")
-    
-    wrong_answers = []
-    count = 0
-    prev_question = None
-    question = None
-    # if question have fully part (eng, viet, phonetic, annotation)
-    if 'phonetic' in random.choice(vocabulary):
-      # browse through each voca in list voca
-      while vocabulary:
-        result = None
-        if question: prev_question = question 
-        question = random.choice(vocabulary)
-        vocabulary.remove(question)
-        count += 1
+  print("=============== new list voca ======================")
+  vocabulary = read_vocabulary(selected_file)
+  
+  # print_vocabulary_list(vocabulary)
+  # is_english == 1 <=> hiển thị tiếng anh, trả lời bằng tiếng việt
+  is_english = input("Choose the language is displayed (English or Vietnamese, English as default): ").strip().lower() != 'vietnamese'
+  
+  print("Dịch từ tiếng Anh sang tiếng Việt:" if is_english else "Translate from English to Vietnamese:")
+  
+  wrong_answers = []
+  count = 0
+  prev_question = None
+  question = None
+  print_counter_of_file(selected_file)
+  # if question have fully part (eng, viet, phonetic, annotation)
+  if 'phonetic' in random.choice(vocabulary):
+    # browse through each voca in list voca
+    while vocabulary:
+      result = None
+      if question: prev_question = question 
+      question = random.choice(vocabulary)
+      vocabulary.remove(question)
+      count += 1
 
-        # if answer with viet `Ex: debate (n - dɪˈbeɪt): ??`
-        if is_english:
-          print(f"[{count}] {question['english']} ({question['phonetic']})", end=': ')
-        else:
-          print(f"[{count}] {question['vietnamese']}", end=': ')
-        
-        listen_keyboard(on_press=press, on_release=release)
-        if result == "enter":
-          output_answer(question)
-          continue
-        
-        elif result == 'i':   
-        # Add keystroke detection to this
-          user_answer = input()
-          if check_answer(question, user_answer, is_english):
-              if 'annotation' in question:
-                print("  example:", question['annotation'])
-          else:
-              wrong_answers.append(question)
-
-        # add word to wrong list
-        elif result == 'space':
-          wrong_answers.append(question)
-          print("added to wrong list")
-          output_answer(question)
-          continue
-        # show help or add previous word to wrong list
-        elif result == 'h' or result == 'w': 
-          if result == 'h':
-            print('''
-            press 'enter':  skip. if you want to add previous word into wrong list
-            press 'w':      add previous word to
-            press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
-            press 'i':      enter the answer with user input
-            press 'h':      show help
-            ''')
-          elif result == 'w':
-            wrong_answers.append(prev_question)
-
-          # Wait another input: 'enter' or 'space' or 'i'
-          while True:
-            listen_keyboard(on_press=press, on_release=release)
-            if result == "enter":
-              output_answer(question)
-              break
-            
-            elif result == 'i':
-            # Add keystroke detection to this
-              user_answer = input()
-              if check_answer(question, user_answer, is_english):
-                  if 'annotation' in question:
-                    print("  example:", question['annotation'])
-              else:
-                  wrong_answers.append(question)
-              break
-
-            # add word to wrong list
-            elif result == 'space':
-              wrong_answers.append(question)
-              print("\n")
-              break
-          
-    # question have just the eng, viet
-    else:
-      while vocabulary:
-        question = random.choice(vocabulary)
-        # print("question: ", question)
-        if is_english:
-          print(f"[{count}] {highlight_text(question['english'])}", end=': ')
-        else:
-          print(f"[{count}] {highlight_text(question['vietnamese'])}", end=': ')
-        count += 1
-
+      # if answer with viet `Ex: debate (n - dɪˈbeɪt): ??`
+      if is_english:
+        print(f"[{count}] {question['english']} ({question['phonetic']})", end=': ')
+      else:
+        print(f"[{count}] {question['vietnamese']}", end=': ')
+      
+      listen_keyboard(on_press=press, on_release=release)
+      if result == "enter":
+        output_answer(question)
+        continue
+      
+      elif result == 'i':   
+      # Add keystroke detection to this
         user_answer = input()
-        # Whether answer correct or not
-        if check_answer(question, user_answer, is_english) or user_answer == 'n':
-            if (user_answer == 'n'):
-              print(question['vietnamese'])
+        if check_answer(question, user_answer, is_english):
             if 'annotation' in question:
               print("  example:", question['annotation'])
         else:
             wrong_answers.append(question)
-            print(f"answer is: {highlight_text(question['vietnamese']) if is_english else highlight_text(question['english'])}")
-        vocabulary.remove(question)
 
-    if wrong_answers:
-      print("\nList wrong word:")
-      print_vocabulary_list(wrong_answers)
-      
-    update_counter_of_file(selected_file)
+      # add word to wrong list
+      elif result == 'space':
+        wrong_answers.append(question)
+        print("added to wrong list")
+        output_answer(question)
+        continue
+      # show help or add previous word to wrong list
+      elif result == 'h' or result == 'w': 
+        if result == 'h':
+          print('''
+          press 'enter':  skip. if you want to add previous word into wrong list
+          press 'w':      add previous word to
+          press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
+          press 'i':      enter the answer with user input
+          press 'h':      show help
+          ''')
+        elif result == 'w':
+          wrong_answers.append(prev_question)
+
+        # Wait another input: 'enter' or 'space' or 'i'
+        while True:
+          listen_keyboard(on_press=press, on_release=release)
+          if result == "enter":
+            output_answer(question)
+            break
+          
+          elif result == 'i':
+          # Add keystroke detection to this
+            user_answer = input()
+            if check_answer(question, user_answer, is_english):
+                if 'annotation' in question:
+                  print("  example:", question['annotation'])
+            else:
+                wrong_answers.append(question)
+            break
+
+          # add word to wrong list
+          elif result == 'space':
+            wrong_answers.append(question)
+            print("\n")
+            break
+        
+  # question have just the eng, viet
+  else:
+    while vocabulary:
+      question = random.choice(vocabulary)
+      # print("question: ", question)
+      if is_english:
+        print(f"[{count}] {highlight_text(question['english'])}", end=': ')
+      else:
+        print(f"[{count}] {highlight_text(question['vietnamese'])}", end=': ')
+      count += 1
+
+      user_answer = input()
+      # Whether answer correct or not
+      if check_answer(question, user_answer, is_english) or user_answer == 'n':
+          if (user_answer == 'n'):
+            print(question['vietnamese'])
+          if 'annotation' in question:
+            print("  example:", question['annotation'])
+      else:
+          wrong_answers.append(question)
+          print(f"answer is: {highlight_text(question['vietnamese']) if is_english else highlight_text(question['english'])}")
+      vocabulary.remove(question)
+
+  if wrong_answers:
+    print("\nList wrong word:")
+    print_vocabulary_list(wrong_answers)
     
-    continue_quiz = input("Do you want to continue (yes/no)? ")
-    if continue_quiz.lower() != 'yes':
-        break
+  update_counter_of_file(selected_file)
 
 if __name__ == '__main__':
     # Do something about here, so what when running python3 Voca_28.txt, it will take Voca_28.txt as argument and input to file
