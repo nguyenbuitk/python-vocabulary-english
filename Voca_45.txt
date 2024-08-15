@@ -1,4 +1,4 @@
-2
+5
 # test 11th
 attract(v - əˈtrækt)thu hút|the event attracted a large crowd
 skillful(adj - ˈskɪlfəl)khéo léo, thành thạo|she is skillful at negotiating deals
@@ -14,7 +14,6 @@ outlet(n - ˈaʊtlɛt)kênh, cửa hàng|the company has several outlets across 
 serves as(v - sɜrvz æz)đóng vai trò như|the book serves as a guide for beginners
 territory(n - ˈtɛrɪˌtɔri)lãnh thổ|the company is expanding its territory
 client retention(n - ˈklaɪənt rɪˈtɛnʃn)duy trì khách hàng|client retention is crucial for business growth
-counterpart(n - ˈkaʊntərˌpɑrts)đồng nghiệp|she met her counterparts from other countries
 striking(adj - ˈstraɪkɪŋ)ấn tượng|the building has a striking design
 chair(v - tʃɛr)chủ trì|she chaired the meeting effectively
 catching the attention(idiom - ˈkætʃɪŋ ði əˈtɛnʃn)thu hút|the speaker did a great job of catching the attention of the audience
@@ -33,7 +32,7 @@ sign off(v - saɪn ɔf)ký duyệt|the manager needs to sign off on the proposal
 draw up(v - drɔn ʌp)soạn thảo|the contract was drawn up by the legal team
 explore(v - ɪkˈsplɔr)xem xét|we need to explore all options before making a decision
 voice(v - vɔɪs)nêu|she voiced her concerns during the meeting
-civic(adj - ˈsɪvɪk)công dân|the civic center is hosting a community event
+civic(adj - ˈsɪvɪk)dân sự|the civic center is hosting a community event
 sauce jar(n - sos jɑr)lọ sốt|I bought a new sauce jar
 ride down(phrase - raɪd daʊn)đi xuống|we rode down the hill on our bikes
 parked in a row(phrase - pɑrkt ɪn ə roʊ)đỗ thành 1 hàng|the cars were parked in a row
@@ -42,7 +41,6 @@ your transfer(n - jɔr ˈtrænsfər)việc chuyển công tác của bạn|your 
 handwriting(n - ˈhændˌraɪtɪŋ)chữ viết tay|his handwriting is difficult to read
 took inventory(phrase - tʊk ˈɪnvənˌtɔri)kiểm kê|we took inventory of the supplies
 cardboard box(n - ˈkɑrdˌbɔks)hộp các tông|the items were packed in a cardboard box
-specialty(n - ˈspɛʃəlti)chuyên môn|her specialty is Italian cuisine
 an extra key(n - æn ˈɛkstrə ki)chìa sơ cua|I keep an extra key under the mat
 socialize(v - ˈsoʊʃəˌlaɪz)giao lưu|we need to socialize more with our colleagues
 beat = avoid(v - bit = əˈvɔɪd)tránh|she managed to beat the traffic
