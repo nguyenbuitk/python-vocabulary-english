@@ -1,9 +1,84 @@
-30
+10
 ## test 9th
 incur (v - ɪnˈkɜːr) phải gánh chịu | We incurred significant costs due to the delay.
 compensate (v - ˈkɒmpənseɪt) bù đắp | The company compensated employees for their overtime work.
 tie (v - taɪ) buộc | She tied the package with a red ribbon.
 opt to (phr.v - ɒpt tuː) chọn | Many students opt to study abroad for better opportunities.
-authenticity (n - ɔːˌθentɪˈsɪti) tính xác thực
+authenticity (n - ɔːˌθentɪˈsɪti) tính xác thực | The museum verified the authenticity of the ancient artifact.
 given that (conj - ˈɡɪvn ðæt) vì, bởi vì | Given that it’s raining, the event will be held indoors.
 burden (n - ˈbɜːdn) gánh nặng | The financial burden was too much for the small business.
+dispute (n - dɪˈspjuːt) tranh chấp, tranh cãi | The contract dispute has delayed the project.
+adoption (n - əˈdɒpʃn) nhận nuôi | The adoption of the new policy was unanimous 'nhất trí'
+veterinarian care (vetərɪˈneriən) chăm sóc thú y | The shelter 'nơi trú ấn' provides excellent veterinarian care for all its animals.
+scrub (v - skrʌb) chà rửa | She scrubbed the floor until it was spotless.
+housekeeping (n - ˈhaʊskiːpɪŋ) dọn dẹp | The hotel’s housekeeping staff is very efficient.
+wetsuit (n - ˈwetsuːt) đồ lặn | He put on his wetsuit before diving into the cold water.
+at its finest (phr) ở mức tốt nhất | he is French cooking at its finest.
+peace of mind (n - piːs ɒv maɪnd) sự an tâm | give us some peace of mind.
+round-the-clock (adj - raʊnd-ðə-klɒk) suốt ngày đêm | The hospital provides round-the-clock care.
+stimulating (adj - ˈstɪmjʊleɪtɪŋ) kích thích | The lecture was very stimulating
+mat (n - mæt) thảm | She placed a mat at the entrance to wipe 'lau' feet.
+head guard (n - hɛd ɡɑːrd) nón đội đầu | The boxer wore a head guard for protection.
+discipline (n - ˈdɪsɪplɪn) bộ môn | She has mastered 'thành thạo' several disciplines in martial arts.
+dictionary (n - ˈdɪkʃənəri) từ điển | She always carries a dictionary to help with translations.
+complication (n - ˌkɒmplɪˈkeɪʃn) sự cố | The surgery went well without any complications.
+ample (adj - ˈæmpl) đủ | There is ample space for a large party.
+off-site (adj - ɒf-saɪt) bên ngoài | The meeting will be held at an off-site location.
+retreat (n - rɪˈtriːt) nghỉ dưỡng | The company organized a weekend retreat for its employees.
+a head count (phr) số liệu | We need a final head count before confirming the reservation.
+compulsory (adj - kəmˈpʌlsəri) bắt buộc | Wearing a helmet is compulsory for motorcyclists.
+introductory period () giai đoạn giới thiệu | There is no charge during the introductory period.
+platter (n - ˈplætə) đĩa | The seafood platter was the highlight of the meal.
+overflow (n - ˈəʊvəˌfləʊ) tràn ra | The river’s overflow caused flooding in the nearby area.
+flooding (n - ˈflʌdɪŋ) lũ lụt | The flooding affected several homes in the area.
+postponement (n - pəʊstˈpəʊnmənt) việc hoãn | The postponement of the meeting was unavoidable.
+adjacent (adj - əˈdʒeɪsnt) liền kề | The park is adjacent to the school.
+damp (adj - dæmp) ẩm ướt | The basement was damp.
+debt-to-income ratio () tỉ lệ thu nợ | The bank evaluates your debt-to-income ratio when approving loans.
+reasonable (adj - ˈriːzənəbl) hợp lý | The price for the service is very reasonable.
+powder (n - ˈpaʊdər) bột | The recipe with two baking powder 'bột nở'.
+all-purpose (adj - ɔːl-ˈpɜːpəs) toàn diện | This is an all-purpose cleaner suitable for various surfaces.
+pose (v - pəʊz) đặt ra | The new regulations pose a challenge to small businesses.
+present the award () trao giải | He will present the award at the ceremony.
+after-hours (adj - ˈɑːftər-aʊəz) sau giờ làm | The after-hours event was well-attended.
+donor (n - ˈdəʊnər) nhà tài trợ | The donor contributed a significant amount to the charity.
+screwdriver (n - ˈskruːdraɪvər) tua vít | He used a screwdriver to assemble the furniture.
+stripe (n - straɪp) vạch kẻ | The zebra has distinctive black and white stripes.
+suspend (v - səˈspɛnd) treo |  suspended from the ceiling.
+mark down (phr.v - mɑːrk daʊn) giảm giá | The store marked down the prices of many items for the sale.
+sleeve (n - sliːv) tay áo | The sleeve of her dress was torn.
+adore (v - əˈdɔːr) yêu thích | She adores her new puppy.
+steam-cleaned (adj - stiːm-kliːnd) giặt bằng hơi nước | The carpets were steam-cleaned before the guests arrived.
+cater (v - ˈkeɪtər) phục vụ đồ ăn | The restaurant caters for weddings and other events.
+legislation (n - ˌlɛdʒɪsˈleɪʃən) luật | The new legislation aims to reduce carbon emissions 'phát thải'.
+cleanser (n - ˈklɛnzər) chất tẩy rửa | She bought a facial cleanser to remove makeup.
+cab (n - kæb) taxi | He hailed a cab to get to the airport.
+exam room (n - ɪɡˈzæm ruːm) phòng khám | The doctor asked the patient to wait in the exam room.
+exterior (adj - ɪkˈstɪriər) bên ngoài | The exterior of the building was newly painted.
+junk food (n - dʒʌŋk fuːd) đồ ăn vặt | She tries to avoid eating too much junk food.
+usher (n - ˈʌʃər) người hướng dẫn | The usher showed us to our seats.
+moderate (v - ˈmɒdəreɪt) điều hành | She was chosen to moderate the discussion.
+fraction of (phr - ˈfrækʃn əv) một phần của | He only paid a fraction of the cost.
+binder (n - ˈbaɪndər) tệp tài liệu | She organized the documents in a binder.
+drop off (phr.v - drɒp ɒf) gửi | Please drop off the package at the reception desk.
+
+detergent (n - dɪˈtɜːrdʒənt): chất tẩy rửa | this detergent is effective in removing stains
+accompany (v - əˈkʌmpəni): đi cùng | she accompanied him to the meeting
+follow up (v - ˈfɑːloʊ ʌp): theo dõi | the doctor will follow up with the patient next week
+overcharge (v - ˌəʊvərˈtʃɑːrdʒ): tính phí quá cao | they overcharged me for the meal
+overspending (n - ˌəʊvərˈspendɪŋ): chi tiêu quá mức | overspending can lead to debt
+overdue bill (n - ˌəʊvərˈduː bɪl): hóa đơn quá hạn | he received an overdue bill for his electricity
+entree (n - ˈɑːntreɪ): món khai vị | the entree was served with a delicious sauce
+comes with a side of vegetables (phrase): kèm với một ít rau | the dish comes with a side of vegetables
+bag drop (n - ˈbæɡ drɒp): hành lý ký gửi | go to the bag drop counter before your flight
+footwear (n - ˈfʊtˌwɛr): giày dép | she purchased new footwear for the hike
+experienced record sale (phrase): doanh số kỷ lục | the store experienced record sales during the holiday season
+consultant (n - kənˈsʌltənt): cố vấn | the company hired a consultant to improve efficiency
+endorsement (n - ɪnˈdɔːrsmənt): sự xác nhận, sự chứng thực | the product received a celebrity endorsement
+summit: hội nghị thượng đỉnh
+
+benefit (n - ˈbenɪfɪt) gây quỹ | The charity benefit was a huge success.
+refrain (v - rɪˈfreɪn) kiềm chế | She had to refrain from laughing during the meeting.
+raise (v - reɪz) quyên góp | They managed to raise a significant amount of money for the cause.
+remain (n - rɪˈmeɪn) tàn tích | The ancient remains were uncovered by archaeologists.
+uncover (v - ʌnˈkʌvər) phát hiện | The detective worked hard to uncover the truth.

@@ -6,7 +6,6 @@ import unicodedata
 from colorama import Fore, Style, init
 import argparse
 from sshkeyboard import listen_keyboard, stop_listening
-from langdetect import detect
 
 result = None
 
