@@ -36,7 +36,7 @@ TODO:
 Optimize read_vocabulary function?
 [No need] Fix functions for accept by english?
 [Done] Detect ctrl + C signal and exit
-
+Test answer with phrase and fix
 """
 
 
@@ -135,7 +135,7 @@ def print_vocabulary_list(vocabulary):
 
 
 def highlight_text(text):
-    return re.sub(r"`([^`]+)`", f"{Fore.RED}`\\1`{Style.RESET_ALL}", text)
+    return re.sub(r"`([^`]+)`", f"{Fore.GREEN}`\\1`{Style.RESET_ALL}", text)
 
 
 def update_counter_of_file(filename):
@@ -156,11 +156,11 @@ def print_counter_of_file(filename):
 # Can we detect it is vietnamese or english?
 def output_answer(question, answer_with_viet):
     if answer_with_viet:
-        print(f"{question['vietnamese']} ")
+        print(f"{highlight_text(question['vietnamese'])} ")
     else:
-        print(f"{question['english']} ({question['phonetic']})")
+        print(f"{highlight_text(question['english'])} ({highlight_text(question.get('phonetic'))})", end =' | ')
     if "annotation" in question:
-        print(f"    {question['annotation']}")
+        print(f"{question['annotation']}")
 
 
 def signal_handler(sig, frame):
@@ -231,6 +231,7 @@ def vocabulary_quiz(selected_file):
                     if "annotation" in question:
                         print("  example:", question["annotation"])
                 else:
+                    output_answer(question, answer_with_viet)
                     print("wrong, added to list wrong word!")
                     wrong_answers.append(question)
 
@@ -245,12 +246,11 @@ def vocabulary_quiz(selected_file):
                 if result == "h":
                     print(
                         """
-          press 'enter':  skip. if you want to add previous word into wrong list
-          press 'w':      add previous word to
-          press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
-          press 'i':      enter the answer with user input
-          press 'h':      show help
-          """
+    press 'enter':  skip. if you want to add previous word into wrong list
+    press 'w':      add previous word to
+    press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
+    press 'i':      enter the answer with user input
+    press 'h':      show help"""
                     )
                 elif result == "w":
                     wrong_answers.append(prev_question)
@@ -289,17 +289,12 @@ def vocabulary_quiz(selected_file):
             else:
                 print(f"[{count}] {highlight_text(question['vietnamese'])}", end=": ")
             count += 1
-
-            user_answer = input()
             # Whether answer correct or not
-            if (
-                check_answer(question, user_answer, answer_with_viet)
-                or user_answer == "n"
-            ):
-                if user_answer == "n":
-                    print(question["vietnamese"])
-                if "annotation" in question:
-                    print("  example:", question["annotation"])
+            listen_keyboard(on_press=press, on_release=release)
+            if result == "enter":
+                output_answer(question, answer_with_viet)
+                vocabulary.remove(question)
+                continue
             else:
                 wrong_answers.append(question)
                 print(

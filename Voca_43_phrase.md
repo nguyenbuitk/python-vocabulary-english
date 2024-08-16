@@ -1,4 +1,4 @@
-5
+7
 The rented equipment must `be returned by the user within 24 hours`: Thiết bị thuê phải `được trả bởi người dùng trong 24 giờ`.
 She accepts `nothing less than` perfection in her work: Cô ấy chấp nhận `không gì ngoài` sự hoàn hảo trong công việc của mình.
 We need to ensure that the talk can `go forward` even in case of technical issues: Chúng ta cần đảm bảo rằng bài nói có thể `tiếp tục` ngay cả khi có sự cố kỹ thuật.
