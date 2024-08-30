@@ -36,6 +36,7 @@ Optimize read_vocabulary function?
 [No need] Fix functions for accept by english?
 [Done] Detect ctrl + C signal and exit
 Test answer with phrase and fix
+Bug when press i, enter unicode, it don't show expected unicode
 """
 
 
@@ -43,10 +44,10 @@ def press(key):
     global result
     if key == "esc":
         stop_listening()
-    elif key == "h" or key == "w":
+    elif key == "h" or key == "p":
         stop_listening()
         result = key
-    elif key == "space" or key == "enter" or key == "i":
+    elif key == "space" or key == "enter" or key == "w":
         result = key
         stop_listening()
 
@@ -223,7 +224,7 @@ def vocabulary_quiz(selected_file):
                 output_answer(question, answer_with_viet)
                 continue
 
-            elif result == "i":
+            elif result == "space":
                 # Add keystroke detection to this
                 user_answer = input()
                 if check_answer(question, user_answer, answer_with_viet):
@@ -235,23 +236,23 @@ def vocabulary_quiz(selected_file):
                     wrong_answers.append(question)
 
             # add word to wrong list
-            elif result == "space":
+            elif result == "w":
                 wrong_answers.append(question)
                 output_answer(question, answer_with_viet)
                 print("    Added to wrong list")
                 continue
             # show help or add previous word to wrong list
-            elif result == "h" or result == "w":
+            elif result == "h" or result == "p":
                 if result == "h":
                     print(
                         """
     press 'enter':  skip. if you want to add previous word into wrong list
-    press 'w':      add previous word to
-    press 'space':  it mean we don't rememeber this word. This word will added into wrong list. 
-    press 'i':      enter the answer with user input
+    press 'p':      add previous word to wrong list
+    press 'space':  enter the answer with user input
+    press 'w':      it mean we don't rememeber this word. This word will added into wrong list. 
     press 'h':      show help"""
                     )
-                elif result == "w":
+                elif result == "p":
                     wrong_answers.append(prev_question)
                     print("  [Added previous word to wrong list]")
                 # Wait another input: 'enter' or 'space' or 'i'
@@ -261,7 +262,7 @@ def vocabulary_quiz(selected_file):
                         output_answer(question, answer_with_viet)
                         break
 
-                    elif result == "i":
+                    elif result == "space":
                         # Add keystroke detection to this
                         user_answer = input()
                         if check_answer(question, user_answer, answer_with_viet):
@@ -273,7 +274,7 @@ def vocabulary_quiz(selected_file):
                         break
 
                     # add word to wrong list
-                    elif result == "space":
+                    elif result == "w":
                         wrong_answers.append(question)
                         print("    Added to wrong list")
                         break
