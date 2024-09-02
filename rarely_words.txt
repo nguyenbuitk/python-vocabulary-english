@@ -89,4 +89,5 @@ emblem: biểu tượng
 fabric tote bags: túi vải
 solicit: thu thập
 seafaring(adj - ˈsiːˌfɛrɪŋ)hàng hải|he comes from a seafaring family
-
+boutique hotel: loại khách sạn nhỏ, có phong cách riêng
+doorstep: trước cửa

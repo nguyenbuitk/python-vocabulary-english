@@ -1,7 +1,7 @@
-5
+15
 # test 11th
 attract(v - əˈtrækt)thu hút|the event attracted a large crowd
-skillful(adj - ˈskɪlfəl)khéo léo, thành thạo|she is skillful at negotiating deals
+skillful(adj - ˈskɪlfəl)thành thạo|she is skillful at negotiating deals
 admittance(n - ədˈmɪtns)việc tham dự|admittance to the event is by invitation only
 how often(adv - haʊ ˈɔːfən)tần suất|how often do you visit your hometown?
 marked(idiom - mɑrkt)rõ rệt|there is a marked difference in their attitudes
@@ -11,7 +11,7 @@ fragrance(n - ˈfreɪɡrəns)nước hoa|the fragrance is very popular
 exceptional(adj - ɪkˈsɛpʃənl)đặc biệt|he has an exceptional talent for music
 communication(n - kəˌmjunɪˈkeɪʃn)truyền thông, liên lạc|effective communication is key to success
 outlet(n - ˈaʊtlɛt)kênh, cửa hàng|the company has several outlets across the city
-serves as(v - sɜrvz æz)đóng vai trò như|the book serves as a guide for beginners
+serve as(v - sɜrvz æz)đóng vai trò như|the book serves as a guide for beginners
 territory(n - ˈtɛrɪˌtɔri)lãnh thổ|the company is expanding its territory
 client retention(n - ˈklaɪənt rɪˈtɛnʃn)duy trì khách hàng|client retention is crucial for business growth
 striking(adj - ˈstraɪkɪŋ)ấn tượng|the building has a striking design

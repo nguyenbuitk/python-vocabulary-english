@@ -36,7 +36,8 @@ Optimize read_vocabulary function?
 [No need] Fix functions for accept by english?
 [Done] Detect ctrl + C signal and exit
 Test answer with phrase and fix
-Bug when press i, enter unicode, it don't show expected unicode
+[Done] Bug when press i, enter unicode, it don't show expected unicode
+Answer with english and count the number of learning answer with english
 """
 
 
