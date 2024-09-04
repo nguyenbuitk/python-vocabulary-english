@@ -37,8 +37,10 @@ Optimize read_vocabulary function?
 [Done] Detect ctrl + C signal and exit
 Test answer with phrase and fix
 [Done] Bug when press i, enter unicode, it don't show expected unicode
-Answer with english and count the number of learning answer with english
-When press 'Enter' first time, it will show example
+[Done] Answer with english and count the number of learning answer with english
+[Done] When press 'Enter' first time, it will show example
+Optimize when answer with English (example `handouts` is correct of 'handouts`)
+[Done] Auto add count of learning when not exist in file
 """
 
 
@@ -143,7 +145,20 @@ def highlight_text(text):
 def update_counter_of_file(filename, viet=True):
     with open(filename, "r", encoding="utf-8") as file:
         data = file.readlines()
-
+    try:
+        a = int(data[0])
+    except Exception as e:    
+        data_new = "0\n"
+        data.insert(0,data_new)
+        with open(filename, "w", encoding="utf-8") as file:
+            file.writelines(data_new)
+    try:
+        a = int(data[1])
+    except Exception as e:    
+        data_new = "0\n"
+        data.insert(1,data_new)
+        with open(filename, "w", encoding="utf-8") as file:
+            file.writelines(data_new)
     if viet:
         data[0] = str(int(data[0]) + 1) + "\n"
         with open(filename, "w", encoding="utf-8") as file:
@@ -153,8 +168,6 @@ def update_counter_of_file(filename, viet=True):
         with open(filename, "w", encoding="utf-8") as file:
             file.writelines(data)
         
-
-
 def print_counter_of_file(filename):
     with open(filename, "r", encoding="utf-8") as file:
         data = file.readlines()
