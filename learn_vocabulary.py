@@ -38,6 +38,7 @@ Optimize read_vocabulary function?
 Test answer with phrase and fix
 [Done] Bug when press i, enter unicode, it don't show expected unicode
 Answer with english and count the number of learning answer with english
+When press 'Enter' first time, it will show example
 """
 
 
@@ -139,13 +140,19 @@ def highlight_text(text):
     return re.sub(r"`([^`]+)`", f"{Fore.GREEN}`\\1`{Style.RESET_ALL}", text)
 
 
-def update_counter_of_file(filename):
+def update_counter_of_file(filename, viet=True):
     with open(filename, "r", encoding="utf-8") as file:
         data = file.readlines()
 
-    data[0] = str(int(data[0]) + 1) + "\n"
-    with open(filename, "w", encoding="utf-8") as file:
-        file.writelines(data)
+    if viet:
+        data[0] = str(int(data[0]) + 1) + "\n"
+        with open(filename, "w", encoding="utf-8") as file:
+            file.writelines(data)
+    else:
+        data[1] = str(int(data[1]) + 1) + "\n"
+        with open(filename, "w", encoding="utf-8") as file:
+            file.writelines(data)
+        
 
 
 def print_counter_of_file(filename):
@@ -223,7 +230,10 @@ def vocabulary_quiz(selected_file):
             listen_keyboard(on_press=press, on_release=release)
             if result == "enter":
                 output_answer(question, answer_with_viet)
-                continue
+                while True:
+                    listen_keyboard(on_press=press, on_release=release)
+                    if result == "enter":
+                       break
 
             elif result == "space":
                 # Add keystroke detection to this
@@ -307,7 +317,7 @@ def vocabulary_quiz(selected_file):
         print("\nList wrong word:")
         print_vocabulary_list(wrong_answers)
 
-    update_counter_of_file(selected_file)
+    update_counter_of_file(selected_file,viet=answer_with_viet)
 
 
 if __name__ == "__main__":
