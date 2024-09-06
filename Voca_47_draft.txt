@@ -1,0 +1,2 @@
+duty: trách nhiệm
+dispute: tranh cãi

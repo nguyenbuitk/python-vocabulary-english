@@ -1,0 +1,4 @@
+code: quy tắc
+conduct(n): hành vi
+compliment: lời khen
+business: doanh nghiệp, việc kinh doanh | nếu thấy "bussinesses" thì nó là doanh nghiệp, vì việc kinh doanh ko tồn tại số nhiều
