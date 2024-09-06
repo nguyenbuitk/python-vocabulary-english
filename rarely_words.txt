@@ -76,7 +76,7 @@ archaeologist: nhà khảo cổ học
 intricate: phức tạp
 mosaics: các bức tranh khảm
 
-test 11th
+### test 11th
 cabinetmaker: thợ đóng tủ
 woodworking: chế biến gỗ
 three demographic: 3 nhóm đặc điểm
@@ -91,3 +91,25 @@ solicit: thu thập
 seafaring(adj - ˈsiːˌfɛrɪŋ)hàng hải|he comes from a seafaring family
 boutique hotel: loại khách sạn nhỏ, có phong cách riêng
 doorstep: trước cửa
+
+### test 12th
+smothered: phủ
+thin crust pizza: pizza vỏ mỏng
+diner: khách ăn uống
+redeem: đổi
+inning: lượt
+a meterial that is 15% stronger: vật liệu bền hơn 15%
+pal: người bạn
+palatability: sự dễ chịu
+outreach: tiếp cận
+Chicago native Sofia Carla: Sofia Carla, người gốc Chicago 
+Fine Arts: mỹ thuật
+Peruvian: người Peru
+MS: Master Science | thạc sỹ 
+MBA: Master Business Administration | thạc sỹ quản trị kinh doanh
+tidbits of advice: lời khuyên
+picturesque: đẹp như tranh
+Dutch: Hà Lan
+wetland: vùng ngập nước
+flower bed: luống hoa
+quaint: cổ kính
