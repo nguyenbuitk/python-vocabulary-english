@@ -46,7 +46,6 @@ seniority: thâm niên
 floral centerpieces: lọ hoa
 checkered: ô vuông
 crystal light fixture: đèn pha lê
-isulated: cách nhiệt
 
 ### Test 10th
 assort?
@@ -113,3 +112,37 @@ Dutch: Hà Lan
 wetland: vùng ngập nước
 flower bed: luống hoa
 quaint: cổ kính
+
+
+### test 13th
+originality: tính độc đáo
+circulation: lưu thông
+parliament: quốc hội
+cubicles: phòng làm việc
+commemorate: kỷ niệm
+return cutoff date: ngày hết hạn trả hàng
+cardboard shoulder guards: móc treo bằng bìa các tông
+off-limits: bị cấm
+mini bale of straw: kiện rơm nhỏ
+nurturing: nuôi dưỡng
+recuperation: phục hội
+drape: màn cửa
+for the sake of (idiom) vì lợi ích của
+retractable roof: mái che có thể thu vào
+majestic: hùng vĩ
+military outpost: đồn quân sự
+meticulously manicured garden: khu vườn được cắt tỉa cẩn thận
+sampling examples of medivals cusine: thưởng thức các món ăn thời trung cổ
+occcurrence: sự kiện
+runway: sàn diễn
+the most flattering fit: vừa vặn nhất
+stethoscope: ống nghe
+literacy: xóa mù chữ
+chapel: nhà cầu nguyện
+want to see it in action: thấy nó hoạt động
+facing forward: hướng về phía trước
+the leather strap and the sleek design: dây đeo bằng da và thiết kế đẹp mắt
+hang on to = keep: giữ lại
+clearance: thanh lý
+the road look clear: có vẻ thông thoáng
+icebreaker: a thing that you do or say, such as a game or a joke, to make people feel more relaxed, especially at the beginning of a meeting, party, etc.

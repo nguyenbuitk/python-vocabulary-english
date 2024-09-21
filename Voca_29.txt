@@ -95,7 +95,7 @@ greet(v - ɡriːt)chào
 potential(adj - pəˈtenʃl)tiềm năng, khả năng, tiềm tàng
 recover(n - rɪˈkʌvəri)bình phục, phục hồi
 agriculture(n - ˈæɡrɪkʌltʃər)nông nghiệp
-ability(n əˈbɪləti)khả năng
+ability(n əˈbɪləti)khả năng, trình độ
 ignore(v - ɪɡˈnɔːr)bỏ qua
 calculate(v - ˈkælkjuleɪt)tính toán
 junior(adj - ˈdʒuːniər)tập sự, sơ cấp

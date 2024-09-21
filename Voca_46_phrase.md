@@ -1,3 +1,4 @@
+5
 Ok. I'll tell them to expect delivery by Friday `at the very latest`. : Được rồi. Tôi sẽ bảo họ chờ đợi việc giao hàng `chậm nhất` vào thứ Sáu.
 not until after lunch: mãi đến sau bữa trưa
 We will arrive at the station `in plenty of time` to catch the train. : Chúng ta sẽ đến ga `kịp giờ` để bắt chuyến tàu.
@@ -26,3 +27,4 @@ I consistently rise to the challenge in every project I undertake. : Tôi luôn 
 `They’re setting aside an actual budget` for the new marketing campaign. : `Họ dành ra một khoản ngân sách` cho chiến dịch tiếp thị mới.
 That project could be promising:  Dự án đó có vẻ khá hứa hẹn
 `Notes were placed on the waste cans` to remind everyone to recycle. : `Ghi chú được đặt trên thùng rác` để nhắc nhở mọi người tái chế.
+Since Ms. Foreman has become head of marketing, the company has grown at a of 5% rate in the last quarter: kể từ khi bà Foreman trở thành giám đốc tiếp thị, công ty đã tăng trưởng với tỷ lệ 5% quý trước
