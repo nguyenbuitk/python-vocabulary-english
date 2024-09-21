@@ -66,3 +66,5 @@ pick up: điểm đón/đón
 compact: nhỏ gọn
 retreat: nghỉ dưỡng
 
+duty: trách nhiệm
+dispute: tranh cãi
