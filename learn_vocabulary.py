@@ -41,6 +41,8 @@ Test answer with phrase and fix
 [Done] When press 'Enter' first time, it will show example
 Optimize when answer with English (example `handouts` is correct of 'handouts`)
 [Done] Auto add count of learning when not exist in file
+[Done] Change script for handle translate to english
+[Done]Change counter of file function
 """
 
 
@@ -64,7 +66,7 @@ def read_vocabulary(filename):
     vocabulary = []
     with open(filename, "r", encoding="utf-8") as file:
         # Open draft file
-        if "phrase" in filename or "Phrase" in filename:
+        if "phrase" in filename or "Phrase" in filename or "trans" in filename:
             for line in file:
                 line = line.strip()
                 parts = line.split(":")
@@ -96,7 +98,7 @@ def read_vocabulary(filename):
                         if "|" in part_two[1]:
                             # part_three = chỗ trống, the seat next to him was vacant
                             part_three = part_two[1].split("|")
-                            vietnamese = part_three[0].strip()
+                            vietnamese = part_three[0].strip().split(":")[1].strip()
                             annotation = part_three[1].strip()
                             vocabulary.append(
                                 {
@@ -141,25 +143,25 @@ def print_vocabulary_list(vocabulary):
 def highlight_text(text):
     return re.sub(r"`([^`]+)`", f"{Fore.GREEN}`\\1`{Style.RESET_ALL}", text)
 
-
-def update_counter_of_file(filename, viet=True):
+def update_counter_of_file(filename, answer_with_viet=True):
     with open(filename, "r", encoding="utf-8") as file:
         data = file.readlines()
     try:
         a = int(data[0])
-    except Exception as e:    
+    except Exception as e:
         data_new = "0\n"
         data.insert(0,data_new)
         with open(filename, "w", encoding="utf-8") as file:
             file.writelines(data_new)
     try:
         a = int(data[1])
-    except Exception as e:    
+    except Exception as e:
         data_new = "0\n"
         data.insert(1,data_new)
         with open(filename, "w", encoding="utf-8") as file:
             file.writelines(data_new)
-    if viet:
+            
+    if answer_with_viet:
         data[0] = str(int(data[0]) + 1) + "\n"
         with open(filename, "w", encoding="utf-8") as file:
             file.writelines(data)
@@ -171,15 +173,24 @@ def update_counter_of_file(filename, viet=True):
 def print_counter_of_file(filename):
     with open(filename, "r", encoding="utf-8") as file:
         data = file.readlines()
-    print(f"Practice times: ", data[0])
-
+    try:
+        a = int(data[0])
+    except Exception as e:
+        print("Practice times when answer with viet:",0)
+        print("Practice times when answer with eng:",0)
+    else:
+        data[0] = data[0].strip()
+        print(f"Practice times when answer with viet:", data[0])
+        print(f"Practice times when answer with eng:", data[1])
 
 # Can we detect it is vietnamese or english?
 def output_answer(question, answer_with_viet):
     if answer_with_viet:
         print(f"{highlight_text(question['vietnamese'])} ")
-    else:
+    elif question.get('phonetic') != None:
         print(f"{highlight_text(question['english'])} ({highlight_text(question.get('phonetic'))})", end =' | ')
+    else:
+        print(f"{highlight_text(question['english'])}")
     if "annotation" in question:
         print(f"{question['annotation']}")
 
@@ -235,7 +246,7 @@ def vocabulary_quiz(selected_file):
             if answer_with_viet:
                 print(
                     f"[{count}] {question['english']} ({question['phonetic']})",
-                    end=": ",
+                    end="",
                 )
             else:
                 print(f"[{count}] {question['vietnamese']}", end=": ")
@@ -330,7 +341,7 @@ def vocabulary_quiz(selected_file):
         print("\nList wrong word:")
         print_vocabulary_list(wrong_answers)
 
-    update_counter_of_file(selected_file,viet=answer_with_viet)
+    update_counter_of_file(selected_file,answer_with_viet=answer_with_viet)
 
 
 if __name__ == "__main__":
