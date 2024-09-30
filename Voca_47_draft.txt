@@ -1,3 +1,5 @@
+1
+0
 commonly (adv - ˈkɑːmənli): phổ biến | This phrase is commonly used in casual conversations.
 constantly (adv - ˈkɑːnstəntli): liên tục | She is constantly checking her phone.
 ultimately (adv - ˈʌltɪmətli): cuối cùng | He ultimately decided to change his career path.
@@ -6,7 +8,7 @@ bid (n - bɪd): giá thầu | They placed the highest bid on the project.
 accompany (v - əˈkʌmpəni): đi kèm | I will accompany you to the meeting.
 emphasis (n - ˈɛmfəsɪs): sự chú trọng | There is a strong emphasis on teamwork in this company.
 admirably (adv - ˈædmərəbli): một cách đáng ngưỡng mộ | She handled the situation admirably.
-ability (n - əˈbɪləti): trình độ | His ability to solve problems is impressive.
+ability (n - əˈbɪləti): khả năng, rình độ | His ability to solve problems is impressive.
 owing to = due to (prep - ˈoʊɪŋ tə / duː tə): do | The event was canceled due to bad weather.
 unlikely (adj - ʌnˈlaɪkli): khó có thể | It is unlikely that he will arrive on time.
 regarding = about (prep - rɪˈɡɑːrdɪŋ): về | I have some questions regarding the project.
@@ -42,7 +44,7 @@ expedite (v - ˈɛkspəˌdaɪt): đẩy nhanh | They are trying to expedite the 
 tailored (adj - ˈteɪlərd): phù hợp | The program is tailored to meet the needs of students.
 demolished (v - dɪˈmɑːlɪʃt): phá dỡ | The old building was demolished last week.
 welcome (adj - ˈwɛlkəm): đáng hoan nghênh | His suggestions were welcome at the meeting.
-complementing (v - ˈkɒmplɪmɛntɪŋ): bổ sung | Her skills are complementing the team's efforts.
+complement (v - ˈkɒmplɪmɛnt): bổ sung | Her skills are complementing the team's efforts.
 preliminary (adj - prɪˈlɪmɪnɛri): sơ bộ | The preliminary results look promising.
 rinse (v - rɪns): rửa | Rinse the vegetables before cooking them.
 handbag (n - ˈhændbæɡ): túi xách | She carried a leather handbag.
@@ -67,3 +69,5 @@ compact (adj - kəmˈpækt): nhỏ gọn | The compact car is easy to park.
 retreat (n - rɪˈtriːt): nghỉ dưỡng | They went on a weekend retreat in the mountains.
 duty (n - ˈduːti): trách nhiệm | It is his duty to take care of the reports.
 dispute (n - dɪˈspjuːt): tranh cãi | The two companies are in a legal dispute.
+compliment (n - ˈkɑːmplɪmənt): lời khen | He received a compliment on his presentation.
+groundbreaking (adj - ˈɡraʊndbreɪkɪŋ): động thổ, đột phá | The groundbreaking ceremony will take place next week.

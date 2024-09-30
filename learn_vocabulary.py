@@ -146,12 +146,12 @@ def check_answer_similarity(question, answer, answer_with_viet=False):
 
     if answer_with_viet:
         print("ratio:", SequenceMatcher(None, question["english"], answer).ratio())
-        if SequenceMatcher(None, question["vietnamese"], answer).ratio() > ratio:
+        if SequenceMatcher(None, question["vietnamese"].lower(), answer.lower()).ratio() > ratio:
             return True
         else: return False
     else:
         print("ratio:", SequenceMatcher(None, question["english"], answer).ratio())
-        if SequenceMatcher(None, question["english"], answer).ratio() > ratio:
+        if SequenceMatcher(None, question["english"].lower(), answer.lower()).ratio() > ratio:
             return True
         else: return False
 
@@ -167,9 +167,10 @@ def print_vocabulary_list(vocabulary):
 
 def highlight_differents_between_two_string(question, answer, answer_with_viet):
     if answer_with_viet:
-        a = question["vietnamese"]
+        a = question["vietnamese"].lower()
     else:
-        a = question["english"]
+        a = question["english"].lower()
+    answer = answer.lower()
     result_a = []
     result_b = []
     # Loop through both strings, character by character
@@ -237,11 +238,11 @@ def print_counter_of_file(filename):
 # Can we detect it is vietnamese or english?
 def output_answer(question, answer_with_viet):
     if answer_with_viet:
-        print(f"{highlight_text(question['vietnamese'])} ")
+        print(f" {highlight_text(question['vietnamese'])}")
     elif question.get('phonetic') != None:
-        print(f"{highlight_text(question['english'])} ({highlight_text(question.get('phonetic'))})", end =' | ')
+        print(f" {highlight_text(question['english'])} ({highlight_text(question.get('phonetic'))})", end =' | ')
     else:
-        print(f"{highlight_text(question['english'])}")
+        print(f" {highlight_text(question['english'])}")
     if "annotation" in question:
         print(f"{question['annotation']}")
 
@@ -388,13 +389,21 @@ def vocabulary_quiz(selected_file):
                 # Add keystroke detection to this
                 user_answer = input()
                 if check_answer_similarity(question, user_answer, answer_with_viet):
+                    highlight_differents_between_two_string(question, user_answer, answer_with_viet)
                     if "annotation" in question:
                         print("  example:", question["annotation"])
+                        
                 else:
                     output_answer(question, answer_with_viet)
                     print("wrong, added to list wrong word!")
                     highlight_differents_between_two_string(question, user_answer, answer_with_viet)
                     wrong_answers.append(question)
+                    while True:
+                        user_answer = input()
+                        if check_answer_similarity(question, user_answer, answer_with_viet):
+                            highlight_differents_between_two_string(question, user_answer, answer_with_viet)
+                            break
+                
 
             # add word to wrong list
             elif result == "w":

@@ -1,5 +1,5 @@
 0
-1
+2
 Anh ấy đã nhận được lời khen ngợi về bài thuyết trình của mình: He received a compliment on his presentation.
 Nhiều doanh nghiệp đã áp dụng công nghệ mới: Many businesses have adopted new technologies.
 Cô ấy đã học rất chăm chỉ, nhưng vẫn không đậu kỳ thi: She studied hard, yet she didn’t pass the exam.
@@ -36,7 +36,7 @@ Bài thuyết trình bán hàng của cô ấy rất thuyết phục: Her sales 
 Sự kiện có một chút thất vọng: The event was a bit of a letdown.
 Nhà hàng đã tồn tại lâu đời trong thành phố: The restaurant is well-established in the city.
 Bạn nói đúng, chúng ta nên cân nhắc lại kế hoạch: You have a point, we should reconsider the plan.
-Anh ấy đã đảm bảo được khoản vay cho doanh nghiệp: He managed to secure a loan for the business.
+Anh ấy đã có thể đảm bảo được khoản vay cho doanh nghiệp: He managed to secure a loan for the business.
 Cô ấy là một nhân viên rất đáng tin cậy: She is a very dependable employee.
 Khu nhà sẽ được sử dụng làm không gian văn phòng bổ sung: The annex will be used for additional office space.
 Cô ấy đã nộp đơn xin tài trợ cho dự án: She submitted a grant application for the project.
@@ -48,7 +48,6 @@ Công ty đã mua quyền đặt tên cho sân vận động: The company bought
 Chúng tôi đã đi bộ xuyên qua cánh rừng: We hiked through the woodlands.
 Tôi bị hấp dẫn bởi dự án mới: I’m intrigued by the new project.
 Công ty xử lý toàn bộ công việc thiết kế nội bộ: The company handles all its design work in-house.
-Bạn cần có mặt tại quản lý lúc 9 giờ sáng: You need to report to the manager at 9 AM.
 Chủ nhà đã đồng ý sửa chữa: The homeowner agreed to the repairs.
 Cuộc họp sẽ bắt đầu đúng 2 giờ chiều: The meeting will start at 2 P.M sharp.
 Hãy luôn giữ chó của bạn trên dây xích: Keep your dog on a leash at all times.
