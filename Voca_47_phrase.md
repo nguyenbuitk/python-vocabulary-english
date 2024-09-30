@@ -1,3 +1,5 @@
+1
+0
 staff member at this company are expected to give as much notice as possible whenever we need tiem off work for a vacation: ... được yêu cầu thông báo càng sớm càng tốt khi chúng tôi cần thời gian nghỉ cho vacation
 children with special conditions: trẻ em với hoàn cảnh đặc biệt
 take a journey back in time: thực hiện cuộc hành trình quay ngược thời gian

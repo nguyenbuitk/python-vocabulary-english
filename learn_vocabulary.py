@@ -6,8 +6,12 @@ import unicodedata
 from colorama import Fore, Style, init
 import argparse
 from sshkeyboard import listen_keyboard, stop_listening
+from difflib import SequenceMatcher
 
 result = None
+
+# percentage of similarity, if it above ratio, it will consider as correct answer
+ratio = 0.85
 
 init(autoreset=True)
 
@@ -35,14 +39,15 @@ TODO:
 Optimize read_vocabulary function?
 [No need] Fix functions for accept by english?
 [Done] Detect ctrl + C signal and exit
-Test answer with phrase and fix
+[Done] Test answer with phrase and fix
 [Done] Bug when press i, enter unicode, it don't show expected unicode
 [Done] Answer with english and count the number of learning answer with english
 [Done] When press 'Enter' first time, it will show example
 Optimize when answer with English (example `handouts` is correct of 'handouts`)
+[Done] Optimize when answer when tranlate from viet to english, compare 2 string and mark correct when it 90% similar
 [Done] Auto add count of learning when not exist in file
 [Done] Change script for handle translate to english
-[Done]Change counter of file function
+[Done] Change counter of file function
 """
 
 
@@ -66,7 +71,7 @@ def read_vocabulary(filename):
     vocabulary = []
     with open(filename, "r", encoding="utf-8") as file:
         # Open draft file
-        if "phrase" in filename or "Phrase" in filename or "trans" in filename:
+        if "phrase" in filename or "Phrase" in filename:
             for line in file:
                 line = line.strip()
                 parts = line.split(":")
@@ -76,7 +81,16 @@ def read_vocabulary(filename):
                     vocabulary.append(
                         {"english": parts[0].strip(), "vietnamese": parts[1].strip()}
                     )
-
+        elif "trans" in filename:
+            for line in file:
+                line = line.strip()
+                parts = line.split(":")
+                if len(parts) < 2:
+                    continue
+                else:
+                    vocabulary.append(
+                        {"english": parts[1].strip(), "vietnamese": parts[0].strip()}
+                    )
         # Open word and draft file type
         else:
             for line in file:
@@ -128,6 +142,18 @@ def check_answer(question, answer, answer_with_viet):
     else:
         return answer == question["english"]
 
+def check_answer_similarity(question, answer, answer_with_viet=False):
+
+    if answer_with_viet:
+        print("ratio:", SequenceMatcher(None, question["english"], answer).ratio())
+        if SequenceMatcher(None, question["vietnamese"], answer).ratio() > ratio:
+            return True
+        else: return False
+    else:
+        print("ratio:", SequenceMatcher(None, question["english"], answer).ratio())
+        if SequenceMatcher(None, question["english"], answer).ratio() > ratio:
+            return True
+        else: return False
 
 def print_vocabulary_list(vocabulary):
     print("English\tPronunciation\tTranslation\tAnnotate")
@@ -139,6 +165,31 @@ def print_vocabulary_list(vocabulary):
         else:
             print(f"{word['english']}\t{word['vietnamese']}")
 
+def highlight_differents_between_two_string(question, answer, answer_with_viet):
+    if answer_with_viet:
+        a = question["vietnamese"]
+    else:
+        a = question["english"]
+    result_a = []
+    result_b = []
+    # Loop through both strings, character by character
+    for i in range(max(len(a), len(answer))):
+        char_a = a[i] if i < len(a) else ''
+        char_b = answer[i] if i < len(answer) else ''
+        
+        if char_a != char_b:
+            result_a.append(f'\033[91m{char_a}\033[0m' if char_a else ' ')  # Red for differences in 'a'
+            result_b.append(f'\033[92m{char_b}\033[0m' if char_b else ' ')  # Green for differences in 'b'
+        else:
+            result_a.append(char_a)  # Unchanged text as is
+            result_b.append(char_b)
+
+    # Join and return the highlighted results
+    highlighted_a = ''.join(result_a)
+    highlighted_b = ''.join(result_b)
+    
+    print(f"Comparison between:\nString 1: {highlighted_a}\nString 2: {highlighted_b}")
+    return highlighted_a, highlighted_b
 
 def highlight_text(text):
     return re.sub(r"`([^`]+)`", f"{Fore.GREEN}`\\1`{Style.RESET_ALL}", text)
@@ -328,13 +379,64 @@ def vocabulary_quiz(selected_file):
             listen_keyboard(on_press=press, on_release=release)
             if result == "enter":
                 output_answer(question, answer_with_viet)
-                vocabulary.remove(question)
-                continue
-            else:
+                while True:
+                    listen_keyboard(on_press=press, on_release=release)
+                    if result == "enter":
+                       break
+
+            elif result == "space":
+                # Add keystroke detection to this
+                user_answer = input()
+                if check_answer_similarity(question, user_answer, answer_with_viet):
+                    if "annotation" in question:
+                        print("  example:", question["annotation"])
+                else:
+                    output_answer(question, answer_with_viet)
+                    print("wrong, added to list wrong word!")
+                    highlight_differents_between_two_string(question, user_answer, answer_with_viet)
+                    wrong_answers.append(question)
+
+            # add word to wrong list
+            elif result == "w":
                 wrong_answers.append(question)
-                print(
-                    f"answer is: {highlight_text(question['vietnamese']) if answer_with_viet else highlight_text(question['english'])}"
-                )
+                output_answer(question, answer_with_viet)
+                print("    Added to wrong list")
+                continue
+            # show help or add previous word to wrong list
+            elif result == "h" or result == "p":
+                if result == "h":
+                    print(
+                        """
+    press 'enter':  skip. if you want to add previous word into wrong list
+    press 'p':      add previous word to wrong list
+    press 'space':  enter the answer with user input
+    press 'w':      it mean we don't rememeber this word. This word will added into wrong list. 
+    press 'h':      show help"""
+                    )
+
+                # Wait another input: 'enter' or 'space' or 'i'
+                while True:
+                    listen_keyboard(on_press=press, on_release=release)
+                    if result == "enter":
+                        output_answer(question, answer_with_viet)
+                        break
+
+                    elif result == "space":
+                        # Add keystroke detection to this
+                        user_answer = input()
+                        if check_answer(question, user_answer, answer_with_viet):
+                            if "annotation" in question:
+                                print("  example:", question["annotation"])
+                        else:
+                            print("wrong, added to list wrong word!")
+                            wrong_answers.append(question)
+                        break
+
+                    # add word to wrong list
+                    elif result == "w":
+                        wrong_answers.append(question)
+                        print("    Added to wrong list")
+                        break
             vocabulary.remove(question)
 
     if wrong_answers:
