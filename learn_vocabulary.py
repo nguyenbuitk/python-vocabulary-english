@@ -137,11 +137,21 @@ def read_vocabulary(filename):
     return vocabulary
 
 
-def check_answer(question, answer, answer_with_viet):
+def check_answer(question, answer, answer_with_viet, similar=False):
     # print(f"{answer}, {question[2]}" if answer_with_viet else "{answer}, {question[0]}")
     if answer_with_viet:
+        if similar:
+            print("ratio:", SequenceMatcher(None, question["en"], answer).ratio())
+            if SequenceMatcher(None, question["vn"].lower(), answer.lower()).ratio() > ratio:
+                return True
+            else: return False
         return answer == question["vn"]
     else:
+        if similar:
+            print("ratio:", SequenceMatcher(None, question["en"], answer).ratio())
+            if SequenceMatcher(None, question["en"].lower(), answer.lower()).ratio() > ratio:
+                return True
+            else: return False
         return answer == question["en"]
 
 def check_answer_similarity(question, answer, answer_with_viet=False):
@@ -257,7 +267,7 @@ def print_help():
     press 'h':      show help
     """)
 
-def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet):
+def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, similarity=False):
     global result
     while True:
         listen_keyboard(on_press=press, on_release=release)
@@ -267,12 +277,22 @@ def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet):
         
         elif result == "space":
             user_answer = input()
-            if check_answer(question, user_answer, answer_with_viet):
+            if check_answer(question, user_answer, answer_with_viet, similarity):
                 if "annotation" in question:
                     print("  example:", question["annotation"])
+                if similarity:
+                    highlight_differents_between_two_string(question, user_answer, answer_with_viet)
             else:
-                print("wrong, added to the list wrong word")
+                output_answer(question, answer_with_viet)
+                print("wrong, added to list wrong word!")
                 wrong_answer.append(question)
+                if similarity:
+                    highlight_differents_between_two_string(question, user_answer, answer_with_viet)
+                    while True:
+                        user_answer = input()
+                        if check_answer_similarity(question, user_answer, answer_with_viet):
+                            highlight_differents_between_two_string(question, user_answer, answer_with_viet)
+                            break
             break
         
         elif result == "w":
@@ -317,13 +337,14 @@ def vocabulary_quiz(selected_file, trans_to_en=False):
     except ValueError:
         answer_with_viet = 1
     
-    print("Dịch từ tiếng Anh sang tiếng Việt:" if answer_with_viet else "Translate from English to Vietnamese:")
+    print("Translate from Vietnamese to English:" if answer_with_viet else "Translate from English to Vietnamese:")
 
     wrong_answers = []
     count = 0
     prev_question = None
     print_counter_of_file(selected_file)
 
+    # If this file 
     if "phonetic" in random.choice(vocabulary):
         while vocabulary:
             result = None
@@ -339,7 +360,10 @@ def vocabulary_quiz(selected_file, trans_to_en=False):
             question = random.choice(vocabulary)
             count += 1
             ask_question(count, question, answer_with_viet)
-            handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
+            if answer_with_viet:
+                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
+            else:
+                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet, similarity=True)
             vocabulary.remove(question)
     
     if wrong_answers:
