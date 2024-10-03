@@ -137,15 +137,13 @@ def read_vocabulary(filename):
     return vocabulary
 
 
-def check_answer(question, answer, answer_with_viet, similar=False, trans_to_en=False):
+def check_answer(question, answer, answer_with_viet,  trans_to_en=False):
     # print(f"{answer}, {question[2]}" if answer_with_viet else "{answer}, {question[0]}")
     if answer_with_viet:
-        if similar:
-            print("ratio:", SequenceMatcher(None, question["en"], answer).ratio())
-            if SequenceMatcher(None, question["vn"].lower(), answer.lower()).ratio() > ratio:
-                return True
-            else: return False
-        return answer == question["vn"]
+        print("ratio:", SequenceMatcher(None, question["vn"], answer).ratio())
+        if SequenceMatcher(None, question["vn"].lower(), answer.lower()).ratio() > ratio:
+            return True
+        else: return False
     else:
         if trans_to_en:
             print("ratio:", SequenceMatcher(None, question["annotation"], answer).ratio())
@@ -153,11 +151,6 @@ def check_answer(question, answer, answer_with_viet, similar=False, trans_to_en=
                 return True
             else: return False
         else:
-            if similar:
-                print("ratio:", SequenceMatcher(None, question["en"], answer).ratio())
-                if SequenceMatcher(None, question["en"].lower(), answer.lower()).ratio() > ratio:
-                    return True
-                else: return False
             return answer == question["en"]
 
 def check_answer_similarity(question, answer, answer_with_viet=False):
@@ -278,7 +271,7 @@ def print_help():
     press 'h':      show help
     """)
 
-def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, similarity=False, trans_to_en=False):
+def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, trans_to_en=False):
     global result
     while True:
         listen_keyboard(on_press=press, on_release=release)
@@ -288,20 +281,20 @@ def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, s
         
         elif result == "space":
             user_answer = input()
-            if check_answer(question, user_answer, answer_with_viet, similarity, trans_to_en):
+            if check_answer(question, user_answer, answer_with_viet, trans_to_en):
                 if "annotation" in question and trans_to_en is False:
                     print("  example:", question["annotation"])
-                if similarity:
+                if trans_to_en:
                     highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
             else:
                 output_answer(question, answer_with_viet)
                 print("wrong, added to list wrong word!")
                 wrong_answer.append(question)
-                if similarity:
+                if trans_to_en:
                     highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
                     while True:
                         user_answer = input()
-                        if check_answer(question, user_answer, answer_with_viet, similarity, trans_to_en):
+                        if check_answer(question, user_answer, answer_with_viet, trans_to_en):
                             highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
                             break
             break
@@ -340,18 +333,18 @@ def translate_to_vietnamese(text):
     translation = translator.translate(text)
     return translation
 
-def vocabulary_quiz(selected_file, trans_to_en=False):
+def vocabulary_quiz(selected_file, answer_with_viet, trans_to_en=False):
     global result
     vocabulary = read_vocabulary(selected_file)
     
-    # Can move this to parameter ??
-    print("Choose the language that you answer (English or Vietnamese, Vietnamese as default):")
-    print("1. English\n2. Vietnamese")
-    try:
-        choice = input("Your choice: ")
-        answer_with_viet = 1 if choice == "" or int(choice) != 1 else 0
-    except ValueError:
-        answer_with_viet = 1
+    # # Can move this to parameter ??
+    # print("Choose the language that you answer (English or Vietnamese, Vietnamese as default):")
+    # print("1. English\n2. Vietnamese")
+    # try:
+    #     choice = input("Your choice: ")
+    #     answer_with_viet = 1 if choice == "" or int(choice) != 1 else 0
+    # except ValueError:
+    #     answer_with_viet = 1
     
     print("Translate from Vietnamese to English:" if answer_with_viet else "Translate from English to Vietnamese:")
 
@@ -372,7 +365,7 @@ def vocabulary_quiz(selected_file, trans_to_en=False):
             # How to handle the situation of user want to trans to english?
             if trans_to_en:
                 ask_question(count, question, answer_with_viet, trans_to_en=True)
-                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet, similarity=True, trans_to_en=True)
+                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet,  trans_to_en=True)
             else:
                 ask_question(count, question, answer_with_viet)
                 handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
@@ -384,7 +377,7 @@ def vocabulary_quiz(selected_file, trans_to_en=False):
             if answer_with_viet:
                 handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
             else:
-                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet, similarity=True)
+                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
             vocabulary.remove(question)
     
     if wrong_answers:
@@ -399,6 +392,8 @@ if __name__ == "__main__":
     # Do something about here, so what when running python3 Voca_28.txt, it will take Voca_28.txt as argument and input to file
     parser = argparse.ArgumentParser(description="Learning Vocabulary")
     parser.add_argument("filename", help="The vocabulary file to use for the quiz")
+    parser.add_argument("--l", choices=["en", "vn"], required=True, help = "Choose for answer with vietnamese or english")
     parser.add_argument("--trans_to_en", action='store_true', help = "Add this flag if you want to translate to english")
     args = parser.parse_args()
-    vocabulary_quiz(args.filename, args.trans_to_en)
+    answer_with_viet = True if args.l == "vn" else False
+    vocabulary_quiz(args.filename, answer_with_viet, args.trans_to_en)
