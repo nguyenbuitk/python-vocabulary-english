@@ -50,6 +50,7 @@ Optimize when answer with en (example `handouts` is correct of 'handouts`)
 [Done] Change script for handle translate to en
 [Done] Change counter of file function
 [Done] Use translate API
+??Change read_vocabulary function for read all file or not??
 """
 
 
@@ -83,19 +84,10 @@ def read_vocabulary(filename):
                     vocabulary.append(
                         {"en": parts[0].strip(), "vn": parts[1].strip()}
                     )
-        elif "trans" in filename:
-            for line in file:
-                line = line.strip()
-                parts = line.split(":")
-                if len(parts) < 2:
-                    continue
-                else:
-                    vocabulary.append(
-                        {"en": parts[1].strip(), "vn": parts[0].strip()}
-                    )
-        # Open word and draft file type
+        
         else:
             for line in file:
+                # a soft opening (n - sɒft ˈəʊpənɪŋ) buổi khai trương nhỏ | the restaurant had a soft opening
                 # line example: vacant(adj - ˈveɪkənt)chỗ trống | the seat next to him was vacant
                 line = line.strip()
                 if line:
@@ -105,16 +97,20 @@ def read_vocabulary(filename):
                         continue
                     else:
                         # en = vacant
+                        # parts[0] = a soft opening
                         en = parts[0].strip()
 
                         # part_two = (adj - ˈveɪkənt, chỗ trống | the seat next to him was vacant)
+                        # parts[1] = n - sɒft ˈəʊpənɪŋ) buổi khai trương nhỏ | the restaurant had a soft opening
                         part_two = parts[1].split(")")
+                        
+                        # part_two = ["n - sɒft ˈəʊpənɪŋ","buổi khai trương nhỏ | the restaurant had a soft opening"]
                         phonetic = part_two[0].strip()
 
                         if "|" in part_two[1]:
-                            # part_three = chỗ trống, the seat next to him was vacant
+                            # part_three = ["buổi khai trương nhỏ", "the restaurant had a soft opening"]
                             part_three = part_two[1].split("|")
-                            vn = part_three[0].strip().split(":")[1].strip()
+                            vn = part_three[0].strip()
                             annotation = part_three[1].strip()
                             vocabulary.append(
                                 {
@@ -256,7 +252,7 @@ def output_answer(question, answer_with_viet, trans_to_en=False):
     if answer_with_viet:
         print(f" {highlight_text(question['vn'])}")
     elif question.get('phonetic') != None:
-        print(f" {highlight_text(question['en'])} ({highlight_text(question.get('phonetic'))})", end =' | ')
+        print(f"{highlight_text(question['en'])} ({highlight_text(question.get('phonetic'))})", end =' | ')
     else:
         print(f" {highlight_text(question['en'])}")
     if "annotation" in question:
@@ -391,9 +387,9 @@ if __name__ == "__main__":
     signal.signal(signal.SIGINT, signal_handler)
     # Do something about here, so what when running python3 Voca_28.txt, it will take Voca_28.txt as argument and input to file
     parser = argparse.ArgumentParser(description="Learning Vocabulary")
-    parser.add_argument("filename", help="The vocabulary file to use for the quiz")
-    parser.add_argument("--l", choices=["en", "vn"], required=True, help = "Choose for answer with vietnamese or english")
+    parser.add_argument("--file", required=True, help="The vocabulary file to use for the quiz")
+    parser.add_argument("--lang", choices=["en", "vn"], required=True, help = "Choose for answer with vietnamese or english")
     parser.add_argument("--trans_to_en", action='store_true', help = "Add this flag if you want to translate to english")
     args = parser.parse_args()
-    answer_with_viet = True if args.l == "vn" else False
-    vocabulary_quiz(args.filename, answer_with_viet, args.trans_to_en)
+    answer_with_viet = True if args.lang == "vn" else False
+    vocabulary_quiz(args.file, answer_with_viet, args.trans_to_en)
