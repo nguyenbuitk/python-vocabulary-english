@@ -49,7 +49,7 @@ Optimize when answer with en (example `handouts` is correct of 'handouts`)
 [Done] Auto add count of learning when not exist in file
 [Done] Change script for handle translate to en
 [Done] Change counter of file function
-use translate API
+[Done] Use translate API
 """
 
 
@@ -137,7 +137,7 @@ def read_vocabulary(filename):
     return vocabulary
 
 
-def check_answer(question, answer, answer_with_viet, similar=False):
+def check_answer(question, answer, answer_with_viet, similar=False, trans_to_en=False):
     # print(f"{answer}, {question[2]}" if answer_with_viet else "{answer}, {question[0]}")
     if answer_with_viet:
         if similar:
@@ -147,12 +147,18 @@ def check_answer(question, answer, answer_with_viet, similar=False):
             else: return False
         return answer == question["vn"]
     else:
-        if similar:
-            print("ratio:", SequenceMatcher(None, question["en"], answer).ratio())
-            if SequenceMatcher(None, question["en"].lower(), answer.lower()).ratio() > ratio:
+        if trans_to_en:
+            print("ratio:", SequenceMatcher(None, question["annotation"], answer).ratio())
+            if SequenceMatcher(None, question["annotation"].lower(), answer.lower()).ratio() > ratio:
                 return True
             else: return False
-        return answer == question["en"]
+        else:
+            if similar:
+                print("ratio:", SequenceMatcher(None, question["en"], answer).ratio())
+                if SequenceMatcher(None, question["en"].lower(), answer.lower()).ratio() > ratio:
+                    return True
+                else: return False
+            return answer == question["en"]
 
 def check_answer_similarity(question, answer, answer_with_viet=False):
 
@@ -177,7 +183,9 @@ def print_vocabulary_list(vocabulary):
         else:
             print(f"{word['en']}\t{word['vn']}")
 
-def highlight_differents_between_two_string(question, answer, answer_with_viet):
+def highlight_differents_between_two_string(question, answer, answer_with_viet, trans_to_en=False):
+    if trans_to_en:
+        question["en"] = question["annotation"]
     if answer_with_viet:
         a = question["vn"].lower()
     else:
@@ -248,7 +256,10 @@ def print_counter_of_file(filename):
         print(f"Practice times when answer with eng:", data[1])
 
 # Can we detect it is vn or en?
-def output_answer(question, answer_with_viet):
+def output_answer(question, answer_with_viet, trans_to_en=False):
+    if trans_to_en:
+        print(f"{question['annotation']}")
+        return
     if answer_with_viet:
         print(f" {highlight_text(question['vn'])}")
     elif question.get('phonetic') != None:
@@ -267,31 +278,31 @@ def print_help():
     press 'h':      show help
     """)
 
-def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, similarity=False):
+def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, similarity=False, trans_to_en=False):
     global result
     while True:
         listen_keyboard(on_press=press, on_release=release)
         if result == "enter":
-            output_answer(question, answer_with_viet)
+            output_answer(question, answer_with_viet, trans_to_en)
             break
         
         elif result == "space":
             user_answer = input()
-            if check_answer(question, user_answer, answer_with_viet, similarity):
-                if "annotation" in question:
+            if check_answer(question, user_answer, answer_with_viet, similarity, trans_to_en):
+                if "annotation" in question and trans_to_en is False:
                     print("  example:", question["annotation"])
                 if similarity:
-                    highlight_differents_between_two_string(question, user_answer, answer_with_viet)
+                    highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
             else:
                 output_answer(question, answer_with_viet)
                 print("wrong, added to list wrong word!")
                 wrong_answer.append(question)
                 if similarity:
-                    highlight_differents_between_two_string(question, user_answer, answer_with_viet)
+                    highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
                     while True:
                         user_answer = input()
-                        if check_answer_similarity(question, user_answer, answer_with_viet):
-                            highlight_differents_between_two_string(question, user_answer, answer_with_viet)
+                        if check_answer(question, user_answer, answer_with_viet, similarity, trans_to_en):
+                            highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
                             break
             break
         
@@ -309,11 +320,16 @@ def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, s
                 print("  [Added previous word to wrong list]")
             break
 
-def ask_question(count, question, answer_with_viet):
-    if answer_with_viet:
-        print(f"[{count}] {question['en']} ({question['phonetic']})", end="")
+def ask_question(count, question, answer_with_viet, trans_to_en=False):
+    if trans_to_en:
+        # Print the vn sentence
+        sentence_vn = translate_to_vietnamese(question['annotation'])
+        print(f"[{count}] {sentence_vn}", end=": ")
     else:
-        print(f"[{count}] {question['vn']}", end=": ")
+        if answer_with_viet:
+            print(f"[{count}] {question['en']} ({question['phonetic']})", end="")
+        else:
+            print(f"[{count}] {question['vn']}", end=": ")
 
 def signal_handler(sig, frame):
     print("\nCtrl+C detected! Exiting gracefully.")
@@ -353,8 +369,13 @@ def vocabulary_quiz(selected_file, trans_to_en=False):
             vocabulary.remove(question)
             count += 1
 
-            ask_question(count, question, answer_with_viet)
-            handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
+            # How to handle the situation of user want to trans to english?
+            if trans_to_en:
+                ask_question(count, question, answer_with_viet, trans_to_en=True)
+                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet, similarity=True, trans_to_en=True)
+            else:
+                ask_question(count, question, answer_with_viet)
+                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
     else:
         while vocabulary:
             question = random.choice(vocabulary)
