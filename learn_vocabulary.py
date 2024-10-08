@@ -11,7 +11,7 @@ from deep_translator import GoogleTranslator
 
 result = None
 
-# percentage of similarity, if it above ratio, it will consider as correct answer
+# percentage of similarity, if it above ratio, it will consider as correct answerv 
 ratio = 0.85
 
 init(autoreset=True)
@@ -51,6 +51,25 @@ Optimize when answer with en (example `handouts` is correct of 'handouts`)
 [Done] Change counter of file function
 [Done] Use translate API
 ??Change read_vocabulary function for read all file or not??
+Trouble issue when annotation have vietnamese. Ex:
+    Comparison between:
+        String 1: she lay down 'nằm' on the couch to watch tv
+        String 2: she lay on chair for waching tv            
+        she lay down 'nằm' on the couch to watch tv
+        ratio: 0.9534883720930233
+[Done] Script for learning sentence files
+Change the read_voca function ??
+                                                             ┌─────────────────────┐
+                                              ┌──────────────►answer with sentences│
+                                      ┌───────┼──────┐       └─────────────────────┘
+                           ┌──────────►answer with en│       ┌─────────────────────┐
+                      ┌────┼────┐     └──────────────┴───────►answer with one word │
+          ┌───────────►full voca│     ┌──────────────┐       └─────────────────────┘
+    ┌─────┼────┐      └─────────┴─────►answer with vi│                              
+    │ file type│                      └──────────────┘                              
+    └─────┬────┘      ┌─────────┐     ┌──────────────┐                              
+          └───────────►sentences│     │answer with en│                              
+                      └─────────┘     └──────────────┘                              
 """
 
 
@@ -142,8 +161,9 @@ def check_answer(question, answer, answer_with_viet,  trans_to_en=False):
         else: return False
     else:
         if trans_to_en:
-            print("ratio:", SequenceMatcher(None, question["annotation"], answer).ratio())
-            if SequenceMatcher(None, question["annotation"].lower(), answer.lower()).ratio() > ratio:
+            correct_answer = question.get('annotation') if question.get('annotation') else question['en']
+            print("ratio:", SequenceMatcher(None, correct_answer, answer).ratio())
+            if SequenceMatcher(None, correct_answer.lower(), answer.lower()).ratio() > ratio:
                 return True
             else: return False
         else:
@@ -173,12 +193,10 @@ def print_vocabulary_list(vocabulary):
             print(f"{word['en']}\t{word['vn']}")
 
 def highlight_differents_between_two_string(question, answer, answer_with_viet, trans_to_en=False):
-    if trans_to_en:
-        question["en"] = question["annotation"]
-    if answer_with_viet:
-        a = question["vn"].lower()
-    else:
-        a = question["en"].lower()
+    if trans_to_en and question.get('annotation'):
+        question['en'] = question['annotation']
+    a = question['vn'] if answer_with_viet else question['en']
+    a = a.lower()
     answer = answer.lower()
     result_a = []
     result_b = []
@@ -247,7 +265,7 @@ def print_counter_of_file(filename):
 # Can we detect it is vn or en?
 def output_answer(question, answer_with_viet, trans_to_en=False):
     if trans_to_en:
-        print(f"{question['annotation']}")
+        print(f"{question['annotation']}") if question.get('annotation') else print(question['en'])
         return
     if answer_with_viet:
         print(f" {highlight_text(question['vn'])}")
@@ -312,7 +330,9 @@ def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, t
 def ask_question(count, question, answer_with_viet, trans_to_en=False):
     if trans_to_en:
         # Print the vn sentence
-        sentence_vn = translate_to_vietnamese(question['annotation'])
+        if question.get('annotation'):
+            sentence_vn = translate_to_vietnamese(question.get('annotation')) 
+        else: sentence_vn = translate_to_vietnamese(question['en'])
         print(f"[{count}] {sentence_vn}", end=": ")
     else:
         if answer_with_viet:
@@ -367,14 +387,12 @@ def vocabulary_quiz(selected_file, answer_with_viet, trans_to_en=False):
                 handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
     else:
         while vocabulary:
+            result = None
             question = random.choice(vocabulary)
-            count += 1
-            ask_question(count, question, answer_with_viet)
-            if answer_with_viet:
-                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
-            else:
-                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
             vocabulary.remove(question)
+            count += 1
+            ask_question(count, question, answer_with_viet, trans_to_en=True)
+            handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet,  trans_to_en=True)
     
     if wrong_answers:
         print("\nList wrong word:")
