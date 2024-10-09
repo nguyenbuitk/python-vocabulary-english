@@ -58,6 +58,7 @@ Trouble issue when annotation have vietnamese. Ex:
         she lay down 'nằm' on the couch to watch tv
         ratio: 0.9534883720930233
 [Done] Script for learning sentence files
+change script for learning file with only sentence of vietnamese?
 Change the read_voca function ??
                                                              ┌─────────────────────┐
                                               ┌──────────────►answer with sentences│
@@ -70,6 +71,14 @@ Change the read_voca function ??
     └─────┬────┘      ┌─────────┐     ┌──────────────┐                              
           └───────────►sentences│     │answer with en│                              
                       └─────────┘     └──────────────┘                              
+
+When answer with english sentence, display the two correct answer, correct answer in file and correct answer with api
+Change the way of display hightlight text
+    Ex:
+    String 1: she hung her clothes on wire hangers.
+    String 2: she hanged her cloth on the metal 
+Features: count the average ratio
+[Done] Optimize all function, script
 """
 
 
@@ -92,7 +101,7 @@ def release(key):
 def read_vocabulary(filename):
     vocabulary = []
     with open(filename, "r", encoding="utf-8") as file:
-        # Open draft file
+        # Open sentences file
         if "phrase" in filename or "Phrase" in filename:
             for line in file:
                 line = line.strip()
@@ -111,9 +120,18 @@ def read_vocabulary(filename):
                 line = line.strip()
                 if line:
                     parts = line.split("(")
-                    if len(parts) < 2 or parts[0] == "end":
-                        # print("not enough infor")
+                    if len(parts) < 1:
                         continue
+                    elif len(parts) < 2 or parts[0] == "end":
+                        # print("not enough infor")
+                        if len(parts[0]) < 5:
+                            continue
+                        else: 
+                            vocabulary.append(
+                                {
+                                    "en": parts[0],
+                                }
+                            )
                     else:
                         # en = vacant
                         # parts[0] = a soft opening
@@ -153,34 +171,24 @@ def read_vocabulary(filename):
 
 
 def check_answer(question, answer, answer_with_viet,  trans_to_en=False):
+    # If trans_to_en = True, check the setences english instead of single word
     # print(f"{answer}, {question[2]}" if answer_with_viet else "{answer}, {question[0]}")
     if answer_with_viet:
-        print("ratio:", SequenceMatcher(None, question["vn"], answer).ratio())
-        if SequenceMatcher(None, question["vn"].lower(), answer.lower()).ratio() > ratio:
+        ratio_score = SequenceMatcher(None, question["vn"].lower(), answer.lower()).ratio()
+        print("ratio:", ratio_score)
+        if ratio_score > ratio:
             return True
         else: return False
     else:
         if trans_to_en:
             correct_answer = question.get('annotation') if question.get('annotation') else question['en']
-            print("ratio:", SequenceMatcher(None, correct_answer, answer).ratio())
-            if SequenceMatcher(None, correct_answer.lower(), answer.lower()).ratio() > ratio:
+            ratio_score = SequenceMatcher(None, correct_answer.lower(), answer.lower()).ratio()
+            print("ratio: ", ratio_score)
+            if ratio_score > ratio:
                 return True
             else: return False
         else:
             return answer == question["en"]
-
-def check_answer_similarity(question, answer, answer_with_viet=False):
-
-    if answer_with_viet:
-        print("ratio:", SequenceMatcher(None, question["en"], answer).ratio())
-        if SequenceMatcher(None, question["vn"].lower(), answer.lower()).ratio() > ratio:
-            return True
-        else: return False
-    else:
-        print("ratio:", SequenceMatcher(None, question["en"], answer).ratio())
-        if SequenceMatcher(None, question["en"].lower(), answer.lower()).ratio() > ratio:
-            return True
-        else: return False
 
 def print_vocabulary_list(vocabulary):
     print("en\tPronunciation\tTranslation\tAnnotate")
@@ -190,7 +198,7 @@ def print_vocabulary_list(vocabulary):
                 f"{word['en']}\t{word['phonetic']}\t{word['vn']}\t{word.get('annotation','')}"
             )
         else:
-            print(f"{word['en']}\t{word['vn']}")
+            print(f"{word['en']}\t{word.get('vn')}")
 
 def highlight_differents_between_two_string(question, answer, answer_with_viet, trans_to_en=False):
     if trans_to_en and question.get('annotation'):
@@ -222,7 +230,7 @@ def highlight_differents_between_two_string(question, answer, answer_with_viet, 
 def highlight_text(text):
     return re.sub(r"`([^`]+)`", f"{Fore.GREEN}`\\1`{Style.RESET_ALL}", text)
 
-def update_counter_of_file(filename, answer_with_viet=True):
+def update_counter_of_file(filename, answer_with_viet=True, trans_to_en=False):
     with open(filename, "r", encoding="utf-8") as file:
         data = file.readlines()
     try:
@@ -239,8 +247,18 @@ def update_counter_of_file(filename, answer_with_viet=True):
         data.insert(1,data_new)
         with open(filename, "w", encoding="utf-8") as file:
             file.writelines(data_new)
-            
-    if answer_with_viet:
+    try:
+        a = int(data[2])
+    except Exception as e:
+        data_new = "0\n"
+        data.insert(2,data_new)
+        with open(filename, "w", encoding="utf-8") as file:
+            file.writelines(data_new)
+    if trans_to_en:
+        data[2] = str(int(data[2]) + 1) + "\n"
+        with open(filename, "w", encoding="utf-8") as file:
+            file.writelines(data)
+    elif answer_with_viet:
         data[0] = str(int(data[0]) + 1) + "\n"
         with open(filename, "w", encoding="utf-8") as file:
             file.writelines(data)
@@ -255,15 +273,18 @@ def print_counter_of_file(filename):
     try:
         a = int(data[0])
     except Exception as e:
-        print("Practice times when answer with viet:",0)
-        print("Practice times when answer with eng:",0)
+        print("Practice times when answer with vi: 0")
+        print("Practice times when answer with en: 0")
+        print("Practice times when answer with sentences: 0")
     else:
         data[0] = data[0].strip()
-        print(f"Practice times when answer with viet:", data[0])
-        print(f"Practice times when answer with eng:", data[1])
+        print(f"Practice times when answer with vi:", data[0])
+        print(f"Practice times when answer with en:", data[1])
+        print(f"Practice times when answer with sentences:", data[2])
 
 # Can we detect it is vn or en?
 def output_answer(question, answer_with_viet, trans_to_en=False):
+    # Output sentences if trans_to_en = True
     if trans_to_en:
         print(f"{question['annotation']}") if question.get('annotation') else print(question['en'])
         return
@@ -279,13 +300,13 @@ def output_answer(question, answer_with_viet, trans_to_en=False):
 def print_help():
     print("""
     press 'enter':  skip. if you want to add previous word into wrong list
-    press 'p':      add previous word to wrong list
     press 'space':  enter the answer with user input
     press 'w':      it means we don't remember this word. This word will be added into wrong list. 
     press 'h':      show help
+    your input?
     """)
 
-def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, trans_to_en=False):
+def handle_keystrokes(question, wrong_answer, answer_with_viet, trans_to_en=False):
     global result
     while True:
         listen_keyboard(on_press=press, on_release=release)
@@ -301,7 +322,7 @@ def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, t
                 if trans_to_en:
                     highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
             else:
-                output_answer(question, answer_with_viet)
+                output_answer(question, answer_with_viet, trans_to_en)
                 print("wrong, added to list wrong word!")
                 wrong_answer.append(question)
                 if trans_to_en:
@@ -321,18 +342,18 @@ def handle_keystrokes(question, prev_question, wrong_answer, answer_with_viet, t
         elif result == "h":
             print_help()
         
-        elif result == "p":
-            if prev_question:
-                wrong_answer.append(prev_question)
-                print("  [Added previous word to wrong list]")
-            break
+        # elif result == "p":
+        #     if prev_question:
+        #         wrong_answer.append(prev_question)
+        #         print("  [Added previous word to wrong list]")
+        #     break
 
 def ask_question(count, question, answer_with_viet, trans_to_en=False):
     if trans_to_en:
         # Print the vn sentence
         if question.get('annotation'):
-            sentence_vn = translate_to_vietnamese(question.get('annotation')) 
-        else: sentence_vn = translate_to_vietnamese(question['en'])
+            sentence_vn = translate_en_vi(question.get('annotation')) 
+        else: sentence_vn = translate_en_vi(question['en'])
         print(f"[{count}] {sentence_vn}", end=": ")
     else:
         if answer_with_viet:
@@ -344,11 +365,16 @@ def signal_handler(sig, frame):
     print("\nCtrl+C detected! Exiting gracefully.")
     sys.exit(0)
 
-def translate_to_vietnamese(text):
-    translator = GoogleTranslator(source = 'en', target ='vi')
-    translation = translator.translate(text)
-    return translation
-
+def translate_en_vi(text, trans_to_vi=True):
+    if trans_to_vi:
+        translator = GoogleTranslator(source = 'en', target ='vi')
+        translation = translator.translate(text)
+        return translation
+    else: 
+        translator = GoogleTranslator(source = 'vi', target ='en')
+        translation = translator.translate(text)
+        return translation
+    
 def vocabulary_quiz(selected_file, answer_with_viet, trans_to_en=False):
     global result
     vocabulary = read_vocabulary(selected_file)
@@ -373,7 +399,7 @@ def vocabulary_quiz(selected_file, answer_with_viet, trans_to_en=False):
     if "phonetic" in random.choice(vocabulary):
         while vocabulary:
             result = None
-            prev_question = question if 'question' in locals() else None
+            # prev_question = question if 'question' in locals() else None
             question = random.choice(vocabulary)
             vocabulary.remove(question)
             count += 1
@@ -381,10 +407,10 @@ def vocabulary_quiz(selected_file, answer_with_viet, trans_to_en=False):
             # How to handle the situation of user want to trans to english?
             if trans_to_en:
                 ask_question(count, question, answer_with_viet, trans_to_en=True)
-                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet,  trans_to_en=True)
+                handle_keystrokes(question, wrong_answers, answer_with_viet,  trans_to_en=True)
             else:
                 ask_question(count, question, answer_with_viet)
-                handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet)
+                handle_keystrokes(question, wrong_answers, answer_with_viet)
     else:
         while vocabulary:
             result = None
@@ -392,7 +418,7 @@ def vocabulary_quiz(selected_file, answer_with_viet, trans_to_en=False):
             vocabulary.remove(question)
             count += 1
             ask_question(count, question, answer_with_viet, trans_to_en=True)
-            handle_keystrokes(question, prev_question, wrong_answers, answer_with_viet,  trans_to_en=True)
+            handle_keystrokes(question, wrong_answers, answer_with_viet,  trans_to_en=True)
     
     if wrong_answers:
         print("\nList wrong word:")
