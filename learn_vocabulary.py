@@ -8,6 +8,7 @@ import argparse
 from sshkeyboard import listen_keyboard, stop_listening
 from difflib import SequenceMatcher
 from deep_translator import GoogleTranslator
+import difflib
 
 result = None
 
@@ -73,7 +74,7 @@ Change the read_voca function ??
                       └─────────┘     └──────────────┘                              
 
 When answer with english sentence, display the two correct answer, correct answer in file and correct answer with api
-Change the way of display hightlight text
+[Done] Change the way of display hightlight text
     Ex:
     String 1: she hung her clothes on wire hangers.
     String 2: she hanged her cloth on the metal 
@@ -200,7 +201,56 @@ def print_vocabulary_list(vocabulary):
         else:
             print(f"{word['en']}\t{word.get('vn')}")
 
+def tokenize(s):
+    return re.split('\s+', s)
+def untokenize(ts):
+    return ' '.join(ts)
+
+def equalize(s1, s2):
+    l1 = tokenize(s1)
+    l1_highlight = l1
+    l2 = tokenize(s2)
+    l2_highlight = l2 
+    print("l1: ", l1)
+    print("l2: ", l2)
+    res1 = []
+    res2 = []
+    prev = difflib.Match(0,0,0)
+    for match in difflib.SequenceMatcher(a=l1, b=l2).get_matching_blocks():
+        if (prev.a + prev.size != match.a):
+            for i in range(prev.a + prev.size, match.a):
+                l1_highlight[i] = "\033[92m" + l1[i] +  "\033[0m"
+                # ele = ["\033[91m" + '_' * len(l1[i]) + "\033[0m"]
+                # ele = ['_' * len(l1[i])]
+
+                # res2 += ele
+            res1 += l1_highlight[prev.a + prev.size:match.a]
+        if (prev.b + prev.size != match.b):
+            for i in range(prev.b + prev.size, match.b):
+                l2_highlight[i] = "\033[91m" + l2[i] +  "\033[0m"
+                # ele = ['_' * len(l2[i])]
+                # res1 += ele
+            res2 += l2[prev.b + prev.size:match.b]
+        res1 += l1[match.a:match.a+match.size]
+        res2 += l2[match.b:match.b+match.size]
+        prev = match
+
+    return untokenize(res1), untokenize(res2)
+
+
+def show_comparison(s1, s2, width=40, margin=10, sidebyside=True, compact=False):
+    s1, s2 = equalize(s1,s2)
+    print(s1)
+    print(s2)
 def highlight_differents_between_two_string(question, answer, answer_with_viet, trans_to_en=False):
+    if trans_to_en and question.get('annotation'):
+        question['en'] = question['annotation']
+    a = question['vn'] if answer_with_viet else question['en']
+    a = a.lower()
+    answer = answer.lower()
+    show_comparison(a, answer)
+    
+def highlight_differents_between_two_string_2(question, answer, answer_with_viet, trans_to_en=False):
     if trans_to_en and question.get('annotation'):
         question['en'] = question['annotation']
     a = question['vn'] if answer_with_viet else question['en']
@@ -224,7 +274,7 @@ def highlight_differents_between_two_string(question, answer, answer_with_viet, 
     highlighted_a = ''.join(result_a)
     highlighted_b = ''.join(result_b)
     
-    print(f"Comparison between:\nString 1: {highlighted_a}\nString 2: {highlighted_b}")
+    print(f"Comparison between:\Correct\t: {highlighted_a}\nYour ans\t: {highlighted_b}")
     return highlighted_a, highlighted_b
 
 def highlight_text(text):
