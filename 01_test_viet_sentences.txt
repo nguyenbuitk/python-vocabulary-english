@@ -1,0 +1,18 @@
+0
+4
+1
+A hub connects devices on a network but is not intelligent. 
+hub: It sends data to all connected devices, creating unnecessary traffic and security risks.
+A switch is smarter than a hub. It learns the MAC addresses of connected devices
+switch: directs data only to the intended destination, improving efficiency and security.
+A router connects different networks by reading IP addresses. 
+router: It determines if a data packet should stay within a local network or be sent out to other networks, like the internet.
+How does a switch reduce unnecessary traffic compared to a hub?
+What role does a router play in managing data between different networks?
+
+DNS Purpose: DNS (Domain Name System) translates human-readable domain names (like yahoo.com) into IP addresses that computers use to identify each other on a network.
+DNS Process: When a user types a domain name, DNS servers resolve the name to an IP address by querying multiple servers: from the root server to the TLD server, and finally the authoritative name server.
+Resolver Cache: Once the DNS resolver finds the IP address, it stores it in cache memory for quicker access in the future.
+Example Questions
+What is the role of the resolver in the DNS process?
+Why is caching important in DNS?

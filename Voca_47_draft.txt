@@ -1,73 +1,75 @@
 2
-0
-commonly (adv - ˈkɑːmənli): phổ biến | This phrase is commonly used in casual conversations.
-constantly (adv - ˈkɑːnstəntli): liên tục | She is constantly checking her phone.
-ultimately (adv - ˈʌltɪmətli): cuối cùng | He ultimately decided to change his career path.
-deny (v - dɪˈnaɪ): phủ nhận, từ chối | She denied the accusations.
-bid (n - bɪd): giá thầu | They placed the highest bid on the project.
-accompany (v - əˈkʌmpəni): đi kèm | I will accompany you to the meeting.
-emphasis (n - ˈɛmfəsɪs): sự chú trọng | There is a strong emphasis on teamwork in this company.
-admirably (adv - ˈædmərəbli): một cách đáng ngưỡng mộ | She handled the situation admirably.
-ability (n - əˈbɪləti): khả năng, trình độ | His ability to solve problems is impressive.
-owing to = due to (prep - ˈoʊɪŋ tə / duː tə): do | The event was canceled due to bad weather.
-unlikely (adj - ʌnˈlaɪkli): khó có thể | It is unlikely that he will arrive on time.
-regarding = about (prep - rɪˈɡɑːrdɪŋ): về | I have some questions regarding the project.
-reckless (adj - ˈrɛklɪs): liều lĩnh | His reckless driving almost caused an accident.
-opposite (adj - ˈɑːpəzɪt): đối diện | The library is located opposite the park.
-illustration (n - ˌɪləˈstreɪʃn): hình minh họa | The book contains many colorful illustrations.
-charming (adj - ˈʧɑːrmɪŋ): cuốn hút | She has a charming personality.
-endure (v - ɪnˈdjʊr): trải qua | Their friendship has endured many challenges.
-scarcely (adv - ˈskɛrsli): hiếm hoi | She scarcely had time to finish her work.
-are zoned (v - zəʊnd): được phân vùng | These areas are zoned for residential development.
-prescription (n - prɪˈskrɪpʃn): đơn thuốc | The doctor wrote a prescription for antibiotics.
-apparent (adj - əˈpærənt): rõ ràng | It became apparent that he was not interested.
-tentative (adj - ˈtɛntətɪv): tạm thời | They have a tentative agreement in place.
-evidently (adv - ˈɛvɪdəntli): rõ ràng | She is evidently upset about the news.
-abundant (adj - əˈbʌndənt): nhiều, đa dạng | There is abundant wildlife in the forest.
-stepping down (v - ˈstɛpɪŋ daʊn): rời vị trí, từ chức | The CEO is stepping down next month.
-opponent (n - əˈpoʊnənt): sự phản đối, đối thủ | His opponent was a strong competitor.
-entitle (v - ɪnˈtaɪtl): cho phép | The ticket entitles you to free entry to the museum.
-recipient (n - rɪˈsɪpiənt): người nhận | She was the recipient of the award.
-apparel (n - əˈpærəl): trang phục | The store specializes in sports apparel.
-amend (v - əˈmɛnd): sửa | The document was amended to include the new information.
-wire hangers (n - waɪr ˈhæŋərz): móc treo | She hung her clothes on wire hangers.
-detergent (n - dɪˈtɜːrdʒənt): chất tẩy rửa | This detergent is good for removing stains.
-progress (n - ˈprɑːɡrɛs): tiến độ | The project is making good progress.
-enjoyable (adj - ɪnˈdʒɔɪəbl): thú vị | The trip was enjoyable for everyone.
-stuffing (v - ˈstʌfɪŋ): nhét | She was stuffing the pillows with cotton.
-pie tin (n - paɪ tɪn): khuôn bánh nướng | She baked the pie in a tin.
-panel (n - ˈpænl): hội đồng, ban, bệ | The panel of judges will announce the winner.
-the effects (n - ðə ɪˈfɛkts): tác động | The effects of climate change are becoming more noticeable.
-trial (n - ˈtraɪəl): thử nghiệm | The new drug is currently undergoing trials.
-outcome (n - ˈaʊtkʌm): kết quả | The outcome of the experiment was surprising.
-expedite (v - ˈɛkspəˌdaɪt): đẩy nhanh | They are trying to expedite the delivery process.
-tailored (adj - ˈteɪlərd): phù hợp | The program is tailored to meet the needs of students.
-demolished (v - dɪˈmɑːlɪʃt): phá dỡ | The old building was demolished last week.
-welcome (adj - ˈwɛlkəm): đáng hoan nghênh | His suggestions were welcome at the meeting.
-complement (v - ˈkɒmplɪmɛnt): bổ sung | Her skills are complementing the team's efforts.
-preliminary (adj - prɪˈlɪmɪnɛri): sơ bộ | The preliminary results look promising.
-rinse (v - rɪns): rửa | Rinse the vegetables before cooking them.
-handbag (n - ˈhændbæɡ): túi xách | She carried a leather handbag.
-intermission (n - ˌɪntərˈmɪʃn): giải lao | The concert had a brief intermission.
-medication (n - ˌmɛdɪˈkeɪʃn): thuốc | He takes his medication every morning.
-shelter (n - ˈʃɛltər): nơi ở | They found shelter from the storm.
-accomplishment (n - əˈkɑːmplɪʃmənt): thành tựu | Completing the project was a great accomplishment.
-an application for financial assistance (n - ˈæplɪkeɪʃn fər fəˈnænʃl əˈsɪstəns): đơn xin hỗ trợ tài chính | She submitted an application for financial assistance.
-settle (v - ˈsɛtl): giải quyết | They managed to settle the dispute.
-hall (n - hɔːl): hành lang | We met in the main hall of the building.
-city hall/town hall (n - ˈsɪti hɔːl/taʊn hɔːl): tòa thị chính | The mayor gave a speech at city hall.
-commuter (n - kəˈmjuːtər): người đi làm | The commuter train was delayed this morning.
-expect (v - ɪkˈspɛkt): dự kiến | We expect the package to arrive tomorrow.
-parade (n - pəˈreɪd): diễu hành | The parade will take place downtown.
-comedian (n - kəˈmiːdiən): diễn viên hài | The comedian made the audience laugh.
-reporting that (v - rɪˈpɔːrtɪŋ ðæt): đưa tin rằng | The news is reporting that a storm is approaching.
-nearly (adv - ˈnɪrli): hầu hết | Nearly everyone attended the meeting.
-nearby (adj - ˌnɪərˈbaɪ): gần | There is a park nearby.
-corridor (n - ˈkɔːrɪdɔːr): hành lang | The corridor leads to the conference room.
-pick up (v - pɪk ʌp): điểm đón/đón | We’ll pick you up at the station.
-compact (adj - kəmˈpækt): nhỏ gọn | The compact car is easy to park.
-retreat (n - rɪˈtriːt): nghỉ dưỡng | They went on a weekend retreat in the mountains.
-duty (n - ˈduːti): trách nhiệm | It is his duty to take care of the reports.
-dispute (n - dɪˈspjuːt): tranh cãi | The two companies are in a legal dispute.
-compliment (n - ˈkɑːmplɪmənt): lời khen | He received a compliment on his presentation.
-groundbreaking (adj - ˈɡraʊndbreɪkɪŋ): động thổ, đột phá | The groundbreaking ceremony will take place next week.
+2
+1
+commonly (adv - ˈkɑːmənli): phổ biến | This phrase is commonly used in casual conversations
+constantly (adv - ˈkɑːnstəntli): liên tục | She is constantly checking her phone
+ultimately (adv - ˈʌltɪmətli): cuối cùng | He ultimately decided to change his career path
+deny (v - dɪˈnaɪ): phủ nhận, từ chối | She denied the accusations
+bid (n - bɪd): giá thầu | They placed the highest bid on the project
+accompany (v - əˈkʌmpəni): đi kèm | I will accompany you to the meeting
+emphasis (n - ˈɛmfəsɪs): sự chú trọng | There is a strong emphasis on teamwork in this company
+admirably (adv - ˈædmərəbli): một cách đáng ngưỡng mộ | She handled the situation admirably
+ability (n - əˈbɪləti): khả năng, trình độ | His ability to solve problems is impressive
+owing to = due to (prep - ˈoʊɪŋ tə / duː tə): do | The event was canceled due to bad weather
+unlikely (adj - ʌnˈlaɪkli): khó có thể | It is unlikely that he will arrive on time
+regarding = about (prep - rɪˈɡɑːrdɪŋ): về | I have some questions regarding the project
+reckless (adj - ˈrɛklɪs): liều lĩnh | His reckless driving almost caused an accident
+opposite (adj - ˈɑːpəzɪt): đối diện | The library is located opposite the park
+illustration (n - ˌɪləˈstreɪʃn): hình minh họa | The book contains many colorful illustrations
+charming (adj - ˈʧɑːrmɪŋ): cuốn hút | She has a charming personality
+endure (v - ɪnˈdjʊr): trải qua | Their friendship has endured many challenges
+scarcely (adv - ˈskɛrsli): hiếm hoi | She scarcely had time to finish her work
+are zoned (v - zəʊnd): được phân vùng | These areas are zoned for residential development
+prescription (n - prɪˈskrɪpʃn): đơn thuốc | The doctor wrote a prescription for antibiotics
+apparent (adj - əˈpærənt): rõ ràng | It became apparent that he was not interested
+tentative (adj - ˈtɛntətɪv): tạm thời | They have a tentative agreement in place
+evidently (adv - ˈɛvɪdəntli): rõ ràng | She is evidently upset about the news
+abundant (adj - əˈbʌndənt): nhiều, đa dạng | There is abundant wildlife in the forest
+stepping down (v - ˈstɛpɪŋ daʊn): rời vị trí, từ chức | The CEO is stepping down next month
+opponent (n - əˈpoʊnənt): sự phản đối, đối thủ | His opponent was a strong competitor
+entitle (v - ɪnˈtaɪtl): cho phép | The ticket entitles you to free entry to the museum
+recipient (n - rɪˈsɪpiənt): người nhận | She was the recipient of the award
+apparel (n - əˈpærəl): trang phục | The store specializes in sports apparel
+amend (v - əˈmɛnd): sửa | The document was amended to include the new information
+wire hangers (n - waɪr ˈhæŋərz): móc treo | She hung her clothes on wire hangers
+detergent (n - dɪˈtɜːrdʒənt): chất tẩy rửa | This detergent is good for removing stains
+progress (n - ˈprɑːɡrɛs): tiến độ | The project is making good progress
+enjoyable (adj - ɪnˈdʒɔɪəbl): thú vị | The trip was enjoyable for everyone
+stuffing (v - ˈstʌfɪŋ): nhét | She was stuffing the pillows with cotton
+pie tin (n - paɪ tɪn): khuôn bánh nướng | She baked the pie in a tin
+panel (n - ˈpænl): hội đồng, ban, bệ | The panel of judges will announce the winner
+the effects (n - ðə ɪˈfɛkts): tác động | The effects of climate change are becoming more noticeable
+trial (n - ˈtraɪəl): thử nghiệm | The new drug is currently undergoing trials
+outcome (n - ˈaʊtkʌm): kết quả | The outcome of the experiment was surprising
+expedite (v - ˈɛkspəˌdaɪt): đẩy nhanh | They are trying to expedite the delivery process
+tailored (adj - ˈteɪlərd): phù hợp | The program is tailored to meet the needs of students
+demolished (v - dɪˈmɑːlɪʃt): phá dỡ | The old building was demolished last week
+welcome (adj - ˈwɛlkəm): đáng hoan nghênh | His suggestions were welcome at the meeting
+complement (v - ˈkɒmplɪmɛnt): bổ sung | Her skills are complementing the team's efforts
+preliminary (adj - prɪˈlɪmɪnɛri): sơ bộ | The preliminary results look promising
+rinse (v - rɪns): rửa | Rinse the vegetables before cooking them
+handbag (n - ˈhændbæɡ): túi xách | She carried a leather handbag
+intermission (n - ˌɪntərˈmɪʃn): giải lao | The concert had a brief intermission
+medication (n - ˌmɛdɪˈkeɪʃn): thuốc | He takes his medication every morning
+shelter (n - ˈʃɛltər): nơi ở | They found shelter from the storm
+accomplishment (n - əˈkɑːmplɪʃmənt): thành tựu | Completing the project was a great accomplishment
+an application for financial assistance (n - ˈæplɪkeɪʃn fər fəˈnænʃl əˈsɪstəns): đơn xin hỗ trợ tài chính | She submitted an application for financial assistance
+settle (v - ˈsɛtl): giải quyết | They managed to settle the dispute
+hall (n - hɔːl): hành lang | We met in the main hall of the building
+city hall/town hall (n - ˈsɪti hɔːl/taʊn hɔːl): tòa thị chính | The mayor gave a speech at city hall
+commuter (n - kəˈmjuːtər): người đi làm | The commuter train was delayed this morning
+expect (v - ɪkˈspɛkt): dự kiến | We expect the package to arrive tomorrow
+parade (n - pəˈreɪd): diễu hành | The parade will take place downtown
+comedian (n - kəˈmiːdiən): diễn viên hài | The comedian made the audience laugh
+reporting that (v - rɪˈpɔːrtɪŋ ðæt): đưa tin rằng | The news is reporting that a storm is approaching
+nearly (adv - ˈnɪrli): hầu hết | Nearly everyone attended the meeting
+nearby (adj - ˌnɪərˈbaɪ): gần | There is a park nearby
+corridor (n - ˈkɔːrɪdɔːr): hành lang | The corridor leads to the conference room
+pick up (v - pɪk ʌp): điểm đón/đón | We’ll pick you up at the station
+compact (adj - kəmˈpækt): nhỏ gọn | The compact car is easy to park
+retreat (n - rɪˈtriːt): nghỉ dưỡng | They went on a weekend retreat in the mountains
+duty (n - ˈduːti): trách nhiệm | It is his duty to take care of the reports
+dispute (n - dɪˈspjuːt): tranh cãi | The two companies are in a legal dispute
+compliment (n - ˈkɑːmplɪmənt): lời khen | He received a compliment on his presentation
+groundbreaking (adj - ˈɡraʊndbreɪkɪŋ): động thổ, đột phá | The groundbreaking ceremony will take place next week
+in excess of(t - t) vượt quá | VIP seats costing in excess of two hundred dollars

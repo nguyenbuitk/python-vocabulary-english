@@ -1,0 +1,6 @@
+DNS : translates human-readable domain names 'like yahoo.com' into IP addresses that computers use to identify each other on a network.
+DNS Process: When a user types a domain name, DNS servers resolve the name to an IP address by querying multiple servers: 
+DNS Process: query from the root server to the TLD server, and finally the authoritative name server.
+Resolver Cache: Once the DNS resolver finds the IP address, it stores it in cache memory for quicker access in the future.
+What is the role of the resolver in the DNS process?
+Why is caching important in DNS?

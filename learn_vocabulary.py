@@ -51,7 +51,7 @@ Optimize when answer with en (example `handouts` is correct of 'handouts`)
 [Done] Change script for handle translate to en
 [Done] Change counter of file function
 [Done] Use translate API
-??Change read_vocabulary function for read all file or not??
+??Change  read_vocabulary function for read all file or not??
 Trouble issue when annotation have vietnamese. Ex:
     Comparison between:
         String 1: she lay down 'nằm' on the couch to watch tv
@@ -80,6 +80,7 @@ When answer with english sentence, display the two correct answer, correct answe
     String 2: she hanged her cloth on the metal 
 Features: count the average ratio
 [Done] Optimize all function, script
+Dùng API để chỉnh sửa file trước khi đưa ra câu hỏi, điều này giúp giảm thời gian loading cho các lần học sau!
 """
 
 
@@ -98,6 +99,9 @@ def press(key):
 def release(key):
     pass
 
+
+def processing_file(filename):
+    pass
 
 def read_vocabulary(filename):
     vocabulary = []
@@ -183,9 +187,12 @@ def check_answer(question, answer, answer_with_viet,  trans_to_en=False):
     else:
         if trans_to_en:
             correct_answer = question.get('annotation') if question.get('annotation') else question['en']
-            ratio_score = SequenceMatcher(None, correct_answer.lower(), answer.lower()).ratio()
-            print("ratio: ", ratio_score)
-            if ratio_score > ratio:
+            correct_answer_2 = translate_en_vi(question.get('sentence_vi'), trans_to_vi=False)
+            ratio_score = SequenceMatcher(None, correct_answer.lower().strip('.'), answer.lower()).ratio()
+            ratio_score_2 = SequenceMatcher(None, correct_answer_2.lower().strip('.'), answer.lower()).ratio()
+            question["annotation2"] = {"higher_score": ratio_score_2 > ratio_score, "value": correct_answer_2}
+            print("ratio:", max(ratio_score, ratio_score_2))
+            if max(ratio_score, ratio_score_2) > ratio:
                 return True
             else: return False
         else:
@@ -211,8 +218,6 @@ def equalize(s1, s2):
     l1_highlight = l1
     l2 = tokenize(s2)
     l2_highlight = l2 
-    print("l1: ", l1)
-    print("l2: ", l2)
     res1 = []
     res2 = []
     prev = difflib.Match(0,0,0)
@@ -245,10 +250,24 @@ def show_comparison(s1, s2, width=40, margin=10, sidebyside=True, compact=False)
 def highlight_differents_between_two_string(question, answer, answer_with_viet, trans_to_en=False):
     if trans_to_en and question.get('annotation'):
         question['en'] = question['annotation']
-    a = question['vn'] if answer_with_viet else question['en']
-    a = a.lower()
+    correct_answer = question['vn'] if answer_with_viet else question['en']
+    correct_answer = correct_answer.lower()
     answer = answer.lower()
-    show_comparison(a, answer)
+    
+    if question.get('annotation2'):
+        correct_answer_2 = question['annotation2']['value'].lower().strip('.')
+        print("Default ans vs api answer")
+        show_comparison(correct_answer, correct_answer_2)
+    
+        # if the ratio of api answer is higher
+        if question['annotation2']['higher_score'] == True:
+            print("Your answer with api answer")
+            show_comparison(correct_answer_2, answer)
+            return
+    
+    # if the ratio of default is higher
+    print("Your answer with default answer")
+    show_comparison(correct_answer, answer)
     
 def highlight_differents_between_two_string_2(question, answer, answer_with_viet, trans_to_en=False):
     if trans_to_en and question.get('annotation'):
@@ -329,8 +348,8 @@ def print_counter_of_file(filename):
     else:
         data[0] = data[0].strip()
         print(f"Practice times when answer with vi:", data[0])
-        print(f"Practice times when answer with en:", data[1])
-        print(f"Practice times when answer with sentences:", data[2])
+        print(f"Practice times when answer with en:", data[1].strip())
+        print(f"Practice times when answer with sentences:", data[2].strip())
 
 # Can we detect it is vn or en?
 def output_answer(question, answer_with_viet, trans_to_en=False):
@@ -372,9 +391,6 @@ def handle_keystrokes(question, wrong_answer, answer_with_viet, trans_to_en=Fals
                 if trans_to_en:
                     highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
             else:
-                output_answer(question, answer_with_viet, trans_to_en)
-                print("wrong, added to list wrong word!")
-                wrong_answer.append(question)
                 if trans_to_en:
                     highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
                     while True:
@@ -382,6 +398,10 @@ def handle_keystrokes(question, wrong_answer, answer_with_viet, trans_to_en=Fals
                         if check_answer(question, user_answer, answer_with_viet, trans_to_en):
                             highlight_differents_between_two_string(question, user_answer, answer_with_viet, trans_to_en)
                             break
+                else:
+                    output_answer(question, answer_with_viet, trans_to_en)
+                    print("wrong, added to list wrong word!")
+                    wrong_answer.append(question)
             break
         
         elif result == "w":
@@ -402,19 +422,20 @@ def ask_question(count, question, answer_with_viet, trans_to_en=False):
     if trans_to_en:
         # Print the vn sentence
         if question.get('annotation'):
-            sentence_vn = translate_en_vi(question.get('annotation')) 
-        else: sentence_vn = translate_en_vi(question['en'])
-        print(f"[{count}] {sentence_vn}", end=": ")
+            question['sentence_vi'] = translate_en_vi(question.get('annotation')) 
+        else: question['sentence_vi'] = translate_en_vi(question['en'])
+        print(f"[{count}] {question['sentence_vi']}", end=": ")
     else:
         if answer_with_viet:
-            print(f"[{count}] {question['en']} ({question['phonetic']})", end="")
+            print(f"[{count}] {question.get('en')} ({question.get('phonetic')})", end="")
         else:
-            print(f"[{count}] {question['vn']}", end=": ")
+            print(f"[{count}] {question.get('vn')}", end=": ")
 
 def signal_handler(sig, frame):
     print("\nCtrl+C detected! Exiting gracefully.")
     sys.exit(0)
 
+# default trans from en to vi
 def translate_en_vi(text, trans_to_vi=True):
     if trans_to_vi:
         translator = GoogleTranslator(source = 'en', target ='vi')
@@ -474,7 +495,7 @@ def vocabulary_quiz(selected_file, answer_with_viet, trans_to_en=False):
         print("\nList wrong word:")
         print_vocabulary_list(wrong_answers)
 
-    update_counter_of_file(selected_file,answer_with_viet=answer_with_viet)
+    update_counter_of_file(selected_file, answer_with_viet=answer_with_viet, trans_to_en=trans_to_en)
 
 
 if __name__ == "__main__":
