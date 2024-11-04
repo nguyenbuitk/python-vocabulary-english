@@ -1,6 +1,25 @@
-4
-3
-3
+5
+5
+5
+admission (n - ædˈmɪʃn) việc vào cửa | admission to the museum is free on Sundays.
+batch (n - bætʃ) lô hàng, đợt | another batch will arrive next Tuesday.
+train car (n - treɪn kɑːr) toa tàu | each train car has its own unique number.
+seat assignment (n - siːt əˈsaɪnmənt) chỉ định chỗ ngồi | your seat assignment is listed on your boarding pass.
+pharmacist (n - ˈfɑːrməsɪst) dược sỹ | the pharmacist provided instructions for the medication.
+foundation (n - faʊnˈdeɪʃn) quỹ | the foundation supports education initiatives worldwide.
+time sheet (n - taɪm ʃiːt) bảng chấm công | please submit your time sheet by Friday.
+payroll (n - ˈpeɪroʊl) phòng kế toán | payroll handles employee salaries and taxes.
+precaution (n - prɪˈkɔːʃn) biện pháp an toàn | follow all precautions to ensure safety.
+follow-up (n - ˈfɑːloʊ ʌp) tiếp theo | the doctor scheduled a follow-up appointment.
+follow up (phr.v - ˈfɑːloʊ ʌp) theo dõi | he will follow up on the application status.
+award (v - əˈwɔːrd) trao | they awarded her a scholarship.
+aircraft (n - ˈerkræft) máy bay | the aircraft was ready for departure.
+auto parts (n - ˈɔːtoʊ pɑːrts) phụ tùng ô tô | the store specializes in auto parts.
+introductory class (n - ˌɪntrəˈdʌktəri klæs) lớp nhập môn | the introductory class is open to beginners.
+across the river (phr) bên kia sông | the park is located across the river.
+merchant (n - ˈmɜːrtʃənt) thương nhân | local merchants offer unique goods.
+tracker (n - ˈtrækər) thiết bị theo dõi | use a fitness tracker to monitor activity.
+photojournalist (n - ˌfoʊtoʊˈdʒɜːrnəlɪst) phóng viên ảnh | the photojournalist captured the event live.
 yet (adv - jet) chưa?, từ trước đến nay | Have you ever been there yet?
 largely (adv - ˈlɑːrdʒli) phần lớn | The success was largely due to his efforts
 valuation (n - ˌvæljuˈeɪʃn) định giá | The valuation of the property increased

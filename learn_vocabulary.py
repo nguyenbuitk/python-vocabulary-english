@@ -13,7 +13,7 @@ import difflib
 result = None
 
 # percentage of similarity, if it above ratio, it will consider as correct answerv 
-ratio = 0.85
+ratio = 0.92
 
 init(autoreset=True)
 
@@ -358,11 +358,11 @@ def output_answer(question, answer_with_viet, trans_to_en=False):
         print(f"{question['annotation']}") if question.get('annotation') else print(question['en'])
         return
     if answer_with_viet:
-        print(f" {highlight_text(question['vn'])}")
+        print(f" {highlight_text(question.get('vn'))}")
     elif question.get('phonetic') != None:
-        print(f"{highlight_text(question['en'])} ({highlight_text(question.get('phonetic'))})", end =' | ')
+        print(f"{highlight_text(question.get('en'))} ({highlight_text(question.get('phonetic'))})", end =' | ')
     else:
-        print(f" {highlight_text(question['en'])}")
+        print(f" {highlight_text(question.get('en'))}")
     if "annotation" in question:
         print(f"{question['annotation']}")
 

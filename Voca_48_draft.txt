@@ -1,31 +1,44 @@
-decline: giảm xuống
-dispose: vứt bỏ
-enthusiastically
-reimbursement: khoản hoàn trả
-assumption: giả định
-obligation: nghĩa vụ
-overwhelmed: choáng ngợp
-Associate: công ty, hiệp hội
-please be advised that: xin lưu ý rằng
-rear: phía sau
-inner: bên trong
-preference: sở thích, sự ưu tiên
-payroll: chấm công, bảng lương
-check: tấm séc
-immigrant: nhập cư
-housed: là trụ sở
-old family recipe: công thức gia truyền cũ
-nut: hạt
-accommodate: phục vụ
-insisted: khăng khăng
-electrical cord: dây điện
-grateful: biết ơn
-comprise: chiếm
-come up with: đưa ra
-heritage: di sản
-ballroom: phòng khiêu vũ, phòng tiệc
-involve: tham gia
-leisure: giải trí
-referral: giới thiệu
-oven: lò nướng
-orchestra: dàn nhạc
+5
+5
+2
+cart (n - kɑːrt) xe đẩy | he filled the cart with groceries.
+commercial (n - kəˈmɜːrʃl) quảng cáo | the commercial aired during prime time.
+about to (phr.v - əˈbaʊt tu) chuẩn bị | he is about to leave for the airport.
+cater (v - ˈkeɪtər) phục vụ đồ ăn | they cater events of all sizes.
+cautious (adj - ˈkɔːʃəs) thận trọng | she was cautious about sharing her plans.
+chemistry major (n - ˈkemɪstri ˈmeɪdʒər) chuyên ngành hóa học | he's a chemistry major in college.
+stripe (n - straɪp) vạch kẻ | the road had yellow stripes for lanes.
+supposed to (phr.v - səˈpoʊzd tu) dự kiến | the event is supposed to start at 5 p.m.
+incorporate (v - ɪnˈkɔːrpəreɪt) kết hợp | incorporate these elements into the design.
+dealership (n - ˈdiːlərʃɪp) đại lý | the car dealership offers various brands.
+convention (n - kənˈvenʃn) hội nghị | the convention attracted visitors from all over.
+turn in (phr.v - tɜːrn ɪn) nộp | turn in your assignment by Monday.
+moderate (v - ˈmɑːdəreɪt) điều hành | she will moderate the panel discussion.
+lounge (n - laʊndʒ) phòng chờ | the lounge offers refreshments for travelers.
+decline (v - dɪˈklaɪn) giảm xuống | the company's profits declined last quarter
+dispose (v - dɪˈspoʊz) vứt bỏ | dispose of waste properly
+enthusiastically (adv - ɪnˌθuːziˈæstɪkli) một cách nhiệt tình | she enthusiastically supported the new project
+reimbursement (n - ˌriːɪmˈbɜːrsmənt) khoản hoàn trả | submit your receipts for reimbursement
+assumption (n - əˈsʌmpʃn) giả định | the assumption was incorrect
+obligation (n - ˌɑːblɪˈɡeɪʃn) nghĩa vụ | you have a legal obligation to report the incident
+overwhelmed (adj - ˌoʊvərˈwelmd) choáng ngợp | she felt overwhelmed by the workload
+associate (n - əˈsoʊʃiət) công ty, hiệp hội | The company is called Landor Associates.
+rear (adj - rɪr) phía sau | the rear entrance is locked
+inner (adj - ˈɪnər) bên trong | the inner workings of the machine
+preference (n - ˈprefərəns) sở thích, sự ưu tiên | I have a preference for tea over coffee
+payroll (n - ˈpeɪroʊl) chấm công, bảng lương | the company has a large payroll
+check (n - tʃek) tấm séc | the bank issued a check for the refund
+immigrant (n - ˈɪmɪɡrənt) nhập cư | she is an immigrant from Italy
+house (v - haʊzd) đặt trong | the organization is housed in a historic building
+nut (n - nʌt) hạt | almonds are a type of nut
+accommodate (v - əˈkɑːmədeɪt) phục vụ | the hotel can accommodate up to 300 guests
+insisted (v - ɪnˈsɪstɪd) khăng khăng | he insisted on paying the bill
+electrical cord (n - ɪˈlektrɪkl kɔːrd) dây điện | the electrical cord is too short
+grateful (adj - ˈɡreɪtfl) biết ơn | she was grateful for the help
+comprise (v - kəmˈpraɪz) chiếm | Older people comprise a large proportion of those living in poverty.
+heritage (n - ˈherɪtɪdʒ) di sản | the city has a rich cultural heritage
+ballroom (n - ˈbɔːlruːm) phòng khiêu vũ, phòng tiệc | the ballroom can host up to 500 people
+leisure (n - ˈliːʒər) giải trí | leisure activities include reading and hiking
+referral (n - rɪˈfɜːrəl) giới thiệu | the doctor gave her a referral to a specialist
+oven (n - ˈʌvn) lò nướng | preheat the oven to 350°F
+orchestra (n - ˈɔːrkɪstrə) dàn nhạc | the orchestra performed beautifully
