@@ -1,3 +1,7 @@
+0
+0
+1
+# 1000 English conversation phrases that seem easy but are not
 we sat down face to face
 you can go to the station by bus
 winter in new york can be very cold
@@ -62,7 +66,7 @@ this is my daughter
 i got married 8 years ago
 i slept nine hours
 will you stay at home?
-i's a long way from here to school
+it's a long way from here to school
 let's open the window
 my sister takes piano lessons twice a week
 she doesn't understand me, either
