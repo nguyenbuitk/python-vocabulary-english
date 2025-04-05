@@ -3,3 +3,5 @@ Voca_X_phrase.txt: cụm từ mới
 Voca_X_draft: từ đã học nhưng quên
 rarely_word: từ hiếm gặp, được bôi màu xanh trong đề
 X_sentences: dịch tiếng anh sang việt
+
+Voca_48: Test 14
