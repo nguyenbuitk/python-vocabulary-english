@@ -266,7 +266,7 @@ def highlight_differents_between_two_string(question, answer, answer_with_viet, 
             return
     
     # if the ratio of default is higher
-    print("Your answer with default answer")
+    print("Default answer vs your answer")
     show_comparison(correct_answer, answer)
     
 def highlight_differents_between_two_string_2(question, answer, answer_with_viet, trans_to_en=False):
@@ -421,6 +421,10 @@ def handle_keystrokes(question, wrong_answer, answer_with_viet, trans_to_en=Fals
 def ask_question(count, question, answer_with_viet, trans_to_en=False):
     if trans_to_en:
         # Print the vn sentence
+        if 'vn' in question:
+            question['sentence_vi'] = question['vn']
+            print(f"[{count}] {question['vn']}", end=": ")
+            return
         if question.get('annotation'):
             question['sentence_vi'] = translate_en_vi(question.get('annotation')) 
         else: question['sentence_vi'] = translate_en_vi(question['en'])
